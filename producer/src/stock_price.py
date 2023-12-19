@@ -17,6 +17,6 @@ def _get_new_price(stock):
 def random_price_change():
     stock = random.choice(stocks)
     new_price = _get_new_price(stock)
-    print('{}: {} -> {}'.format(stock['id'], stock['price'], new_price))
+    # print('{}: {} -> {}'.format(stock['id'], stock['price'], new_price))
     stock['price'] = new_price
     return [stock['id'], stock['price']]
