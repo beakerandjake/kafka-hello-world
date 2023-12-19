@@ -1,9 +1,13 @@
+import os
 import time
-import stock_price
+from confluent_kafka import Producer
+from stock_price import random_price_change
+
+delay = float(os.environ.get("PRODUCER_DELAY", "1"))
 
 def stream():
     while True:
-        print(stock_price.random_price_change())
-        time.sleep(1)
+        print(random_price_change())
+        time.sleep(delay)
 
 stream()
