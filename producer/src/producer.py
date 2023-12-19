@@ -11,7 +11,7 @@ producer = Producer({"bootstrap.servers": 'kafka:9092'})
 def stream():
     while True:
         update = random_price_change()
-        producer.produce("stock_price_changes", key=update[0], value=str(update[1]))
+        producer.produce("stock_price_changes", key=update[0], value=str(update))
         time.sleep(delay)
 
 stream()
