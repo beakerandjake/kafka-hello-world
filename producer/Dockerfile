@@ -3,5 +3,5 @@ WORKDIR /code
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 COPY ./data.json .
-COPY ./producer.py .
-CMD ["python", "./producer.py"]
+COPY ./src .
+CMD ["python", "-u", "./producer.py"]
