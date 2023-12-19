@@ -4,8 +4,7 @@ services:
     build: producer
     container_name: producer
     environment:
-      - PRODUCER_DELAY=1 
-      - PRODUCER_TOPIC=stock_price_changes
+      - PRODUCER_SPEED_MS=25
     networks:
       - kafka_network
   kafka:
@@ -14,7 +13,7 @@ services:
     networks:
       - kafka_network
     ports:
-      - "9094:9094"
+      - "9092:9092"
     volumes:
       - "kafka_data:/bitnami"
     environment:
