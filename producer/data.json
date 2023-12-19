@@ -1,0 +1,5267 @@
+[
+  {
+    "id": "CFA",
+    "name": "VictoryShares US 500 Volatility Wtd ETF",
+    "volatility": 0.07,
+    "price": 366.30
+  },
+  {
+    "id": "MTBCP",
+    "name": "Medical Transcription Billing, Corp.",
+    "volatility": 0.03,
+    "price": 76.18
+  },
+  {
+    "id": "CCC",
+    "name": "Calgon Carbon Corporation",
+    "volatility": 0.02,
+    "price": 142.50
+  },
+  {
+    "id": "VRAY",
+    "name": "ViewRay, Inc.",
+    "volatility": 0.1,
+    "price": 287.44
+  },
+  {
+    "id": "TVTY",
+    "name": "Tivity Health, Inc.",
+    "volatility": 0.06,
+    "price": 237.16
+  },
+  {
+    "id": "LSCC",
+    "name": "Lattice Semiconductor Corporation",
+    "volatility": 0.08,
+    "price": 9.32
+  },
+  {
+    "id": "FNCX",
+    "name": "Function(x) Inc.",
+    "volatility": 0.05,
+    "price": 433.95
+  },
+  { "id": "QIWI", "name": "QIWI plc", "volatility": 0.04, "price": 441.50 },
+  {
+    "id": "MGI",
+    "name": "Moneygram International, Inc.",
+    "volatility": 0.08,
+    "price": 373.29
+  },
+  {
+    "id": "XBIT",
+    "name": "XBiotech Inc.",
+    "volatility": 0.07,
+    "price": 211.26
+  },
+  {
+    "id": "LVHD",
+    "name": "Legg Mason Low Volatility High Dividend ETF",
+    "volatility": 0.05,
+    "price": 449.43
+  },
+  {
+    "id": "JNJ",
+    "name": "Johnson & Johnson",
+    "volatility": 0.04,
+    "price": 346.11
+  },
+  {
+    "id": "AWK",
+    "name": "American Water Works",
+    "volatility": 0.09,
+    "price": 309.20
+  },
+  { "id": "ERIC", "name": "Ericsson", "volatility": 0.1, "price": 272.24 },
+  {
+    "id": "MS^E",
+    "name": "Morgan Stanley",
+    "volatility": 0.09,
+    "price": 440.37
+  },
+  {
+    "id": "IGT",
+    "name": "International Game Technology",
+    "volatility": 0.03,
+    "price": 417.07
+  },
+  {
+    "id": "CHH",
+    "name": "Choice Hotels International, Inc.",
+    "volatility": 0.1,
+    "price": 209.94
+  },
+  {
+    "id": "ATNI",
+    "name": "ATN International, Inc.",
+    "volatility": 0.1,
+    "price": 216.55
+  },
+  {
+    "id": "NNN",
+    "name": "National Retail Properties",
+    "volatility": 0.08,
+    "price": 143.95
+  },
+  {
+    "id": "ELY",
+    "name": "Callaway Golf Company",
+    "volatility": 0.01,
+    "price": 174.54
+  },
+  {
+    "id": "PPC",
+    "name": "Pilgrim's Pride Corporation",
+    "volatility": 0.07,
+    "price": 51.09
+  },
+  {
+    "id": "YUM",
+    "name": "Yum! Brands, Inc.",
+    "volatility": 0.04,
+    "price": 196.01
+  },
+  {
+    "id": "APOPW",
+    "name": "Cellect Biotechnology Ltd.",
+    "volatility": 0.09,
+    "price": 358.53
+  },
+  {
+    "id": "FKLYU",
+    "name": "Frankly, Inc.",
+    "volatility": 0.07,
+    "price": 17.70
+  },
+  { "id": "MOMO", "name": "Momo Inc.", "volatility": 0.01, "price": 222.78 },
+  {
+    "id": "STX",
+    "name": "Seagate Technology PLC",
+    "volatility": 0.05,
+    "price": 440.01
+  },
+  {
+    "id": "SMHI",
+    "name": "SEACOR Marine Holdings Inc.",
+    "volatility": 0.06,
+    "price": 131.05
+  },
+  {
+    "id": "RDNT",
+    "name": "RadNet, Inc.",
+    "volatility": 0.03,
+    "price": 367.00
+  },
+  {
+    "id": "AGCO",
+    "name": "AGCO Corporation",
+    "volatility": 0.03,
+    "price": 39.96
+  },
+  {
+    "id": "ATLC",
+    "name": "Atlanticus Holdings Corporation",
+    "volatility": 0.01,
+    "price": 279.21
+  },
+  {
+    "id": "GCO",
+    "name": "Genesco Inc.",
+    "volatility": 0.08,
+    "price": 427.26
+  },
+  {
+    "id": "TCF.WS",
+    "name": "TCF Financial Corporation",
+    "volatility": 0.03,
+    "price": 273.82
+  },
+  {
+    "id": "BL",
+    "name": "BlackLine, Inc.",
+    "volatility": 0.02,
+    "price": 292.67
+  },
+  {
+    "id": "PSCE",
+    "name": "PowerShares S&P SmallCap Energy Portfolio",
+    "volatility": 0.03,
+    "price": 320.23
+  },
+  {
+    "id": "ACN",
+    "name": "Accenture plc",
+    "volatility": 0.04,
+    "price": 180.66
+  },
+  {
+    "id": "NYV",
+    "name": "Nuveen New York Municipal Value Fund 2",
+    "volatility": 0.03,
+    "price": 179.65
+  },
+  {
+    "id": "NUM",
+    "name": "Nuveen Michigan Quality Municipal Income Fund",
+    "volatility": 0.08,
+    "price": 111.57
+  },
+  {
+    "id": "INWK",
+    "name": "InnerWorkings, Inc.",
+    "volatility": 0.01,
+    "price": 148.72
+  },
+  {
+    "id": "WVVI",
+    "name": "Willamette Valley Vineyards, Inc.",
+    "volatility": 0.05,
+    "price": 318.51
+  },
+  {
+    "id": "TAIT",
+    "name": "Taitron Components Incorporated",
+    "volatility": 0.08,
+    "price": 378.77
+  },
+  {
+    "id": "WSTC",
+    "name": "West Corporation",
+    "volatility": 0.05,
+    "price": 382.38
+  },
+  {
+    "id": "NS^B",
+    "name": "Nustar Energy L.P.",
+    "volatility": 0.08,
+    "price": 313.55
+  },
+  {
+    "id": "GNTY",
+    "name": "Guaranty Bancshares, Inc.",
+    "volatility": 0.04,
+    "price": 382.83
+  },
+  {
+    "id": "CPHC",
+    "name": "Canterbury Park Holding Corporation",
+    "volatility": 0.07,
+    "price": 422.97
+  },
+  {
+    "id": "EL",
+    "name": "Estee Lauder Companies, Inc. (The)",
+    "volatility": 0.02,
+    "price": 359.94
+  },
+  {
+    "id": "BREW",
+    "name": "Craft Brew Alliance, Inc.",
+    "volatility": 0.05,
+    "price": 342.66
+  },
+  {
+    "id": "NSL",
+    "name": "Nuveen Senior Income Fund",
+    "volatility": 0.04,
+    "price": 46.32
+  },
+  {
+    "id": "FOR",
+    "name": "Forestar Group Inc",
+    "volatility": 0.03,
+    "price": 106.65
+  },
+  {
+    "id": "NEE^K",
+    "name": "NextEra Energy, Inc.",
+    "volatility": 0.09,
+    "price": 292.73
+  },
+  {
+    "id": "SRT",
+    "name": "StarTek, Inc.",
+    "volatility": 0.08,
+    "price": 62.98
+  },
+  {
+    "id": "PETX",
+    "name": "Aratana Therapeutics, Inc.",
+    "volatility": 0.08,
+    "price": 329.18
+  },
+  {
+    "id": "ORA",
+    "name": "Ormat Technologies, Inc.",
+    "volatility": 0.03,
+    "price": 371.27
+  },
+  {
+    "id": "CYS^B",
+    "name": "CYS Investments, Inc.",
+    "volatility": 0.04,
+    "price": 72.09
+  },
+  {
+    "id": "PBCT",
+    "name": "People's United Financial, Inc.",
+    "volatility": 0.09,
+    "price": 73.06
+  },
+  {
+    "id": "CLMT",
+    "name": "Calumet Specialty Products Partners, L.P.",
+    "volatility": 0.08,
+    "price": 141.70
+  },
+  {
+    "id": "CMCM",
+    "name": "Cheetah Mobile Inc.",
+    "volatility": 0.06,
+    "price": 89.89
+  },
+  {
+    "id": "BDE",
+    "name": "Black Diamond, Inc.",
+    "volatility": 0.07,
+    "price": 341.86
+  },
+  {
+    "id": "DM",
+    "name": "Dominion Energy Midstream Partners, LP",
+    "volatility": 0.01,
+    "price": 352.47
+  },
+  {
+    "id": "CMA.WS",
+    "name": "Comerica Incorporated",
+    "volatility": 0.07,
+    "price": 54.70
+  },
+  {
+    "id": "R",
+    "name": "Ryder System, Inc.",
+    "volatility": 0.01,
+    "price": 102.36
+  },
+  {
+    "id": "GALE",
+    "name": "Galena Biopharma, Inc.",
+    "volatility": 0.03,
+    "price": 297.80
+  },
+  {
+    "id": "WTBA",
+    "name": "West Bancorporation",
+    "volatility": 0.06,
+    "price": 234.05
+  },
+  {
+    "id": "GOOGL",
+    "name": "Alphabet Inc.",
+    "volatility": 0.1,
+    "price": 391.23
+  },
+  { "id": "GLT", "name": "Glatfelter", "volatility": 0.06, "price": 117.56 },
+  {
+    "id": "FTR",
+    "name": "Frontier Communications Corporation",
+    "volatility": 0.02,
+    "price": 129.20
+  },
+  {
+    "id": "EEI",
+    "name": "Ecology and Environment, Inc.",
+    "volatility": 0.03,
+    "price": 307.36
+  },
+  {
+    "id": "XIV",
+    "name": "VelocityShares Daily Inverse VIX Short-Term ETN",
+    "volatility": 0.06,
+    "price": 250.34
+  },
+  {
+    "id": "MXIM",
+    "name": "Maxim Integrated Products, Inc.",
+    "volatility": 0.05,
+    "price": 57.10
+  },
+  {
+    "id": "VLY^A",
+    "name": "Valley National Bancorp",
+    "volatility": 0.03,
+    "price": 350.41
+  },
+  {
+    "id": "MMU",
+    "name": "Western Asset Managed Municipals Fund, Inc.",
+    "volatility": 0.09,
+    "price": 386.73
+  },
+  {
+    "id": "BNCL",
+    "name": "Beneficial Bancorp, Inc.",
+    "volatility": 0.03,
+    "price": 82.57
+  },
+  {
+    "id": "PPX",
+    "name": "PPL Capital Funding, Inc.",
+    "volatility": 0.06,
+    "price": 209.15
+  },
+  {
+    "id": "FHN",
+    "name": "First Horizon National Corporation",
+    "volatility": 0.06,
+    "price": 229.66
+  },
+  {
+    "id": "WSFS",
+    "name": "WSFS Financial Corporation",
+    "volatility": 0.04,
+    "price": 360.01
+  },
+  {
+    "id": "BKHU",
+    "name": "Black Hills Corporation",
+    "volatility": 0.03,
+    "price": 242.12
+  },
+  {
+    "id": "IBKCO",
+    "name": "IBERIABANK Corporation",
+    "volatility": 0.05,
+    "price": 104.91
+  },
+  {
+    "id": "ALL^E",
+    "name": "Allstate Corporation (The)",
+    "volatility": 0.01,
+    "price": 16.04
+  },
+  {
+    "id": "WWW",
+    "name": "Wolverine World Wide, Inc.",
+    "volatility": 0.03,
+    "price": 142.51
+  },
+  {
+    "id": "CIL",
+    "name": "VictoryShares International Volatility Wtd ETF",
+    "volatility": 0.06,
+    "price": 347.56
+  },
+  {
+    "id": "ADRU",
+    "name": "BLDRS Europe 100 ADR Index Fund",
+    "volatility": 0.09,
+    "price": 221.65
+  },
+  {
+    "id": "FMX",
+    "name": "Fomento Economico Mexicano S.A.B. de C.V.",
+    "volatility": 0.04,
+    "price": 92.11
+  },
+  {
+    "id": "CORE",
+    "name": "Core-Mark Holding Company, Inc.",
+    "volatility": 0.06,
+    "price": 77.87
+  },
+  {
+    "id": "AREX",
+    "name": "Approach Resources Inc.",
+    "volatility": 0.04,
+    "price": 15.52
+  },
+  {
+    "id": "GDV^D",
+    "name": "Gabelli Dividend",
+    "volatility": 0.08,
+    "price": 365.70
+  },
+  {
+    "id": "KNX",
+    "name": "Knight Transportation, Inc.",
+    "volatility": 0.09,
+    "price": 347.11
+  },
+  {
+    "id": "COL",
+    "name": "Rockwell Collins, Inc.",
+    "volatility": 0.09,
+    "price": 186.41
+  },
+  {
+    "id": "MARA",
+    "name": "Marathon Patent Group, Inc.",
+    "volatility": 0.07,
+    "price": 411.74
+  },
+  {
+    "id": "MET^A",
+    "name": "MetLife, Inc.",
+    "volatility": 0.02,
+    "price": 51.20
+  },
+  {
+    "id": "FIVN",
+    "name": "Five9, Inc.",
+    "volatility": 0.09,
+    "price": 42.79
+  },
+  {
+    "id": "IVFGC",
+    "name": "Ivy NextShares",
+    "volatility": 0.03,
+    "price": 328.32
+  },
+  {
+    "id": "IFMK",
+    "name": "iFresh Inc.",
+    "volatility": 0.1,
+    "price": 312.86
+  },
+  {
+    "id": "MANT",
+    "name": "ManTech International Corporation",
+    "volatility": 0.04,
+    "price": 327.89
+  },
+  {
+    "id": "PYPL",
+    "name": "PayPal Holdings, Inc.",
+    "volatility": 0.07,
+    "price": 196.43
+  },
+  {
+    "id": "CRNT",
+    "name": "Ceragon Networks Ltd.",
+    "volatility": 0.01,
+    "price": 26.83
+  },
+  {
+    "id": "ALLE",
+    "name": "Allegion plc",
+    "volatility": 0.04,
+    "price": 56.60
+  },
+  {
+    "id": "CAMT",
+    "name": "Camtek Ltd.",
+    "volatility": 0.08,
+    "price": 153.65
+  },
+  {
+    "id": "LN",
+    "name": "LINE Corporation",
+    "volatility": 0.09,
+    "price": 155.83
+  },
+  {
+    "id": "IFV",
+    "name": "First Trust Dorsey Wright International Focus 5 ETF",
+    "volatility": 0.1,
+    "price": 44.64
+  },
+  {
+    "id": "TSM",
+    "name": "Taiwan Semiconductor Manufacturing Company Ltd.",
+    "volatility": 0.05,
+    "price": 120.47
+  },
+  {
+    "id": "AGM.A",
+    "name": "Federal Agricultural Mortgage Corporation",
+    "volatility": 0.02,
+    "price": 419.68
+  },
+  {
+    "id": "ELGX",
+    "name": "Endologix, Inc.",
+    "volatility": 0.06,
+    "price": 32.61
+  },
+  {
+    "id": "AVAV",
+    "name": "AeroVironment, Inc.",
+    "volatility": 0.01,
+    "price": 365.79
+  },
+  {
+    "id": "BPTH",
+    "name": "Bio-Path Holdings, Inc.",
+    "volatility": 0.03,
+    "price": 200.84
+  },
+  {
+    "id": "MAGS",
+    "name": "Magal Security Systems Ltd.",
+    "volatility": 0.06,
+    "price": 273.30
+  },
+  {
+    "id": "NCA",
+    "name": "Nuveen California Municipal Value Fund, Inc.",
+    "volatility": 0.08,
+    "price": 324.30
+  },
+  {
+    "id": "BGNE",
+    "name": "BeiGene, Ltd.",
+    "volatility": 0.07,
+    "price": 53.41
+  },
+  {
+    "id": "LRGE",
+    "name": "ClearBridge Large Cap Growth ESG ETF",
+    "volatility": 0.08,
+    "price": 405.23
+  },
+  {
+    "id": "USAT",
+    "name": "USA Technologies, Inc.",
+    "volatility": 0.09,
+    "price": 374.26
+  },
+  {
+    "id": "DSX",
+    "name": "Diana Shipping inc.",
+    "volatility": 0.07,
+    "price": 417.27
+  },
+  {
+    "id": "VNCE",
+    "name": "Vince Holding Corp.",
+    "volatility": 0.03,
+    "price": 115.74
+  },
+  {
+    "id": "CBS",
+    "name": "CBS Corporation",
+    "volatility": 0.06,
+    "price": 183.77
+  },
+  {
+    "id": "SBLKL",
+    "name": "Star Bulk Carriers Corp.",
+    "volatility": 0.02,
+    "price": 446.70
+  },
+  {
+    "id": "PMPT",
+    "name": "iSectors Post-MPT Growth ETF",
+    "volatility": 0.06,
+    "price": 21.81
+  },
+  {
+    "id": "HIX",
+    "name": "Western Asset High Income Fund II Inc.",
+    "volatility": 0.09,
+    "price": 113.41
+  },
+  {
+    "id": "CPA",
+    "name": "Copa Holdings, S.A.",
+    "volatility": 0.03,
+    "price": 316.46
+  },
+  {
+    "id": "GER",
+    "name": "Goldman Sachs MLP Energy Renaissance Fund",
+    "volatility": 0.09,
+    "price": 226.04
+  },
+  {
+    "id": "MNST",
+    "name": "Monster Beverage Corporation",
+    "volatility": 0.05,
+    "price": 3.96
+  },
+  {
+    "id": "BIOS",
+    "name": "BioScrip, Inc.",
+    "volatility": 0.06,
+    "price": 207.16
+  },
+  {
+    "id": "DUKH",
+    "name": "Duke Energy Corporation",
+    "volatility": 0.02,
+    "price": 6.01
+  },
+  {
+    "id": "SITE",
+    "name": "SiteOne Landscape Supply, Inc.",
+    "volatility": 0.03,
+    "price": 443.48
+  },
+  {
+    "id": "FLL",
+    "name": "Full House Resorts, Inc.",
+    "volatility": 0.04,
+    "price": 252.44
+  },
+  {
+    "id": "SRTSW",
+    "name": "Sensus Healthcare, Inc.",
+    "volatility": 0.04,
+    "price": 54.75
+  },
+  { "id": "YELP", "name": "Yelp Inc.", "volatility": 0.09, "price": 306.62 },
+  {
+    "id": "MSG",
+    "name": "MSG Networks Inc.",
+    "volatility": 0.08,
+    "price": 329.45
+  },
+  {
+    "id": "LXFR",
+    "name": "Luxfer Holdings PLC",
+    "volatility": 0.07,
+    "price": 149.36
+  },
+  {
+    "id": "ZYNE",
+    "name": "Zynerba Pharmaceuticals, Inc.",
+    "volatility": 0.08,
+    "price": 254.69
+  },
+  {
+    "id": "SMLP",
+    "name": "Summit Midstream Partners, LP",
+    "volatility": 0.1,
+    "price": 437.99
+  },
+  {
+    "id": "BWLD",
+    "name": "Buffalo Wild Wings, Inc.",
+    "volatility": 0.04,
+    "price": 48.90
+  },
+  {
+    "id": "PBIB",
+    "name": "Porter Bancorp, Inc.",
+    "volatility": 0.06,
+    "price": 418.12
+  },
+  {
+    "id": "KALV",
+    "name": "KalVista Pharmaceuticals, Inc.",
+    "volatility": 0.07,
+    "price": 184.60
+  },
+  {
+    "id": "EDAP",
+    "name": "EDAP TMS S.A.",
+    "volatility": 0.06,
+    "price": 133.50
+  },
+  {
+    "id": "CW",
+    "name": "Curtiss-Wright Corporation",
+    "volatility": 0.01,
+    "price": 313.07
+  },
+  {
+    "id": "ONB",
+    "name": "Old National Bancorp",
+    "volatility": 0.04,
+    "price": 343.21
+  },
+  {
+    "id": "NHI",
+    "name": "National Health Investors, Inc.",
+    "volatility": 0.07,
+    "price": 380.86
+  },
+  {
+    "id": "X",
+    "name": "United States Steel Corporation",
+    "volatility": 0.03,
+    "price": 74.16
+  },
+  {
+    "id": "FSZ",
+    "name": "First Trust Switzerland AlphaDEX Fund",
+    "volatility": 0.05,
+    "price": 339.37
+  },
+  {
+    "id": "DIOD",
+    "name": "Diodes Incorporated",
+    "volatility": 0.05,
+    "price": 361.48
+  },
+  {
+    "id": "PKG",
+    "name": "Packaging Corporation of America",
+    "volatility": 0.08,
+    "price": 348.65
+  },
+  {
+    "id": "NVRO",
+    "name": "Nevro Corp.",
+    "volatility": 0.07,
+    "price": 334.40
+  },
+  {
+    "id": "BAX",
+    "name": "Baxter International Inc.",
+    "volatility": 0.08,
+    "price": 168.28
+  },
+  {
+    "id": "ADES",
+    "name": "Advanced Emissions Solutions, Inc.",
+    "volatility": 0.06,
+    "price": 446.30
+  },
+  {
+    "id": "HCOM",
+    "name": "Hawaiian Telcom Holdco, Inc.",
+    "volatility": 0.04,
+    "price": 290.23
+  },
+  {
+    "id": "RNET",
+    "name": "RigNet, Inc.",
+    "volatility": 0.09,
+    "price": 63.98
+  },
+  {
+    "id": "ZN",
+    "name": "Zion Oil & Gas Inc",
+    "volatility": 0.01,
+    "price": 7.86
+  },
+  {
+    "id": "IPI",
+    "name": "Intrepid Potash, Inc",
+    "volatility": 0.08,
+    "price": 180.66
+  },
+  {
+    "id": "DAL",
+    "name": "Delta Air Lines, Inc.",
+    "volatility": 0.07,
+    "price": 353.45
+  },
+  {
+    "id": "RKDA",
+    "name": "Arcadia Biosciences, Inc.",
+    "volatility": 0.02,
+    "price": 261.97
+  },
+  {
+    "id": "BRS",
+    "name": "Bristow Group Inc",
+    "volatility": 0.05,
+    "price": 313.78
+  },
+  {
+    "id": "PLOW",
+    "name": "Douglas Dynamics, Inc.",
+    "volatility": 0.05,
+    "price": 214.34
+  },
+  {
+    "id": "EVA",
+    "name": "Enviva Partners, LP",
+    "volatility": 0.07,
+    "price": 134.44
+  },
+  {
+    "id": "LUNA",
+    "name": "Luna Innovations Incorporated",
+    "volatility": 0.07,
+    "price": 10.00
+  },
+  {
+    "id": "FII",
+    "name": "Federated Investors, Inc.",
+    "volatility": 0.02,
+    "price": 327.52
+  },
+  {
+    "id": "PRLB",
+    "name": "Proto Labs, Inc.",
+    "volatility": 0.06,
+    "price": 203.47
+  },
+  { "id": "YUME", "name": "YuMe, Inc.", "volatility": 0.05, "price": 62.74 },
+  {
+    "id": "ACLS",
+    "name": "Axcelis Technologies, Inc.",
+    "volatility": 0.07,
+    "price": 302.05
+  },
+  {
+    "id": "RRTS",
+    "name": "Roadrunner Transportation Systems, Inc",
+    "volatility": 0.04,
+    "price": 96.67
+  },
+  {
+    "id": "GIL",
+    "name": "Gildan Activewear, Inc.",
+    "volatility": 0.1,
+    "price": 25.82
+  },
+  {
+    "id": "SRG",
+    "name": "Seritage Growth Properties",
+    "volatility": 0.06,
+    "price": 366.55
+  },
+  {
+    "id": "GRFS",
+    "name": "Grifols, S.A.",
+    "volatility": 0.05,
+    "price": 423.80
+  },
+  {
+    "id": "CB",
+    "name": "D/B/A Chubb Limited New",
+    "volatility": 0.09,
+    "price": 45.52
+  },
+  {
+    "id": "ETW",
+    "name": "Eaton Vance Corporation",
+    "volatility": 0.07,
+    "price": 324.70
+  },
+  {
+    "id": "LALT",
+    "name": "PowerShares Multi-Strategy Alternative Portfolio",
+    "volatility": 0.06,
+    "price": 436.02
+  },
+  {
+    "id": "OMN",
+    "name": "OMNOVA Solutions Inc.",
+    "volatility": 0.03,
+    "price": 388.39
+  },
+  {
+    "id": "AVHI",
+    "name": "A V Homes, Inc.",
+    "volatility": 0.06,
+    "price": 102.60
+  },
+  {
+    "id": "AVAL",
+    "name": "Grupo Aval Acciones y Valores S.A.",
+    "volatility": 0.06,
+    "price": 304.06
+  },
+  {
+    "id": "MHO",
+    "name": "M/I Homes, Inc.",
+    "volatility": 0.09,
+    "price": 117.44
+  },
+  {
+    "id": "CHN",
+    "name": "China Fund, Inc. (The)",
+    "volatility": 0.01,
+    "price": 15.95
+  },
+  {
+    "id": "CPTAL",
+    "name": "Capitala Finance Corp.",
+    "volatility": 0.05,
+    "price": 258.82
+  },
+  {
+    "id": "PIH",
+    "name": "1347 Property Insurance Holdings, Inc.",
+    "volatility": 0.06,
+    "price": 105.45
+  },
+  {
+    "id": "TAHO",
+    "name": "Tahoe Resources, Inc.",
+    "volatility": 0.03,
+    "price": 167.55
+  },
+  {
+    "id": "CARO",
+    "name": "Carolina Financial Corporation",
+    "volatility": 0.08,
+    "price": 349.35
+  },
+  {
+    "id": "NCR",
+    "name": "NCR Corporation",
+    "volatility": 0.06,
+    "price": 185.63
+  },
+  {
+    "id": "RLJ",
+    "name": "RLJ Lodging Trust",
+    "volatility": 0.02,
+    "price": 204.70
+  },
+  {
+    "id": "JAX",
+    "name": "J. Alexander's Holdings, Inc.",
+    "volatility": 0.03,
+    "price": 294.75
+  },
+  {
+    "id": "CLDT",
+    "name": "Chatham Lodging Trust (REIT)",
+    "volatility": 0.06,
+    "price": 344.06
+  },
+  {
+    "id": "FLAT",
+    "name": "iPath US Treasury Flattener ETN",
+    "volatility": 0.09,
+    "price": 144.02
+  },
+  {
+    "id": "MANU",
+    "name": "Manchester United Ltd.",
+    "volatility": 0.06,
+    "price": 247.42
+  },
+  {
+    "id": "EYES",
+    "name": "Second Sight Medical Products, Inc.",
+    "volatility": 0.07,
+    "price": 355.09
+  },
+  {
+    "id": "TAX",
+    "name": "Liberty Tax, Inc.",
+    "volatility": 0.09,
+    "price": 145.68
+  },
+  {
+    "id": "EDUC",
+    "name": "Educational Development Corporation",
+    "volatility": 0.06,
+    "price": 223.62
+  },
+  {
+    "id": "VLRX",
+    "name": "Valeritas Holdings, Inc.",
+    "volatility": 0.03,
+    "price": 372.31
+  },
+  {
+    "id": "EFF",
+    "name": "Eaton vance Floating-Rate Income Plus Fund",
+    "volatility": 0.04,
+    "price": 43.58
+  },
+  {
+    "id": "OPHT",
+    "name": "Ophthotech Corporation",
+    "volatility": 0.09,
+    "price": 8.95
+  },
+  {
+    "id": "FONE",
+    "name": "First Trust NASDAQ Smartphone Index Fund",
+    "volatility": 0.07,
+    "price": 139.80
+  },
+  {
+    "id": "MMI",
+    "name": "Marcus & Millichap, Inc.",
+    "volatility": 0.06,
+    "price": 153.63
+  },
+  {
+    "id": "CLPR",
+    "name": "Clipper Realty Inc.",
+    "volatility": 0.06,
+    "price": 248.23
+  },
+  {
+    "id": "TBI",
+    "name": "TrueBlue, Inc.",
+    "volatility": 0.06,
+    "price": 162.37
+  },
+  {
+    "id": "NCTY",
+    "name": "The9 Limited",
+    "volatility": 0.08,
+    "price": 305.44
+  },
+  {
+    "id": "MIND",
+    "name": "Mitcham Industries, Inc.",
+    "volatility": 0.02,
+    "price": 124.95
+  },
+  {
+    "id": "AFL",
+    "name": "Aflac Incorporated",
+    "volatility": 0.06,
+    "price": 191.02
+  },
+  {
+    "id": "WPXP",
+    "name": "WPX Energy, Inc.",
+    "volatility": 0.05,
+    "price": 208.27
+  },
+  {
+    "id": "NATH",
+    "name": "Nathan's Famous, Inc.",
+    "volatility": 0.04,
+    "price": 34.77
+  },
+  {
+    "id": "ASMB",
+    "name": "Assembly Biosciences, Inc.",
+    "volatility": 0.07,
+    "price": 73.60
+  },
+  {
+    "id": "NDSN",
+    "name": "Nordson Corporation",
+    "volatility": 0.04,
+    "price": 76.11
+  },
+  { "id": "AEG", "name": "Aegon NV", "volatility": 0.03, "price": 273.16 },
+  {
+    "id": "PG",
+    "name": "Procter & Gamble Company (The)",
+    "volatility": 0.03,
+    "price": 320.68
+  },
+  {
+    "id": "BANC^D",
+    "name": "Banc of California, Inc.",
+    "volatility": 0.1,
+    "price": 431.57
+  },
+  {
+    "id": "OMCL",
+    "name": "Omnicell, Inc.",
+    "volatility": 0.06,
+    "price": 270.62
+  },
+  {
+    "id": "CLNS",
+    "name": "Colony NorthStar, Inc.",
+    "volatility": 0.05,
+    "price": 166.08
+  },
+  {
+    "id": "IDLB",
+    "name": "PowerShares FTSE International Low Beta Equal Weight Portfolio",
+    "volatility": 0.05,
+    "price": 184.09
+  },
+  {
+    "id": "JCS",
+    "name": "Communications Systems, Inc.",
+    "volatility": 0.02,
+    "price": 263.91
+  },
+  {
+    "id": "WBMD",
+    "name": "WebMD Health Corp",
+    "volatility": 0.07,
+    "price": 402.34
+  },
+  {
+    "id": "DGAS",
+    "name": "Delta Natural Gas Company, Inc.",
+    "volatility": 0.07,
+    "price": 51.51
+  },
+  {
+    "id": "ENR",
+    "name": "Energizer Holdings, Inc.",
+    "volatility": 0.05,
+    "price": 95.76
+  },
+  {
+    "id": "AIZ",
+    "name": "Assurant, Inc.",
+    "volatility": 0.1,
+    "price": 406.56
+  },
+  {
+    "id": "AVGR",
+    "name": "Avinger, Inc.",
+    "volatility": 0.07,
+    "price": 256.88
+  },
+  {
+    "id": "INFY",
+    "name": "Infosys Limited",
+    "volatility": 0.07,
+    "price": 198.39
+  },
+  {
+    "id": "ACSF",
+    "name": "American Capital Senior Floating, Ltd.",
+    "volatility": 0.08,
+    "price": 104.06
+  },
+  {
+    "id": "DSKE",
+    "name": "Daseke, Inc.",
+    "volatility": 0.09,
+    "price": 31.62
+  },
+  {
+    "id": "GLPI",
+    "name": "Gaming and Leisure Properties, Inc.",
+    "volatility": 0.08,
+    "price": 247.93
+  },
+  {
+    "id": "BBH",
+    "name": "VanEck Vectors Biotech ETF",
+    "volatility": 0.08,
+    "price": 248.87
+  },
+  {
+    "id": "RBPAA",
+    "name": "Royal Bancshares of Pennsylvania, Inc.",
+    "volatility": 0.08,
+    "price": 329.43
+  },
+  {
+    "id": "CDTI",
+    "name": "Clean Diesel Technologies, Inc.",
+    "volatility": 0.06,
+    "price": 70.02
+  },
+  {
+    "id": "JP",
+    "name": "Jupai Holdings Limited",
+    "volatility": 0.01,
+    "price": 280.15
+  },
+  {
+    "id": "TWIN",
+    "name": "Twin Disc, Incorporated",
+    "volatility": 0.03,
+    "price": 228.96
+  },
+  {
+    "id": "RY^T",
+    "name": "Royal Bank Of Canada",
+    "volatility": 0.03,
+    "price": 14.19
+  },
+  {
+    "id": "TLLP",
+    "name": "Tesoro Logistics LP",
+    "volatility": 0.09,
+    "price": 349.48
+  },
+  {
+    "id": "GIMO",
+    "name": "Gigamon Inc.",
+    "volatility": 0.03,
+    "price": 91.33
+  },
+  {
+    "id": "ZGNX",
+    "name": "Zogenix, Inc.",
+    "volatility": 0.05,
+    "price": 164.98
+  },
+  {
+    "id": "VSI",
+    "name": "Vitamin Shoppe, Inc",
+    "volatility": 0.03,
+    "price": 433.08
+  },
+  {
+    "id": "MBRX",
+    "name": "Moleculin Biotech, Inc.",
+    "volatility": 0.05,
+    "price": 248.14
+  },
+  {
+    "id": "CYTR",
+    "name": "CytRx Corporation",
+    "volatility": 0.07,
+    "price": 76.13
+  },
+  {
+    "id": "BOBE",
+    "name": "Bob Evans Farms, Inc.",
+    "volatility": 0.03,
+    "price": 320.22
+  },
+  {
+    "id": "TTF",
+    "name": "Thai Fund, Inc. (The)",
+    "volatility": 0.07,
+    "price": 416.13
+  },
+  {
+    "id": "PNC.WS",
+    "name": "PNC Financial Services Group, Inc. (The)",
+    "volatility": 0.03,
+    "price": 226.40
+  },
+  {
+    "id": "AFA",
+    "name": "American Financial Group, Inc.",
+    "volatility": 0.04,
+    "price": 51.05
+  },
+  {
+    "id": "BSFT",
+    "name": "BroadSoft, Inc.",
+    "volatility": 0.02,
+    "price": 342.89
+  },
+  {
+    "id": "TY",
+    "name": "Tri Continental Corporation",
+    "volatility": 0.02,
+    "price": 16.98
+  },
+  {
+    "id": "SGC",
+    "name": "Superior Uniform Group, Inc.",
+    "volatility": 0.06,
+    "price": 277.41
+  },
+  {
+    "id": "VUZI",
+    "name": "Vuzix Corporation",
+    "volatility": 0.05,
+    "price": 266.14
+  },
+  {
+    "id": "AMZN",
+    "name": "Amazon.com, Inc.",
+    "volatility": 0.09,
+    "price": 192.28
+  },
+  {
+    "id": "NDRM",
+    "name": "NeuroDerm Ltd.",
+    "volatility": 0.09,
+    "price": 409.72
+  },
+  {
+    "id": "AHL^B.CL",
+    "name": "Aspen Insurance Holdings Limited",
+    "volatility": 0.06,
+    "price": 326.15
+  },
+  {
+    "id": "WIRE",
+    "name": "Encore Wire Corporation",
+    "volatility": 0.09,
+    "price": 331.43
+  },
+  {
+    "id": "DBL",
+    "name": "DoubleLine Opportunistic Credit Fund",
+    "volatility": 0.02,
+    "price": 273.01
+  },
+  {
+    "id": "NFX",
+    "name": "Newfield Exploration Company",
+    "volatility": 0.09,
+    "price": 448.51
+  },
+  {
+    "id": "BKCC",
+    "name": "BlackRock Capital Investment Corporation",
+    "volatility": 0.01,
+    "price": 64.35
+  },
+  {
+    "id": "INTX",
+    "name": "Intersections, Inc.",
+    "volatility": 0.06,
+    "price": 254.02
+  },
+  {
+    "id": "HCN",
+    "name": "Welltower Inc.",
+    "volatility": 0.08,
+    "price": 80.73
+  },
+  { "id": "MO", "name": "Altria Group", "volatility": 0.04, "price": 65.11 },
+  {
+    "id": "FYT",
+    "name": "First Trust Small Cap Value AlphaDEX Fund",
+    "volatility": 0.08,
+    "price": 63.07
+  },
+  {
+    "id": "VNDA",
+    "name": "Vanda Pharmaceuticals Inc.",
+    "volatility": 0.04,
+    "price": 389.86
+  },
+  {
+    "id": "CSWI",
+    "name": "CSW Industrials, Inc.",
+    "volatility": 0.04,
+    "price": 327.66
+  },
+  {
+    "id": "NR",
+    "name": "Newpark Resources, Inc.",
+    "volatility": 0.09,
+    "price": 100.40
+  },
+  {
+    "id": "ZNH",
+    "name": "China Southern Airlines Company Limited",
+    "volatility": 0.03,
+    "price": 275.69
+  },
+  {
+    "id": "CEN",
+    "name": "Center Coast MLP & Infrastructure Fund",
+    "volatility": 0.08,
+    "price": 238.20
+  },
+  {
+    "id": "ISBC",
+    "name": "Investors Bancorp, Inc.",
+    "volatility": 0.03,
+    "price": 433.52
+  },
+  {
+    "id": "PIM",
+    "name": "Putnam Master Intermediate Income Trust",
+    "volatility": 0.1,
+    "price": 213.15
+  },
+  {
+    "id": "BBF",
+    "name": "BlackRock Municipal Income Investment Trust",
+    "volatility": 0.04,
+    "price": 287.18
+  },
+  {
+    "id": "FMS",
+    "name": "Fresenius Medical Care Corporation",
+    "volatility": 0.05,
+    "price": 123.89
+  },
+  {
+    "id": "CASS",
+    "name": "Cass Information Systems, Inc",
+    "volatility": 0.06,
+    "price": 184.29
+  },
+  {
+    "id": "ZBH",
+    "name": "Zimmer Biomet Holdings, Inc.",
+    "volatility": 0.05,
+    "price": 36.43
+  },
+  {
+    "id": "IMRNW",
+    "name": "Immuron Limited",
+    "volatility": 0.08,
+    "price": 59.50
+  },
+  {
+    "id": "HCI",
+    "name": "HCI Group, Inc.",
+    "volatility": 0.08,
+    "price": 298.03
+  },
+  {
+    "id": "VIVE",
+    "name": "Viveve Medical, Inc.",
+    "volatility": 0.08,
+    "price": 416.98
+  },
+  {
+    "id": "RAVN",
+    "name": "Raven Industries, Inc.",
+    "volatility": 0.04,
+    "price": 427.78
+  },
+  {
+    "id": "PKD",
+    "name": "Parker Drilling Company",
+    "volatility": 0.07,
+    "price": 114.77
+  },
+  {
+    "id": "BPMC",
+    "name": "Blueprint Medicines Corporation",
+    "volatility": 0.07,
+    "price": 108.38
+  },
+  {
+    "id": "TMST",
+    "name": "Timken Steel Corporation",
+    "volatility": 0.08,
+    "price": 168.73
+  },
+  {
+    "id": "SCE^H",
+    "name": "Southern California Edison Company",
+    "volatility": 0.08,
+    "price": 229.23
+  },
+  { "id": "WPPGY", "name": "WPP plc", "volatility": 0.04, "price": 205.61 },
+  {
+    "id": "THLD",
+    "name": "Threshold Pharmaceuticals, Inc.",
+    "volatility": 0.03,
+    "price": 427.07
+  },
+  {
+    "id": "UFPI",
+    "name": "Universal Forest Products, Inc.",
+    "volatility": 0.07,
+    "price": 28.76
+  },
+  {
+    "id": "WIT",
+    "name": "Wipro Limited",
+    "volatility": 0.06,
+    "price": 345.93
+  },
+  {
+    "id": "ANDAU",
+    "name": "Andina Acquisition Corp. II",
+    "volatility": 0.03,
+    "price": 1.80
+  },
+  {
+    "id": "PFH",
+    "name": "CABCO Series 2004-101 Trust",
+    "volatility": 0.05,
+    "price": 259.04
+  },
+  {
+    "id": "INSM",
+    "name": "Insmed, Inc.",
+    "volatility": 0.07,
+    "price": 213.92
+  },
+  {
+    "id": "ASYS",
+    "name": "Amtech Systems, Inc.",
+    "volatility": 0.02,
+    "price": 403.35
+  },
+  {
+    "id": "SSFN",
+    "name": "Stewardship Financial Corp",
+    "volatility": 0.05,
+    "price": 128.59
+  },
+  {
+    "id": "AAN",
+    "name": "Aaron's,  Inc.",
+    "volatility": 0.06,
+    "price": 411.80
+  },
+  {
+    "id": "SASR",
+    "name": "Sandy Spring Bancorp, Inc.",
+    "volatility": 0.04,
+    "price": 276.70
+  },
+  {
+    "id": "OAKS",
+    "name": "Five Oaks Investment Corp.",
+    "volatility": 0.09,
+    "price": 37.56
+  },
+  {
+    "id": "DRUA",
+    "name": "Dominion Energy, Inc.",
+    "volatility": 0.05,
+    "price": 379.53
+  },
+  {
+    "id": "C^P",
+    "name": "Citigroup Inc.",
+    "volatility": 0.09,
+    "price": 27.95
+  },
+  {
+    "id": "STAY",
+    "name": "Extended Stay America, Inc.",
+    "volatility": 0.06,
+    "price": 419.03
+  },
+  {
+    "id": "TQQQ",
+    "name": "ProShares UltraPro QQQ",
+    "volatility": 0.03,
+    "price": 54.87
+  },
+  {
+    "id": "MTD",
+    "name": "Mettler-Toledo International, Inc.",
+    "volatility": 0.04,
+    "price": 90.05
+  },
+  {
+    "id": "MINI",
+    "name": "Mobile Mini, Inc.",
+    "volatility": 0.1,
+    "price": 280.78
+  },
+  { "id": "LHCG", "name": "LHC Group", "volatility": 0.06, "price": 84.57 },
+  {
+    "id": "BBT^H",
+    "name": "BB&T Corporation",
+    "volatility": 0.04,
+    "price": 372.00
+  },
+  {
+    "id": "CTAS",
+    "name": "Cintas Corporation",
+    "volatility": 0.02,
+    "price": 380.10
+  },
+  {
+    "id": "LVNTB",
+    "name": "Liberty Interactive Corporation",
+    "volatility": 0.06,
+    "price": 138.53
+  },
+  {
+    "id": "NUROW",
+    "name": "NeuroMetrix, Inc.",
+    "volatility": 0.09,
+    "price": 46.63
+  },
+  {
+    "id": "BT",
+    "name": "BT Group plc",
+    "volatility": 0.07,
+    "price": 156.99
+  },
+  {
+    "id": "CUB",
+    "name": "Cubic Corporation",
+    "volatility": 0.07,
+    "price": 394.82
+  },
+  {
+    "id": "CARB",
+    "name": "Carbonite, Inc.",
+    "volatility": 0.02,
+    "price": 2.94
+  },
+  {
+    "id": "NGLS^A",
+    "name": "Targa Resources Partners LP",
+    "volatility": 0.03,
+    "price": 346.32
+  },
+  {
+    "id": "SRC",
+    "name": "Spirit Realty Capital, Inc.",
+    "volatility": 0.01,
+    "price": 355.18
+  },
+  {
+    "id": "KRC",
+    "name": "Kilroy Realty Corporation",
+    "volatility": 0.09,
+    "price": 433.64
+  },
+  {
+    "id": "WHLRP",
+    "name": "Wheeler Real Estate Investment Trust, Inc.",
+    "volatility": 0.09,
+    "price": 433.80
+  },
+  {
+    "id": "PAACR",
+    "name": "Pacific Special Acquisition Corp.",
+    "volatility": 0.07,
+    "price": 168.65
+  },
+  {
+    "id": "UAN",
+    "name": "CVR Partners, LP",
+    "volatility": 0.07,
+    "price": 249.52
+  },
+  {
+    "id": "PCRX",
+    "name": "Pacira Pharmaceuticals, Inc.",
+    "volatility": 0.06,
+    "price": 103.62
+  },
+  {
+    "id": "BANF",
+    "name": "BancFirst Corporation",
+    "volatility": 0.02,
+    "price": 314.72
+  },
+  {
+    "id": "LADR",
+    "name": "Ladder Capital Corp",
+    "volatility": 0.03,
+    "price": 286.21
+  },
+  {
+    "id": "ASTE",
+    "name": "Astec Industries, Inc.",
+    "volatility": 0.04,
+    "price": 382.20
+  },
+  {
+    "id": "JNPR",
+    "name": "Juniper Networks, Inc.",
+    "volatility": 0.03,
+    "price": 174.32
+  },
+  {
+    "id": "GWR",
+    "name": "Genesee & Wyoming, Inc.",
+    "volatility": 0.04,
+    "price": 12.97
+  },
+  {
+    "id": "HHS",
+    "name": "Harte-Hanks, Inc.",
+    "volatility": 0.01,
+    "price": 387.86
+  },
+  {
+    "id": "HBM",
+    "name": "Hudbay Minerals Inc.",
+    "volatility": 0.06,
+    "price": 386.62
+  },
+  {
+    "id": "ONCE",
+    "name": "Spark Therapeutics, Inc.",
+    "volatility": 0.09,
+    "price": 358.06
+  },
+  {
+    "id": "VGIT",
+    "name": "Vanguard Intermediate -Term Government Bond ETF",
+    "volatility": 0.1,
+    "price": 418.97
+  },
+  {
+    "id": "OMNT",
+    "name": "Ominto, Inc.",
+    "volatility": 0.03,
+    "price": 250.18
+  },
+  {
+    "id": "IFN",
+    "name": "India Fund, Inc. (The)",
+    "volatility": 0.06,
+    "price": 169.55
+  },
+  {
+    "id": "ENZ",
+    "name": "Enzo Biochem, Inc.",
+    "volatility": 0.05,
+    "price": 122.91
+  },
+  {
+    "id": "DVA",
+    "name": "DaVita Inc.",
+    "volatility": 0.03,
+    "price": 370.49
+  },
+  {
+    "id": "FTXG",
+    "name": "First Trust Nasdaq Food & Beverage ETF",
+    "volatility": 0.09,
+    "price": 117.90
+  },
+  {
+    "id": "BBRY",
+    "name": "BlackBerry Limited",
+    "volatility": 0.03,
+    "price": 323.63
+  },
+  {
+    "id": "CHUBA",
+    "name": "CommerceHub, Inc.",
+    "volatility": 0.04,
+    "price": 289.51
+  },
+  {
+    "id": "JYNT",
+    "name": "The Joint Corp.",
+    "volatility": 0.01,
+    "price": 156.24
+  },
+  {
+    "id": "ARNC",
+    "name": "Arconic Inc.",
+    "volatility": 0.03,
+    "price": 5.48
+  },
+  {
+    "id": "RUTH",
+    "name": "Ruth's Hospitality Group, Inc.",
+    "volatility": 0.05,
+    "price": 257.34
+  },
+  {
+    "id": "MMP",
+    "name": "Magellan Midstream Partners L.P.",
+    "volatility": 0.07,
+    "price": 41.14
+  },
+  {
+    "id": "ARRS",
+    "name": "ARRIS International plc",
+    "volatility": 0.02,
+    "price": 145.97
+  },
+  {
+    "id": "VMO",
+    "name": "Invesco Municipal Opportunity Trust",
+    "volatility": 0.03,
+    "price": 243.71
+  },
+  {
+    "id": "ANH",
+    "name": "Anworth Mortgage Asset  Corporation",
+    "volatility": 0.04,
+    "price": 100.63
+  },
+  {
+    "id": "GLADO",
+    "name": "Gladstone Capital Corporation",
+    "volatility": 0.09,
+    "price": 447.35
+  },
+  {
+    "id": "EEX",
+    "name": "Emerald Expositions Events, Inc.",
+    "volatility": 0.08,
+    "price": 357.22
+  },
+  {
+    "id": "SBR",
+    "name": "Sabine Royalty Trust",
+    "volatility": 0.05,
+    "price": 246.50
+  },
+  {
+    "id": "EAB",
+    "name": "Entergy Arkansas, Inc.",
+    "volatility": 0.01,
+    "price": 22.82
+  },
+  {
+    "id": "IFF",
+    "name": "Internationa Flavors & Fragrances, Inc.",
+    "volatility": 0.07,
+    "price": 434.74
+  },
+  {
+    "id": "TWN",
+    "name": "Taiwan Fund, Inc. (The)",
+    "volatility": 0.06,
+    "price": 256.88
+  },
+  {
+    "id": "APU",
+    "name": "AmeriGas Partners, L.P.",
+    "volatility": 0.06,
+    "price": 354.30
+  },
+  {
+    "id": "TCRZ",
+    "name": "THL Credit, Inc.",
+    "volatility": 0.03,
+    "price": 53.98
+  },
+  {
+    "id": "AWI",
+    "name": "Armstrong World Industries Inc",
+    "volatility": 0.08,
+    "price": 135.94
+  },
+  {
+    "id": "HUBS",
+    "name": "HubSpot, Inc.",
+    "volatility": 0.06,
+    "price": 231.13
+  },
+  {
+    "id": "PDFS",
+    "name": "PDF Solutions, Inc.",
+    "volatility": 0.02,
+    "price": 390.79
+  },
+  {
+    "id": "JOE",
+    "name": "St. Joe Company (The)",
+    "volatility": 0.08,
+    "price": 248.77
+  },
+  {
+    "id": "TRIL",
+    "name": "Trillium Therapeutics Inc.",
+    "volatility": 0.04,
+    "price": 34.02
+  },
+  {
+    "id": "SIR",
+    "name": "Select Income REIT",
+    "volatility": 0.06,
+    "price": 201.75
+  },
+  {
+    "id": "MYE",
+    "name": "Myers Industries, Inc.",
+    "volatility": 0.1,
+    "price": 324.05
+  },
+  {
+    "id": "PJC",
+    "name": "Piper Jaffray Companies",
+    "volatility": 0.02,
+    "price": 260.10
+  },
+  {
+    "id": "GUID",
+    "name": "Guidance Software, Inc.",
+    "volatility": 0.03,
+    "price": 127.56
+  },
+  {
+    "id": "SBCP",
+    "name": "Sunshine Bancorp, Inc.",
+    "volatility": 0.1,
+    "price": 300.65
+  },
+  {
+    "id": "AXAR",
+    "name": "Axar Acquisition Corp.",
+    "volatility": 0.04,
+    "price": 39.45
+  },
+  {
+    "id": "CAA",
+    "name": "CalAtlantic Group, Inc.",
+    "volatility": 0.1,
+    "price": 410.37
+  },
+  {
+    "id": "AVH",
+    "name": "Avianca Holdings S.A.",
+    "volatility": 0.08,
+    "price": 425.62
+  },
+  { "id": "MPLX", "name": "MPLX LP", "volatility": 0.03, "price": 263.10 },
+  {
+    "id": "BBVA",
+    "name": "Banco Bilbao Viscaya Argentaria S.A.",
+    "volatility": 0.03,
+    "price": 224.04
+  },
+  {
+    "id": "PZN",
+    "name": "Pzena Investment Management Inc",
+    "volatility": 0.07,
+    "price": 233.45
+  },
+  {
+    "id": "MATW",
+    "name": "Matthews International Corporation",
+    "volatility": 0.04,
+    "price": 337.24
+  },
+  {
+    "id": "SRE",
+    "name": "Sempra Energy",
+    "volatility": 0.08,
+    "price": 24.60
+  },
+  {
+    "id": "SHO",
+    "name": "Sunstone Hotel Investors, Inc.",
+    "volatility": 0.03,
+    "price": 256.31
+  },
+  {
+    "id": "ARCX",
+    "name": "Arc Logistic Partners LP",
+    "volatility": 0.07,
+    "price": 429.59
+  },
+  {
+    "id": "ASFI",
+    "name": "Asta Funding, Inc.",
+    "volatility": 0.02,
+    "price": 312.51
+  },
+  {
+    "id": "TTM",
+    "name": "Tata Motors Ltd",
+    "volatility": 0.04,
+    "price": 155.65
+  },
+  { "id": "MBI", "name": "MBIA, Inc.", "volatility": 0.04, "price": 383.96 },
+  {
+    "id": "ICCH",
+    "name": "ICC Holdings, Inc.",
+    "volatility": 0.03,
+    "price": 157.37
+  },
+  {
+    "id": "YDIV",
+    "name": "First Trust International Multi-Asset Diversified Income Index",
+    "volatility": 0.04,
+    "price": 150.99
+  },
+  {
+    "id": "IPHI",
+    "name": "Inphi Corporation",
+    "volatility": 0.05,
+    "price": 330.72
+  },
+  {
+    "id": "MLNX",
+    "name": "Mellanox Technologies, Ltd.",
+    "volatility": 0.05,
+    "price": 96.25
+  },
+  {
+    "id": "ADC",
+    "name": "Agree Realty Corporation",
+    "volatility": 0.1,
+    "price": 350.75
+  },
+  {
+    "id": "RFI",
+    "name": "Cohen & Steers Total Return Realty Fund, Inc.",
+    "volatility": 0.03,
+    "price": 439.76
+  },
+  {
+    "id": "NUTR",
+    "name": "Nutraceutical International Corporation",
+    "volatility": 0.06,
+    "price": 203.57
+  },
+  {
+    "id": "CECO",
+    "name": "Career Education Corporation",
+    "volatility": 0.08,
+    "price": 439.04
+  },
+  {
+    "id": "CHKR",
+    "name": "Chesapeake Granite Wash Trust",
+    "volatility": 0.07,
+    "price": 388.46
+  },
+  {
+    "id": "PERF",
+    "name": "Perfumania Holdings, Inc",
+    "volatility": 0.02,
+    "price": 272.66
+  },
+  {
+    "id": "LTC",
+    "name": "LTC Properties, Inc.",
+    "volatility": 0.08,
+    "price": 117.12
+  },
+  {
+    "id": "CPE^A",
+    "name": "Callon Petroleum Company",
+    "volatility": 0.03,
+    "price": 87.86
+  },
+  {
+    "id": "LMHA",
+    "name": "Legg Mason, Inc.",
+    "volatility": 0.01,
+    "price": 239.83
+  },
+  {
+    "id": "INVE",
+    "name": "Identiv, Inc.",
+    "volatility": 0.02,
+    "price": 406.89
+  },
+  {
+    "id": "PIZ",
+    "name": "PowerShares DWA Developed Markets Momentum Portfolio",
+    "volatility": 0.09,
+    "price": 150.09
+  },
+  {
+    "id": "FND",
+    "name": "Floor & Decor Holdings, Inc.",
+    "volatility": 0.06,
+    "price": 418.67
+  },
+  {
+    "id": "AEGN",
+    "name": "Aegion Corp",
+    "volatility": 0.04,
+    "price": 27.34
+  },
+  {
+    "id": "TMK^C",
+    "name": "Torchmark Corporation",
+    "volatility": 0.04,
+    "price": 292.30
+  },
+  {
+    "id": "OMAM",
+    "name": "OM Asset Management plc",
+    "volatility": 0.03,
+    "price": 242.50
+  },
+  {
+    "id": "LVLT",
+    "name": "Level 3 Communications, Inc.",
+    "volatility": 0.03,
+    "price": 130.43
+  },
+  {
+    "id": "FPO",
+    "name": "First Potomac Realty Trust",
+    "volatility": 0.04,
+    "price": 411.10
+  },
+  {
+    "id": "DX^B",
+    "name": "Dynex Capital, Inc.",
+    "volatility": 0.06,
+    "price": 370.92
+  },
+  {
+    "id": "WNC",
+    "name": "Wabash National Corporation",
+    "volatility": 0.04,
+    "price": 219.09
+  },
+  {
+    "id": "VSTO",
+    "name": "Vista Outdoor Inc.",
+    "volatility": 0.09,
+    "price": 446.12
+  },
+  {
+    "id": "TPIC",
+    "name": "TPI Composites, Inc.",
+    "volatility": 0.01,
+    "price": 399.31
+  },
+  {
+    "id": "VERI",
+    "name": "Veritone, Inc.",
+    "volatility": 0.05,
+    "price": 140.23
+  },
+  {
+    "id": "DLPH",
+    "name": "Delphi Automotive plc",
+    "volatility": 0.08,
+    "price": 318.99
+  },
+  {
+    "id": "CVTI",
+    "name": "Covenant Transportation Group, Inc.",
+    "volatility": 0.02,
+    "price": 370.86
+  },
+  {
+    "id": "HELE",
+    "name": "Helen of Troy Limited",
+    "volatility": 0.02,
+    "price": 316.45
+  },
+  {
+    "id": "WDAY",
+    "name": "Workday, Inc.",
+    "volatility": 0.05,
+    "price": 50.71
+  },
+  {
+    "id": "AQXP",
+    "name": "Aquinox Pharmaceuticals, Inc.",
+    "volatility": 0.04,
+    "price": 169.76
+  },
+  {
+    "id": "URBN",
+    "name": "Urban Outfitters, Inc.",
+    "volatility": 0.09,
+    "price": 164.80
+  },
+  {
+    "id": "CHMA",
+    "name": "Chiasma, Inc.",
+    "volatility": 0.04,
+    "price": 232.71
+  },
+  {
+    "id": "XNY",
+    "name": "China Xiniya Fashion Limited",
+    "volatility": 0.07,
+    "price": 90.69
+  },
+  {
+    "id": "MIE",
+    "name": "Cohen & Steers MLP Income and Energy Opportunity Fund, Inc.",
+    "volatility": 0.06,
+    "price": 291.50
+  },
+  {
+    "id": "TDA",
+    "name": "Telephone and Data Systems, Inc.",
+    "volatility": 0.05,
+    "price": 255.77
+  },
+  {
+    "id": "BWFG",
+    "name": "Bankwell Financial Group, Inc.",
+    "volatility": 0.01,
+    "price": 157.08
+  },
+  {
+    "id": "TRMK",
+    "name": "Trustmark Corporation",
+    "volatility": 0.04,
+    "price": 62.91
+  },
+  {
+    "id": "KYN",
+    "name": "Kayne Anderson MLP Investment Company",
+    "volatility": 0.04,
+    "price": 152.83
+  },
+  {
+    "id": "VRTV",
+    "name": "Veritiv Corporation",
+    "volatility": 0.09,
+    "price": 88.82
+  },
+  {
+    "id": "NEV",
+    "name": "Nuveen Enhanced Municipal Value Fund",
+    "volatility": 0.08,
+    "price": 172.82
+  },
+  {
+    "id": "MACQU",
+    "name": "M I Acquisitions, Inc.",
+    "volatility": 0.04,
+    "price": 368.15
+  },
+  {
+    "id": "DLR",
+    "name": "Digital Realty Trust, Inc.",
+    "volatility": 0.03,
+    "price": 61.84
+  },
+  {
+    "id": "IMMU",
+    "name": "Immunomedics, Inc.",
+    "volatility": 0.05,
+    "price": 51.26
+  },
+  {
+    "id": "WHG",
+    "name": "Westwood Holdings Group Inc",
+    "volatility": 0.1,
+    "price": 382.26
+  },
+  {
+    "id": "FTNT",
+    "name": "Fortinet, Inc.",
+    "volatility": 0.09,
+    "price": 141.09
+  },
+  {
+    "id": "EHT",
+    "name": "Eaton Vance High Income 2021 Target Term Trust",
+    "volatility": 0.05,
+    "price": 236.43
+  },
+  {
+    "id": "NWPX",
+    "name": "Northwest Pipe Company",
+    "volatility": 0.09,
+    "price": 182.45
+  },
+  {
+    "id": "HAYN",
+    "name": "Haynes International, Inc.",
+    "volatility": 0.06,
+    "price": 185.64
+  },
+  {
+    "id": "ASTC",
+    "name": "Astrotech Corporation",
+    "volatility": 0.06,
+    "price": 45.45
+  },
+  {
+    "id": "TRVG",
+    "name": "trivago N.V.",
+    "volatility": 0.06,
+    "price": 123.12
+  },
+  {
+    "id": "MFC",
+    "name": "Manulife Financial Corp",
+    "volatility": 0.02,
+    "price": 392.57
+  },
+  {
+    "id": "JAGX",
+    "name": "Jaguar Animal Health, Inc.",
+    "volatility": 0.03,
+    "price": 398.45
+  },
+  {
+    "id": "GNRX",
+    "name": "VanEck Vectors Generic Drugs ETF",
+    "volatility": 0.07,
+    "price": 90.56
+  },
+  {
+    "id": "FBR",
+    "name": "Fibria Celulose S.A.",
+    "volatility": 0.1,
+    "price": 375.38
+  },
+  { "id": "HF", "name": "HFF, Inc.", "volatility": 0.05, "price": 114.41 },
+  {
+    "id": "PNTA.CL",
+    "name": "PennantPark Investment Corporation",
+    "volatility": 0.08,
+    "price": 315.27
+  },
+  {
+    "id": "COF^P",
+    "name": "Capital One Financial Corporation",
+    "volatility": 0.04,
+    "price": 326.18
+  },
+  {
+    "id": "KKR",
+    "name": "KKR & Co. L.P.",
+    "volatility": 0.07,
+    "price": 38.58
+  },
+  {
+    "id": "HTH",
+    "name": "Hilltop Holdings Inc.",
+    "volatility": 0.08,
+    "price": 253.00
+  },
+  {
+    "id": "CASI",
+    "name": "CASI Pharmaceuticals, Inc.",
+    "volatility": 0.05,
+    "price": 49.60
+  },
+  {
+    "id": "NVMI",
+    "name": "Nova Measuring Instruments Ltd.",
+    "volatility": 0.04,
+    "price": 408.94
+  },
+  {
+    "id": "SCCO",
+    "name": "Southern Copper Corporation",
+    "volatility": 0.05,
+    "price": 161.18
+  },
+  {
+    "id": "CLB",
+    "name": "Core Laboratories N.V.",
+    "volatility": 0.04,
+    "price": 221.82
+  },
+  { "id": "PCMI", "name": "PCM, Inc.", "volatility": 0.03, "price": 257.37 },
+  {
+    "id": "XOMA",
+    "name": "XOMA Corporation",
+    "volatility": 0.05,
+    "price": 59.93
+  },
+  {
+    "id": "EDN",
+    "name": "Empresa Distribuidora Y Comercializadora Norte S.A. (Edenor)",
+    "volatility": 0.05,
+    "price": 220.11
+  },
+  {
+    "id": "NXRT",
+    "name": "NexPoint Residential Trust, Inc.",
+    "volatility": 0.06,
+    "price": 419.95
+  },
+  {
+    "id": "MX",
+    "name": "MagnaChip Semiconductor Corporation",
+    "volatility": 0.05,
+    "price": 126.19
+  },
+  {
+    "id": "LGCYO",
+    "name": "Legacy Reserves LP",
+    "volatility": 0.04,
+    "price": 325.53
+  },
+  {
+    "id": "LOXO",
+    "name": "Loxo Oncology, Inc.",
+    "volatility": 0.06,
+    "price": 423.61
+  },
+  {
+    "id": "UNFI",
+    "name": "United Natural Foods, Inc.",
+    "volatility": 0.1,
+    "price": 379.31
+  },
+  {
+    "id": "NVDA",
+    "name": "NVIDIA Corporation",
+    "volatility": 0.08,
+    "price": 431.12
+  },
+  {
+    "id": "VOD",
+    "name": "Vodafone Group Plc",
+    "volatility": 0.05,
+    "price": 127.85
+  },
+  {
+    "id": "DRQ",
+    "name": "Dril-Quip, Inc.",
+    "volatility": 0.1,
+    "price": 19.31
+  },
+  {
+    "id": "RNWK",
+    "name": "RealNetworks, Inc.",
+    "volatility": 0.02,
+    "price": 276.65
+  },
+  {
+    "id": "RTK",
+    "name": "Rentech, Inc.",
+    "volatility": 0.04,
+    "price": 134.21
+  },
+  {
+    "id": "NRE",
+    "name": "NorthStar Realty Europe Corp.",
+    "volatility": 0.07,
+    "price": 222.31
+  },
+  {
+    "id": "SRF",
+    "name": "Cushing Energy Income Fund (The)",
+    "volatility": 0.03,
+    "price": 416.81
+  },
+  {
+    "id": "CNTY",
+    "name": "Century Casinos, Inc.",
+    "volatility": 0.02,
+    "price": 115.57
+  },
+  {
+    "id": "FUN",
+    "name": "Cedar Fair, L.P.",
+    "volatility": 0.04,
+    "price": 205.38
+  },
+  {
+    "id": "OKS",
+    "name": "ONEOK Partners, L.P.",
+    "volatility": 0.04,
+    "price": 349.89
+  },
+  { "id": "IZEA", "name": "IZEA Inc.", "volatility": 0.02, "price": 21.40 },
+  {
+    "id": "MLP",
+    "name": "Maui Land & Pineapple Company, Inc.",
+    "volatility": 0.05,
+    "price": 346.35
+  },
+  {
+    "id": "LYV",
+    "name": "Live Nation Entertainment, Inc.",
+    "volatility": 0.05,
+    "price": 397.81
+  },
+  {
+    "id": "STM",
+    "name": "STMicroelectronics N.V.",
+    "volatility": 0.04,
+    "price": 245.55
+  },
+  {
+    "id": "MTL^",
+    "name": "Mechel PAO",
+    "volatility": 0.09,
+    "price": 355.21
+  },
+  {
+    "id": "CRS",
+    "name": "Carpenter Technology Corporation",
+    "volatility": 0.09,
+    "price": 321.34
+  },
+  {
+    "id": "FKU",
+    "name": "First Trust United Kingdom AlphaDEX Fund",
+    "volatility": 0.06,
+    "price": 270.25
+  },
+  {
+    "id": "PUK",
+    "name": "Prudential Public Limited Company",
+    "volatility": 0.04,
+    "price": 37.72
+  },
+  {
+    "id": "GNRT",
+    "name": "Gener8 Maritime, Inc.",
+    "volatility": 0.02,
+    "price": 420.94
+  },
+  { "id": "CPF", "name": "CPB Inc.", "volatility": 0.09, "price": 238.71 },
+  {
+    "id": "RIBT",
+    "name": "RiceBran Technologies",
+    "volatility": 0.08,
+    "price": 216.17
+  },
+  {
+    "id": "RPT^D",
+    "name": "Ramco-Gershenson Properties Trust",
+    "volatility": 0.03,
+    "price": 400.93
+  },
+  {
+    "id": "USA",
+    "name": "Liberty All-Star Equity Fund",
+    "volatility": 0.08,
+    "price": 445.78
+  },
+  {
+    "id": "BHP",
+    "name": "BHP Billiton Limited",
+    "volatility": 0.03,
+    "price": 56.66
+  },
+  {
+    "id": "FELE",
+    "name": "Franklin Electric Co., Inc.",
+    "volatility": 0.03,
+    "price": 247.29
+  },
+  {
+    "id": "IBKR",
+    "name": "Interactive Brokers Group, Inc.",
+    "volatility": 0.07,
+    "price": 257.37
+  },
+  {
+    "id": "MTB.WS",
+    "name": "M&T Bank Corporation",
+    "volatility": 0.08,
+    "price": 127.60
+  },
+  {
+    "id": "KRNY",
+    "name": "Kearny Financial",
+    "volatility": 0.01,
+    "price": 152.44
+  },
+  {
+    "id": "ZEUS",
+    "name": "Olympic Steel, Inc.",
+    "volatility": 0.07,
+    "price": 148.86
+  },
+  {
+    "id": "ISSC",
+    "name": "Innovative Solutions and Support, Inc.",
+    "volatility": 0.03,
+    "price": 384.61
+  },
+  {
+    "id": "PYT",
+    "name": "PPlus Trust",
+    "volatility": 0.05,
+    "price": 138.16
+  },
+  {
+    "id": "SOV^C",
+    "name": "Santander Holdings USA, Inc.",
+    "volatility": 0.05,
+    "price": 382.71
+  },
+  {
+    "id": "WABC",
+    "name": "Westamerica Bancorporation",
+    "volatility": 0.09,
+    "price": 53.60
+  },
+  {
+    "id": "MT",
+    "name": "ArcelorMittal",
+    "volatility": 0.06,
+    "price": 310.96
+  },
+  {
+    "id": "CALM",
+    "name": "Cal-Maine Foods, Inc.",
+    "volatility": 0.05,
+    "price": 23.73
+  },
+  {
+    "id": "PSCD",
+    "name": "PowerShares S&P SmallCap Consumer Discretionary Portfolio",
+    "volatility": 0.05,
+    "price": 322.17
+  },
+  {
+    "id": "CNXR",
+    "name": "Connecture, Inc.",
+    "volatility": 0.09,
+    "price": 83.00
+  },
+  {
+    "id": "VEACU",
+    "name": "Vantage Energy Acquisition Corp.",
+    "volatility": 0.07,
+    "price": 119.15
+  },
+  {
+    "id": "BPFHP",
+    "name": "Boston Private Financial Holdings, Inc.",
+    "volatility": 0.05,
+    "price": 408.81
+  },
+  {
+    "id": "TXT",
+    "name": "Textron Inc.",
+    "volatility": 0.08,
+    "price": 271.45
+  },
+  {
+    "id": "PLSE",
+    "name": "Pulse Biosciences, Inc",
+    "volatility": 0.04,
+    "price": 58.93
+  },
+  {
+    "id": "XPER",
+    "name": "Xperi Corporation",
+    "volatility": 0.06,
+    "price": 256.77
+  },
+  {
+    "id": "WRB",
+    "name": "W.R. Berkley Corporation",
+    "volatility": 0.01,
+    "price": 436.91
+  },
+  {
+    "id": "EMR",
+    "name": "Emerson Electric Company",
+    "volatility": 0.05,
+    "price": 46.16
+  },
+  {
+    "id": "OBLN",
+    "name": "Obalon Therapeutics, Inc.",
+    "volatility": 0.04,
+    "price": 284.39
+  },
+  {
+    "id": "CNK",
+    "name": "Cinemark Holdings Inc",
+    "volatility": 0.05,
+    "price": 282.65
+  },
+  {
+    "id": "HMLP",
+    "name": "Hoegh LNG Partners LP",
+    "volatility": 0.04,
+    "price": 40.87
+  },
+  {
+    "id": "ARQL",
+    "name": "ArQule, Inc.",
+    "volatility": 0.05,
+    "price": 36.78
+  },
+  {
+    "id": "GLOG",
+    "name": "GasLog LP.",
+    "volatility": 0.08,
+    "price": 241.17
+  },
+  {
+    "id": "CVA",
+    "name": "Covanta Holding Corporation",
+    "volatility": 0.03,
+    "price": 209.11
+  },
+  {
+    "id": "JOUT",
+    "name": "Johnson Outdoors Inc.",
+    "volatility": 0.09,
+    "price": 146.88
+  },
+  {
+    "id": "PENN",
+    "name": "Penn National Gaming, Inc.",
+    "volatility": 0.02,
+    "price": 173.36
+  },
+  {
+    "id": "AVP",
+    "name": "Avon Products, Inc.",
+    "volatility": 0.07,
+    "price": 378.72
+  },
+  {
+    "id": "GRX",
+    "name": "The Gabelli Healthcare & Wellness Trust",
+    "volatility": 0.1,
+    "price": 409.84
+  },
+  { "id": "GFA", "name": "Gafisa SA", "volatility": 0.06, "price": 119.00 },
+  {
+    "id": "HWCC",
+    "name": "Houston Wire & Cable Company",
+    "volatility": 0.02,
+    "price": 425.00
+  },
+  {
+    "id": "ZIXI",
+    "name": "Zix Corporation",
+    "volatility": 0.08,
+    "price": 283.10
+  },
+  {
+    "id": "CELH",
+    "name": "Celsius Holdings, Inc.",
+    "volatility": 0.07,
+    "price": 14.75
+  },
+  {
+    "id": "OCC",
+    "name": "Optical Cable Corporation",
+    "volatility": 0.04,
+    "price": 147.91
+  },
+  {
+    "id": "TM",
+    "name": "Toyota Motor Corp Ltd Ord",
+    "volatility": 0.06,
+    "price": 369.47
+  },
+  {
+    "id": "LDR",
+    "name": "Landauer, Inc.",
+    "volatility": 0.05,
+    "price": 271.94
+  },
+  {
+    "id": "PRSC",
+    "name": "The Providence Service Corporation",
+    "volatility": 0.09,
+    "price": 3.58
+  },
+  {
+    "id": "SKM",
+    "name": "SK Telecom Co., Ltd.",
+    "volatility": 0.07,
+    "price": 422.49
+  },
+  {
+    "id": "CONN",
+    "name": "Conn's, Inc.",
+    "volatility": 0.07,
+    "price": 370.23
+  },
+  {
+    "id": "BGCP",
+    "name": "BGC Partners, Inc.",
+    "volatility": 0.07,
+    "price": 426.93
+  },
+  {
+    "id": "SSD",
+    "name": "Simpson Manufacturing Company, Inc.",
+    "volatility": 0.08,
+    "price": 364.94
+  },
+  {
+    "id": "ONSIZ",
+    "name": "Oncobiologics, Inc.",
+    "volatility": 0.06,
+    "price": 331.01
+  },
+  { "id": "DSW", "name": "DSW Inc.", "volatility": 0.03, "price": 316.42 },
+  {
+    "id": "BCRH",
+    "name": "Blue Capital Reinsurance Holdings Ltd.",
+    "volatility": 0.06,
+    "price": 30.81
+  },
+  {
+    "id": "CASM",
+    "name": "CAS Medical Systems, Inc.",
+    "volatility": 0.1,
+    "price": 221.73
+  },
+  {
+    "id": "VSAT",
+    "name": "ViaSat, Inc.",
+    "volatility": 0.08,
+    "price": 266.91
+  },
+  { "id": "E", "name": "ENI S.p.A.", "volatility": 0.09, "price": 445.97 },
+  {
+    "id": "MIK",
+    "name": "The Michaels Companies, Inc.",
+    "volatility": 0.07,
+    "price": 226.96
+  },
+  {
+    "id": "AKR",
+    "name": "Acadia Realty Trust",
+    "volatility": 0.06,
+    "price": 426.47
+  },
+  {
+    "id": "GT",
+    "name": "The Goodyear Tire & Rubber Company",
+    "volatility": 0.02,
+    "price": 208.73
+  },
+  {
+    "id": "AAON",
+    "name": "AAON, Inc.",
+    "volatility": 0.04,
+    "price": 234.69
+  },
+  {
+    "id": "TCAP",
+    "name": "Triangle Capital Corporation",
+    "volatility": 0.09,
+    "price": 175.99
+  },
+  {
+    "id": "MBUU",
+    "name": "Malibu Boats, Inc.",
+    "volatility": 0.05,
+    "price": 252.92
+  },
+  {
+    "id": "ASCMA",
+    "name": "Ascent Capital Group, Inc.",
+    "volatility": 0.08,
+    "price": 438.09
+  },
+  {
+    "id": "DXGE",
+    "name": "WisdomTree Germany Hedged Equity Fund",
+    "volatility": 0.05,
+    "price": 100.96
+  },
+  {
+    "id": "BGY",
+    "name": "BLACKROCK INTERNATIONAL, LTD.",
+    "volatility": 0.09,
+    "price": 214.79
+  },
+  {
+    "id": "CHT",
+    "name": "Chunghwa Telecom Co., Ltd.",
+    "volatility": 0.01,
+    "price": 134.88
+  },
+  {
+    "id": "ATGE",
+    "name": "Adtalem Global Education Inc.",
+    "volatility": 0.02,
+    "price": 383.53
+  },
+  {
+    "id": "GPIAU",
+    "name": "GP Investments Acquisition Corp.",
+    "volatility": 0.03,
+    "price": 251.37
+  },
+  {
+    "id": "BLVD",
+    "name": "Boulevard Acquisition Corp. II",
+    "volatility": 0.04,
+    "price": 101.46
+  },
+  {
+    "id": "SVU",
+    "name": "SuperValu Inc.",
+    "volatility": 0.03,
+    "price": 294.41
+  },
+  {
+    "id": "VRSK",
+    "name": "Verisk Analytics, Inc.",
+    "volatility": 0.02,
+    "price": 223.28
+  },
+  {
+    "id": "KMF",
+    "name": "Kayne Anderson Midstream Energy Fund, Inc",
+    "volatility": 0.06,
+    "price": 307.17
+  },
+  {
+    "id": "AMT^B",
+    "name": "American Tower Corporation (REIT)",
+    "volatility": 0.05,
+    "price": 187.66
+  },
+  {
+    "id": "IROQ",
+    "name": "IF Bancorp, Inc.",
+    "volatility": 0.04,
+    "price": 206.61
+  },
+  {
+    "id": "XEC",
+    "name": "Cimarex Energy Co",
+    "volatility": 0.09,
+    "price": 331.45
+  },
+  {
+    "id": "ITEQ",
+    "name": "BlueStar TA-BIGITech Israel Technology ETF",
+    "volatility": 0.05,
+    "price": 88.31
+  },
+  {
+    "id": "DE",
+    "name": "Deere & Company",
+    "volatility": 0.07,
+    "price": 100.95
+  },
+  {
+    "id": "EXXI",
+    "name": "Energy XXI Gulf Coast, Inc.",
+    "volatility": 0.09,
+    "price": 239.62
+  },
+  {
+    "id": "PSA^D",
+    "name": "Public Storage",
+    "volatility": 0.08,
+    "price": 114.14
+  },
+  {
+    "id": "SNLN",
+    "name": "Highland/iBoxx Senior Loan ETF",
+    "volatility": 0.09,
+    "price": 312.97
+  },
+  {
+    "id": "PME",
+    "name": "Pingtan Marine Enterprise Ltd.",
+    "volatility": 0.07,
+    "price": 135.44
+  },
+  {
+    "id": "VPG",
+    "name": "Vishay Precision Group, Inc.",
+    "volatility": 0.07,
+    "price": 122.98
+  },
+  {
+    "id": "TCFC",
+    "name": "The Community Financial Corporation",
+    "volatility": 0.03,
+    "price": 440.14
+  },
+  {
+    "id": "GEL",
+    "name": "Genesis Energy, L.P.",
+    "volatility": 0.03,
+    "price": 107.07
+  },
+  {
+    "id": "DWAC",
+    "name": "Elkhorn Commodity Rotation Strategy ETF",
+    "volatility": 0.08,
+    "price": 161.49
+  },
+  {
+    "id": "CLIR",
+    "name": "ClearSign Combustion Corporation",
+    "volatility": 0.08,
+    "price": 239.90
+  },
+  {
+    "id": "FFBC",
+    "name": "First Financial Bancorp.",
+    "volatility": 0.06,
+    "price": 427.70
+  },
+  {
+    "id": "BLDP",
+    "name": "Ballard Power Systems, Inc.",
+    "volatility": 0.04,
+    "price": 69.93
+  },
+  {
+    "id": "KBWY",
+    "name": "PowerShares KBW Premium Yield Equity REIT Portfolio",
+    "volatility": 0.09,
+    "price": 184.99
+  },
+  {
+    "id": "KIM",
+    "name": "Kimco Realty Corporation",
+    "volatility": 0.03,
+    "price": 95.74
+  },
+  {
+    "id": "URI",
+    "name": "United Rentals, Inc.",
+    "volatility": 0.08,
+    "price": 358.84
+  },
+  {
+    "id": "NC",
+    "name": "NACCO Industries, Inc.",
+    "volatility": 0.06,
+    "price": 179.08
+  },
+  {
+    "id": "ASRV",
+    "name": "AmeriServ Financial Inc.",
+    "volatility": 0.05,
+    "price": 338.18
+  },
+  {
+    "id": "PRQR",
+    "name": "ProQR Therapeutics N.V.",
+    "volatility": 0.02,
+    "price": 195.74
+  },
+  {
+    "id": "BOOT",
+    "name": "Boot Barn Holdings, Inc.",
+    "volatility": 0.08,
+    "price": 253.84
+  },
+  {
+    "id": "FIT",
+    "name": "Fitbit, Inc.",
+    "volatility": 0.09,
+    "price": 85.41
+  },
+  {
+    "id": "WLL",
+    "name": "Whiting Petroleum Corporation",
+    "volatility": 0.02,
+    "price": 228.04
+  },
+  {
+    "id": "WINA",
+    "name": "Winmark Corporation",
+    "volatility": 0.01,
+    "price": 86.54
+  },
+  {
+    "id": "VSM",
+    "name": "Versum Materials, Inc.",
+    "volatility": 0.1,
+    "price": 402.64
+  },
+  {
+    "id": "DELT",
+    "name": "Delta Technology Holdings Limited",
+    "volatility": 0.09,
+    "price": 365.49
+  },
+  {
+    "id": "IDXG",
+    "name": "Interpace Diagnostics Group, Inc.",
+    "volatility": 0.03,
+    "price": 82.95
+  },
+  { "id": "RLI", "name": "RLI Corp.", "volatility": 0.02, "price": 251.91 },
+  {
+    "id": "OXLCO",
+    "name": "Oxford Lane Capital Corp.",
+    "volatility": 0.06,
+    "price": 235.65
+  },
+  {
+    "id": "DHT",
+    "name": "DHT Holdings, Inc.",
+    "volatility": 0.02,
+    "price": 222.23
+  },
+  {
+    "id": "ETJ",
+    "name": "Eaton Vance Risk-Managed Diversified Equity Income Fund",
+    "volatility": 0.07,
+    "price": 156.01
+  },
+  {
+    "id": "PH",
+    "name": "Parker-Hannifin Corporation",
+    "volatility": 0.08,
+    "price": 389.19
+  },
+  {
+    "id": "MPC",
+    "name": "Marathon Petroleum Corporation",
+    "volatility": 0.1,
+    "price": 339.36
+  },
+  {
+    "id": "ICLN",
+    "name": "iShares S&P Global Clean Energy Index Fund",
+    "volatility": 0.04,
+    "price": 72.82
+  },
+  { "id": "HUM", "name": "Humana Inc.", "volatility": 0.04, "price": 47.37 },
+  { "id": "RENX", "name": "RELX N.V.", "volatility": 0.07, "price": 228.15 },
+  {
+    "id": "ITRI",
+    "name": "Itron, Inc.",
+    "volatility": 0.09,
+    "price": 138.94
+  },
+  {
+    "id": "PII",
+    "name": "Polaris Industries Inc.",
+    "volatility": 0.05,
+    "price": 331.07
+  },
+  {
+    "id": "SSNC",
+    "name": "SS&C Technologies Holdings, Inc.",
+    "volatility": 0.04,
+    "price": 202.27
+  },
+  {
+    "id": "EQIX",
+    "name": "Equinix, Inc.",
+    "volatility": 0.04,
+    "price": 252.60
+  },
+  {
+    "id": "PTR",
+    "name": "PetroChina Company Limited",
+    "volatility": 0.09,
+    "price": 408.23
+  },
+  {
+    "id": "RMT",
+    "name": "Royce Micro-Cap Trust, Inc.",
+    "volatility": 0.06,
+    "price": 106.28
+  },
+  {
+    "id": "WMC",
+    "name": "Western Asset Mortgage Capital Corporation",
+    "volatility": 0.08,
+    "price": 6.60
+  },
+  {
+    "id": "LINC",
+    "name": "Lincoln Educational Services Corporation",
+    "volatility": 0.09,
+    "price": 207.83
+  },
+  {
+    "id": "NEPT",
+    "name": "Neptune Technologies & Bioresources Inc",
+    "volatility": 0.02,
+    "price": 307.74
+  },
+  {
+    "id": "STBZ",
+    "name": "State Bank Financial Corporation.",
+    "volatility": 0.01,
+    "price": 29.59
+  },
+  {
+    "id": "RYAAY",
+    "name": "Ryanair Holdings plc",
+    "volatility": 0.09,
+    "price": 106.55
+  },
+  {
+    "id": "TFSL",
+    "name": "TFS Financial Corporation",
+    "volatility": 0.03,
+    "price": 358.77
+  },
+  {
+    "id": "SKYS",
+    "name": "Sky Solar Holdings, Ltd.",
+    "volatility": 0.08,
+    "price": 139.99
+  },
+  {
+    "id": "YHOO",
+    "name": "Yahoo! Inc.",
+    "volatility": 0.1,
+    "price": 308.83
+  },
+  {
+    "id": "SNHY",
+    "name": "Sun Hydraulics Corporation",
+    "volatility": 0.09,
+    "price": 345.72
+  },
+  {
+    "id": "BXS",
+    "name": "BancorpSouth, Inc.",
+    "volatility": 0.03,
+    "price": 227.99
+  },
+  {
+    "id": "GAM^B",
+    "name": "General American Investors, Inc.",
+    "volatility": 0.04,
+    "price": 280.92
+  },
+  {
+    "id": "WLB",
+    "name": "Westmoreland Coal Company",
+    "volatility": 0.09,
+    "price": 410.59
+  },
+  {
+    "id": "ADP",
+    "name": "Automatic Data Processing, Inc.",
+    "volatility": 0.1,
+    "price": 93.59
+  },
+  {
+    "id": "HES^A",
+    "name": "Hess Corporation",
+    "volatility": 0.08,
+    "price": 87.13
+  },
+  {
+    "id": "PEI^A",
+    "name": "Pennsylvania Real Estate Investment Trust",
+    "volatility": 0.09,
+    "price": 208.55
+  },
+  {
+    "id": "ESGR",
+    "name": "Enstar Group Limited",
+    "volatility": 0.01,
+    "price": 74.12
+  },
+  {
+    "id": "BWINA",
+    "name": "Baldwin & Lyons, Inc.",
+    "volatility": 0.09,
+    "price": 277.15
+  },
+  {
+    "id": "HBIO",
+    "name": "Harvard Bioscience, Inc.",
+    "volatility": 0.02,
+    "price": 395.28
+  },
+  {
+    "id": "FI",
+    "name": "Frank's International N.V.",
+    "volatility": 0.05,
+    "price": 204.35
+  },
+  {
+    "id": "IPCI",
+    "name": "Intellipharmaceutics International Inc.",
+    "volatility": 0.03,
+    "price": 186.27
+  },
+  {
+    "id": "EBIO",
+    "name": "Eleven Biotherapeutics, Inc.",
+    "volatility": 0.03,
+    "price": 262.89
+  },
+  {
+    "id": "IDT",
+    "name": "IDT Corporation",
+    "volatility": 0.09,
+    "price": 36.16
+  },
+  {
+    "id": "GPT^A",
+    "name": "Gramercy Property Trust Inc.",
+    "volatility": 0.03,
+    "price": 157.25
+  },
+  {
+    "id": "SNAK",
+    "name": "Inventure Foods, Inc.",
+    "volatility": 0.05,
+    "price": 154.83
+  },
+  {
+    "id": "CCL",
+    "name": "Carnival Corporation",
+    "volatility": 0.03,
+    "price": 121.68
+  },
+  {
+    "id": "IBM",
+    "name": "International Business Machines Corporation",
+    "volatility": 0.04,
+    "price": 218.16
+  },
+  {
+    "id": "OA",
+    "name": "Orbital ATK, Inc.",
+    "volatility": 0.04,
+    "price": 242.50
+  },
+  { "id": "XYL", "name": "Xylem Inc.", "volatility": 0.03, "price": 156.25 },
+  {
+    "id": "ISM",
+    "name": "Navient Corporation",
+    "volatility": 0.03,
+    "price": 186.44
+  },
+  {
+    "id": "SBGL",
+    "name": "Sibanye Gold Limited",
+    "volatility": 0.05,
+    "price": 429.41
+  },
+  {
+    "id": "LYB",
+    "name": "LyondellBasell Industries NV",
+    "volatility": 0.01,
+    "price": 61.32
+  },
+  {
+    "id": "SCACW",
+    "name": "Saban Capital Acquisition Corp.",
+    "volatility": 0.07,
+    "price": 278.57
+  },
+  {
+    "id": "BAC.WS.B",
+    "name": "Bank of America Corporation",
+    "volatility": 0.09,
+    "price": 139.50
+  },
+  {
+    "id": "EDD",
+    "name": "Morgan Stanley Emerging Markets Domestic Debt Fund, Inc.",
+    "volatility": 0.08,
+    "price": 328.04
+  },
+  {
+    "id": "LMBS",
+    "name": "First Trust Low Duration Opportunities ETF",
+    "volatility": 0.07,
+    "price": 253.51
+  },
+  {
+    "id": "ITUS",
+    "name": "ITUS Corporation",
+    "volatility": 0.03,
+    "price": 57.58
+  },
+  {
+    "id": "GECC",
+    "name": "Great Elm Capital Corp.",
+    "volatility": 0.05,
+    "price": 32.08
+  },
+  {
+    "id": "JW.A",
+    "name": "John Wiley & Sons, Inc.",
+    "volatility": 0.03,
+    "price": 102.33
+  },
+  {
+    "id": "NM^G",
+    "name": "Navios Maritime Holdings Inc.",
+    "volatility": 0.06,
+    "price": 29.63
+  },
+  {
+    "id": "GFF",
+    "name": "Griffon Corporation",
+    "volatility": 0.02,
+    "price": 276.41
+  },
+  {
+    "id": "VVR",
+    "name": "Invesco Senior Income Trust",
+    "volatility": 0.05,
+    "price": 279.37
+  },
+  {
+    "id": "CAFD",
+    "name": "8point3 Energy Partners LP",
+    "volatility": 0.07,
+    "price": 65.88
+  },
+  {
+    "id": "HPT",
+    "name": "Hospitality Properties Trust",
+    "volatility": 0.07,
+    "price": 346.81
+  },
+  {
+    "id": "QCOM",
+    "name": "QUALCOMM Incorporated",
+    "volatility": 0.08,
+    "price": 314.08
+  },
+  {
+    "id": "SMRT",
+    "name": "Stein Mart, Inc.",
+    "volatility": 0.03,
+    "price": 228.08
+  },
+  {
+    "id": "MOTAW",
+    "name": "Mota Group, Inc.",
+    "volatility": 0.01,
+    "price": 46.12
+  },
+  {
+    "id": "MNOV",
+    "name": "MediciNova, Inc.",
+    "volatility": 0.08,
+    "price": 381.68
+  },
+  { "id": "BCE", "name": "BCE, Inc.", "volatility": 0.07, "price": 172.33 },
+  {
+    "id": "RP",
+    "name": "RealPage, Inc.",
+    "volatility": 0.07,
+    "price": 10.44
+  },
+  {
+    "id": "KITE",
+    "name": "Kite Pharma, Inc.",
+    "volatility": 0.06,
+    "price": 30.04
+  },
+  {
+    "id": "FNX",
+    "name": "First Trust Mid Cap Core AlphaDEX Fund",
+    "volatility": 0.08,
+    "price": 136.60
+  },
+  {
+    "id": "ECCA",
+    "name": "Eagle Point Credit Company Inc.",
+    "volatility": 0.06,
+    "price": 159.78
+  },
+  {
+    "id": "DO",
+    "name": "Diamond Offshore Drilling, Inc.",
+    "volatility": 0.04,
+    "price": 72.83
+  },
+  {
+    "id": "EARS",
+    "name": "Auris Medical Holding AG",
+    "volatility": 0.06,
+    "price": 238.19
+  },
+  {
+    "id": "ARU.CL",
+    "name": "Ares Capital Corporation",
+    "volatility": 0.1,
+    "price": 70.25
+  },
+  {
+    "id": "MH^A",
+    "name": "Maiden Holdings, Ltd.",
+    "volatility": 0.09,
+    "price": 228.34
+  },
+  {
+    "id": "ATW",
+    "name": "Atwood Oceanics, Inc.",
+    "volatility": 0.02,
+    "price": 339.94
+  },
+  {
+    "id": "NRCIA",
+    "name": "National Research Corporation",
+    "volatility": 0.09,
+    "price": 149.61
+  },
+  {
+    "id": "DERM",
+    "name": "Dermira, Inc.",
+    "volatility": 0.05,
+    "price": 126.01
+  },
+  {
+    "id": "SAH",
+    "name": "Sonic Automotive, Inc.",
+    "volatility": 0.07,
+    "price": 341.89
+  },
+  {
+    "id": "CELG",
+    "name": "Celgene Corporation",
+    "volatility": 0.03,
+    "price": 66.66
+  },
+  {
+    "id": "MDRX",
+    "name": "Allscripts Healthcare Solutions, Inc.",
+    "volatility": 0.06,
+    "price": 303.28
+  },
+  {
+    "id": "PCOM",
+    "name": "Points International, Ltd.",
+    "volatility": 0.08,
+    "price": 155.25
+  },
+  {
+    "id": "ATHX",
+    "name": "Athersys, Inc.",
+    "volatility": 0.05,
+    "price": 286.84
+  },
+  {
+    "id": "HRMN",
+    "name": "Harmony Merger Corp.",
+    "volatility": 0.1,
+    "price": 8.64
+  },
+  {
+    "id": "ANIP",
+    "name": "ANI Pharmaceuticals, Inc.",
+    "volatility": 0.05,
+    "price": 89.29
+  },
+  {
+    "id": "SEAS",
+    "name": "SeaWorld Entertainment, Inc.",
+    "volatility": 0.09,
+    "price": 237.86
+  },
+  {
+    "id": "FEP",
+    "name": "First Trust Europe AlphaDEX Fund",
+    "volatility": 0.08,
+    "price": 440.76
+  },
+  {
+    "id": "TCON",
+    "name": "TRACON Pharmaceuticals, Inc.",
+    "volatility": 0.09,
+    "price": 101.50
+  },
+  {
+    "id": "PDS",
+    "name": "Precision Drilling Corporation",
+    "volatility": 0.08,
+    "price": 387.51
+  },
+  {
+    "id": "WDR",
+    "name": "Waddell & Reed Financial, Inc.",
+    "volatility": 0.04,
+    "price": 305.51
+  },
+  {
+    "id": "GUT^A",
+    "name": "Gabelli Utility Trust (The)",
+    "volatility": 0.07,
+    "price": 307.86
+  },
+  {
+    "id": "QYLD",
+    "name": "Horizons NASDAQ-100 Covered Call ETF",
+    "volatility": 0.09,
+    "price": 38.37
+  },
+  {
+    "id": "BJZ",
+    "name": "Blackrock California Municipal 2018 Term Trust",
+    "volatility": 0.08,
+    "price": 105.34
+  },
+  {
+    "id": "IDXX",
+    "name": "IDEXX Laboratories, Inc.",
+    "volatility": 0.09,
+    "price": 277.98
+  },
+  {
+    "id": "BKD",
+    "name": "Brookdale Senior Living Inc.",
+    "volatility": 0.04,
+    "price": 189.65
+  },
+  {
+    "id": "NMRX",
+    "name": "Numerex Corp.",
+    "volatility": 0.03,
+    "price": 382.66
+  },
+  {
+    "id": "ZUMZ",
+    "name": "Zumiez Inc.",
+    "volatility": 0.06,
+    "price": 109.92
+  },
+  {
+    "id": "IRDMB",
+    "name": "Iridium Communications Inc",
+    "volatility": 0.02,
+    "price": 5.61
+  },
+  {
+    "id": "RIV",
+    "name": "RiverNorth Opportunities Fund, Inc.",
+    "volatility": 0.07,
+    "price": 419.33
+  },
+  {
+    "id": "DFS",
+    "name": "Discover Financial Services",
+    "volatility": 0.02,
+    "price": 195.80
+  },
+  {
+    "id": "KE",
+    "name": "Kimball Electronics, Inc.",
+    "volatility": 0.09,
+    "price": 13.47
+  },
+  {
+    "id": "UDR",
+    "name": "United Dominion Realty Trust, Inc.",
+    "volatility": 0.06,
+    "price": 48.88
+  },
+  {
+    "id": "ENSG",
+    "name": "The Ensign Group, Inc.",
+    "volatility": 0.07,
+    "price": 314.28
+  },
+  {
+    "id": "MSON",
+    "name": "MISONIX, Inc.",
+    "volatility": 0.1,
+    "price": 342.06
+  },
+  {
+    "id": "HPS",
+    "name": "John Hancock Preferred Income Fund III",
+    "volatility": 0.01,
+    "price": 449.16
+  },
+  {
+    "id": "OCLR",
+    "name": "Oclaro, Inc.",
+    "volatility": 0.08,
+    "price": 247.56
+  },
+  {
+    "id": "AVNW",
+    "name": "Aviat Networks, Inc.",
+    "volatility": 0.05,
+    "price": 224.09
+  },
+  {
+    "id": "SRV",
+    "name": "The Cushing MLP Total Return Fund",
+    "volatility": 0.07,
+    "price": 3.22
+  },
+  {
+    "id": "TRGP",
+    "name": "Targa Resources, Inc.",
+    "volatility": 0.08,
+    "price": 182.44
+  },
+  {
+    "id": "ASGN",
+    "name": "On Assignment, Inc.",
+    "volatility": 0.08,
+    "price": 26.05
+  },
+  {
+    "id": "GROW",
+    "name": "U.S. Global Investors, Inc.",
+    "volatility": 0.09,
+    "price": 300.92
+  },
+  {
+    "id": "NTRSP",
+    "name": "Northern Trust Corporation",
+    "volatility": 0.05,
+    "price": 106.50
+  },
+  {
+    "id": "AXL",
+    "name": "American Axle & Manufacturing Holdings, Inc.",
+    "volatility": 0.05,
+    "price": 273.66
+  },
+  {
+    "id": "CBO",
+    "name": "CBO (Listing Market - NYSE - Networks A/E)",
+    "volatility": 0.02,
+    "price": 152.99
+  },
+  {
+    "id": "BOTZ",
+    "name": "Global X Robotics & Artificial Intelligence ETF",
+    "volatility": 0.05,
+    "price": 292.05
+  },
+  {
+    "id": "PMC",
+    "name": "Pharmerica Corporation",
+    "volatility": 0.06,
+    "price": 181.75
+  },
+  {
+    "id": "DMPI",
+    "name": "DelMar Pharmaceuticals, Inc.",
+    "volatility": 0.1,
+    "price": 393.31
+  },
+  {
+    "id": "HSTM",
+    "name": "HealthStream, Inc.",
+    "volatility": 0.08,
+    "price": 216.42
+  },
+  {
+    "id": "USLV",
+    "name": "VelocityShares 3x Long Silver ETN",
+    "volatility": 0.08,
+    "price": 320.08
+  },
+  {
+    "id": "MOH",
+    "name": "Molina Healthcare Inc",
+    "volatility": 0.06,
+    "price": 328.50
+  },
+  {
+    "id": "NSYS",
+    "name": "Nortech Systems Incorporated",
+    "volatility": 0.03,
+    "price": 78.41
+  },
+  {
+    "id": "EXG",
+    "name": "Eaton Vance Tax-Managed Global Diversified Equity Income Fund",
+    "volatility": 0.03,
+    "price": 221.83
+  },
+  {
+    "id": "GJO",
+    "name": "STRATS Trust",
+    "volatility": 0.05,
+    "price": 398.43
+  },
+  {
+    "id": "ORMP",
+    "name": "Oramed Pharmaceuticals Inc.",
+    "volatility": 0.09,
+    "price": 221.39
+  },
+  {
+    "id": "CI",
+    "name": "Cigna Corporation",
+    "volatility": 0.02,
+    "price": 427.39
+  },
+  {
+    "id": "FSBK",
+    "name": "First South Bancorp Inc",
+    "volatility": 0.05,
+    "price": 192.99
+  },
+  {
+    "id": "AF",
+    "name": "Astoria Financial Corporation",
+    "volatility": 0.08,
+    "price": 304.12
+  },
+  {
+    "id": "APTS",
+    "name": "Preferred Apartment Communities, Inc.",
+    "volatility": 0.07,
+    "price": 330.69
+  },
+  {
+    "id": "OMC",
+    "name": "Omnicom Group Inc.",
+    "volatility": 0.02,
+    "price": 123.90
+  },
+  {
+    "id": "CIZN",
+    "name": "Citizens Holding Company",
+    "volatility": 0.02,
+    "price": 75.25
+  },
+  {
+    "id": "GFNCP",
+    "name": "General Finance Corporation",
+    "volatility": 0.08,
+    "price": 431.06
+  },
+  {
+    "id": "JE^A",
+    "name": "Just Energy Group, Inc.",
+    "volatility": 0.03,
+    "price": 172.72
+  },
+  {
+    "id": "WFC^O",
+    "name": "Wells Fargo & Company",
+    "volatility": 0.05,
+    "price": 178.43
+  },
+  {
+    "id": "APPS",
+    "name": "Digital Turbine, Inc.",
+    "volatility": 0.08,
+    "price": 397.69
+  },
+  {
+    "id": "DTK",
+    "name": "Deutsche Bank AG",
+    "volatility": 0.1,
+    "price": 200.43
+  },
+  {
+    "id": "NLY^A",
+    "name": "Annaly Capital Management Inc",
+    "volatility": 0.08,
+    "price": 207.72
+  },
+  {
+    "id": "SPIL",
+    "name": "Siliconware Precision Industries Company, Ltd.",
+    "volatility": 0.01,
+    "price": 204.41
+  },
+  {
+    "id": "NRK",
+    "name": "Nuveen New York AMT-Free Quality Municipal",
+    "volatility": 0.05,
+    "price": 15.20
+  },
+  {
+    "id": "SKYY",
+    "name": "First Trust Cloud Computing ETF",
+    "volatility": 0.02,
+    "price": 92.82
+  },
+  {
+    "id": "SDLP",
+    "name": "Seadrill Partners LLC",
+    "volatility": 0.01,
+    "price": 296.21
+  },
+  {
+    "id": "PY",
+    "name": "Principal Shareholder Yield Index ETF",
+    "volatility": 0.09,
+    "price": 175.42
+  },
+  {
+    "id": "KMB",
+    "name": "Kimberly-Clark Corporation",
+    "volatility": 0.03,
+    "price": 314.60
+  },
+  {
+    "id": "NTG",
+    "name": "Tortoise MLP Fund, Inc.",
+    "volatility": 0.07,
+    "price": 98.14
+  },
+  {
+    "id": "ETG",
+    "name": "Eaton Vance Tax-Advantaged Global Dividend Income Fund",
+    "volatility": 0.05,
+    "price": 261.64
+  },
+  {
+    "id": "JHS",
+    "name": "John Hancock Income Securities Trust",
+    "volatility": 0.08,
+    "price": 402.76
+  },
+  {
+    "id": "RTRX",
+    "name": "Retrophin, Inc.",
+    "volatility": 0.1,
+    "price": 120.38
+  },
+  {
+    "id": "CHI",
+    "name": "Calamos Convertible Opportunities and Income Fund",
+    "volatility": 0.02,
+    "price": 100.91
+  },
+  {
+    "id": "RCI",
+    "name": "Rogers Communication, Inc.",
+    "volatility": 0.06,
+    "price": 191.25
+  },
+  {
+    "id": "AKO.A",
+    "name": "Embotelladora Andina S.A.",
+    "volatility": 0.09,
+    "price": 75.07
+  },
+  {
+    "id": "UCTT",
+    "name": "Ultra Clean Holdings, Inc.",
+    "volatility": 0.02,
+    "price": 165.66
+  },
+  {
+    "id": "JAKK",
+    "name": "JAKKS Pacific, Inc.",
+    "volatility": 0.08,
+    "price": 339.85
+  },
+  {
+    "id": "AHT^A",
+    "name": "Ashford Hospitality Trust Inc",
+    "volatility": 0.05,
+    "price": 5.01
+  },
+  {
+    "id": "FDS",
+    "name": "FactSet Research Systems Inc.",
+    "volatility": 0.09,
+    "price": 301.46
+  },
+  {
+    "id": "CTIC",
+    "name": "CTI BioPharma Corp.",
+    "volatility": 0.09,
+    "price": 423.55
+  },
+  {
+    "id": "SNBC",
+    "name": "Sun Bancorp, Inc.",
+    "volatility": 0.09,
+    "price": 157.06
+  },
+  {
+    "id": "LBRDK",
+    "name": "Liberty Broadband Corporation",
+    "volatility": 0.06,
+    "price": 428.09
+  },
+  {
+    "id": "ESRX",
+    "name": "Express Scripts Holding Company",
+    "volatility": 0.02,
+    "price": 207.02
+  },
+  {
+    "id": "VEDL",
+    "name": "Vedanta  Limited",
+    "volatility": 0.08,
+    "price": 21.27
+  },
+  {
+    "id": "WBK",
+    "name": "Westpac Banking Corporation",
+    "volatility": 0.05,
+    "price": 195.19
+  },
+  {
+    "id": "AXON          ",
+    "name": "Axovant Sciences Ltd.",
+    "volatility": 0.03,
+    "price": 350.45
+  },
+  {
+    "id": "PNRG",
+    "name": "PrimeEnergy Corporation",
+    "volatility": 0.03,
+    "price": 415.16
+  },
+  {
+    "id": "EFAS",
+    "name": "Global X MSCI SuperDividend EAFE ETF",
+    "volatility": 0.07,
+    "price": 240.65
+  },
+  {
+    "id": "SHLO",
+    "name": "Shiloh Industries, Inc.",
+    "volatility": 0.07,
+    "price": 296.12
+  },
+  {
+    "id": "MNK",
+    "name": "Mallinckrodt plc",
+    "volatility": 0.07,
+    "price": 291.92
+  },
+  {
+    "id": "RGT",
+    "name": "Royce Global Value Trust, Inc.",
+    "volatility": 0.02,
+    "price": 308.04
+  },
+  {
+    "id": "SRET",
+    "name": "Global X SuperDividend REIT ETF",
+    "volatility": 0.08,
+    "price": 279.49
+  },
+  {
+    "id": "HTF",
+    "name": "Horizon Technology Finance Corporation",
+    "volatility": 0.08,
+    "price": 411.28
+  },
+  {
+    "id": "CIG",
+    "name": "Comp En De Mn Cemig ADS",
+    "volatility": 0.08,
+    "price": 248.53
+  },
+  {
+    "id": "AUPH",
+    "name": "Aurinia Pharmaceuticals Inc",
+    "volatility": 0.08,
+    "price": 242.88
+  },
+  {
+    "id": "SPKE",
+    "name": "Spark Energy, Inc.",
+    "volatility": 0.05,
+    "price": 16.47
+  },
+  {
+    "id": "SRUN",
+    "name": "Silver Run Acquisition Corporation II",
+    "volatility": 0.06,
+    "price": 439.29
+  },
+  {
+    "id": "EGY",
+    "name": "Vaalco Energy Inc",
+    "volatility": 0.04,
+    "price": 316.90
+  },
+  {
+    "id": "HPP",
+    "name": "Hudson Pacific Properties, Inc.",
+    "volatility": 0.08,
+    "price": 18.47
+  },
+  {
+    "id": "IFON",
+    "name": "InfoSonics Corp",
+    "volatility": 0.08,
+    "price": 269.45
+  },
+  {
+    "id": "DLTH",
+    "name": "Duluth Holdings Inc.",
+    "volatility": 0.03,
+    "price": 103.99
+  },
+  {
+    "id": "PANL",
+    "name": "Pangaea Logistics Solutions Ltd.",
+    "volatility": 0.06,
+    "price": 100.30
+  },
+  { "id": "ARMK", "name": "Aramark", "volatility": 0.1, "price": 69.46 },
+  {
+    "id": "CLACW",
+    "name": "Capitol Acquisition Corp. III",
+    "volatility": 0.02,
+    "price": 56.40
+  },
+  {
+    "id": "CCUR",
+    "name": "Concurrent Computer Corporation",
+    "volatility": 0.05,
+    "price": 158.94
+  },
+  {
+    "id": "SNPS",
+    "name": "Synopsys, Inc.",
+    "volatility": 0.04,
+    "price": 300.58
+  },
+  {
+    "id": "HMNF",
+    "name": "HMN Financial, Inc.",
+    "volatility": 0.07,
+    "price": 436.43
+  },
+  {
+    "id": "BSAC",
+    "name": "Banco Santander Chile",
+    "volatility": 0.07,
+    "price": 339.41
+  },
+  {
+    "id": "ICCC",
+    "name": "ImmuCell Corporation",
+    "volatility": 0.03,
+    "price": 297.75
+  },
+  {
+    "id": "TWX",
+    "name": "Time Warner Inc.",
+    "volatility": 0.08,
+    "price": 291.60
+  },
+  {
+    "id": "OIA",
+    "name": "Invesco Municipal Income Opportunities Trust",
+    "volatility": 0.06,
+    "price": 199.84
+  },
+  {
+    "id": "MMS",
+    "name": "Maximus, Inc.",
+    "volatility": 0.04,
+    "price": 239.06
+  },
+  {
+    "id": "CFO",
+    "name": "VictoryShares US 500 Enhanced Volatility Wtd ETF",
+    "volatility": 0.01,
+    "price": 18.46
+  },
+  {
+    "id": "OMF",
+    "name": "OneMain Holdings, Inc.",
+    "volatility": 0.06,
+    "price": 393.15
+  },
+  {
+    "id": "CMRE^D",
+    "name": "Costamare Inc.",
+    "volatility": 0.04,
+    "price": 205.81
+  },
+  {
+    "id": "COVS",
+    "name": "Covisint Corporation",
+    "volatility": 0.02,
+    "price": 266.38
+  },
+  {
+    "id": "ASG",
+    "name": "Liberty All-Star Growth Fund, Inc.",
+    "volatility": 0.03,
+    "price": 224.95
+  },
+  {
+    "id": "HHC",
+    "name": "Howard Hughes Corporation (The)",
+    "volatility": 0.09,
+    "price": 231.61
+  },
+  {
+    "id": "BGC",
+    "name": "General Cable Corporation",
+    "volatility": 0.03,
+    "price": 269.11
+  },
+  {
+    "id": "NDP",
+    "name": "Tortoise Energy Independence Fund, Inc.",
+    "volatility": 0.05,
+    "price": 166.45
+  },
+  {
+    "id": "ESL",
+    "name": "Esterline Technologies Corporation",
+    "volatility": 0.01,
+    "price": 400.98
+  },
+  {
+    "id": "FLY",
+    "name": "Fly Leasing Limited",
+    "volatility": 0.02,
+    "price": 64.55
+  },
+  {
+    "id": "MNR^C",
+    "name": "Monmouth Real Estate Investment Corporation",
+    "volatility": 0.09,
+    "price": 226.23
+  },
+  {
+    "id": "SRPT",
+    "name": "Sarepta Therapeutics, Inc.",
+    "volatility": 0.06,
+    "price": 398.23
+  },
+  {
+    "id": "KAP",
+    "name": "KCAP Financial, Inc.",
+    "volatility": 0.01,
+    "price": 276.34
+  },
+  {
+    "id": "OGS",
+    "name": "ONE Gas, Inc.",
+    "volatility": 0.06,
+    "price": 282.71
+  },
+  {
+    "id": "OFIX",
+    "name": "Orthofix International N.V.",
+    "volatility": 0.01,
+    "price": 340.91
+  },
+  {
+    "id": "PXD",
+    "name": "Pioneer Natural Resources Company",
+    "volatility": 0.01,
+    "price": 55.52
+  },
+  {
+    "id": "FTAI",
+    "name": "Fortress Transportation and Infrastructure Investors LLC",
+    "volatility": 0.08,
+    "price": 264.57
+  },
+  {
+    "id": "AWR",
+    "name": "American States Water Company",
+    "volatility": 0.02,
+    "price": 44.29
+  },
+  {
+    "id": "NBLX",
+    "name": "Noble Midstream Partners LP",
+    "volatility": 0.04,
+    "price": 368.79
+  },
+  {
+    "id": "FNGN",
+    "name": "Financial Engines, Inc.",
+    "volatility": 0.03,
+    "price": 78.85
+  },
+  {
+    "id": "TSS",
+    "name": "Total System Services, Inc.",
+    "volatility": 0.06,
+    "price": 173.55
+  },
+  {
+    "id": "NEWTZ",
+    "name": "Newtek Business Services Corp.",
+    "volatility": 0.06,
+    "price": 191.40
+  },
+  {
+    "id": "HLS",
+    "name": "HealthSouth Corporation",
+    "volatility": 0.03,
+    "price": 404.07
+  },
+  {
+    "id": "ASX",
+    "name": "Advanced Semiconductor Engineering, Inc.",
+    "volatility": 0.05,
+    "price": 139.43
+  },
+  {
+    "id": "EIG",
+    "name": "Employers Holdings Inc",
+    "volatility": 0.07,
+    "price": 179.03
+  },
+  {
+    "id": "PBPB",
+    "name": "Potbelly Corporation",
+    "volatility": 0.06,
+    "price": 270.55
+  },
+  {
+    "id": "RDHL",
+    "name": "Redhill Biopharma Ltd.",
+    "volatility": 0.07,
+    "price": 165.01
+  },
+  {
+    "id": "EGO",
+    "name": "Eldorado Gold Corporation",
+    "volatility": 0.06,
+    "price": 276.31
+  },
+  {
+    "id": "TROV",
+    "name": "TrovaGene, Inc.",
+    "volatility": 0.08,
+    "price": 173.54
+  },
+  {
+    "id": "VNQI",
+    "name": "Vanguard Global ex-U.S. Real Estate ETF",
+    "volatility": 0.1,
+    "price": 85.10
+  },
+  {
+    "id": "CFFI",
+    "name": "C&F Financial Corporation",
+    "volatility": 0.04,
+    "price": 428.40
+  },
+  {
+    "id": "ERII",
+    "name": "Energy Recovery, Inc.",
+    "volatility": 0.03,
+    "price": 164.30
+  },
+  {
+    "id": "CKH",
+    "name": "SEACOR Holdings, Inc.",
+    "volatility": 0.09,
+    "price": 48.83
+  },
+  {
+    "id": "FB",
+    "name": "Facebook, Inc.",
+    "volatility": 0.07,
+    "price": 368.73
+  },
+  {
+    "id": "EBSB",
+    "name": "Meridian Bancorp, Inc.",
+    "volatility": 0.06,
+    "price": 217.82
+  },
+  {
+    "id": "BPY",
+    "name": "Brookfield Property Partners L.P.",
+    "volatility": 0.01,
+    "price": 198.84
+  },
+  {
+    "id": "DRYS",
+    "name": "DryShips Inc.",
+    "volatility": 0.01,
+    "price": 254.23
+  },
+  {
+    "id": "SNV^C",
+    "name": "Synovus Financial Corp.",
+    "volatility": 0.08,
+    "price": 236.32
+  },
+  {
+    "id": "SMBK",
+    "name": "SmartFinancial, Inc.",
+    "volatility": 0.05,
+    "price": 155.60
+  },
+  {
+    "id": "FLXS",
+    "name": "Flexsteel Industries, Inc.",
+    "volatility": 0.05,
+    "price": 193.70
+  },
+  {
+    "id": "CLRBZ",
+    "name": "Cellectar Biosciences, Inc.",
+    "volatility": 0.09,
+    "price": 10.53
+  },
+  {
+    "id": "JUNO",
+    "name": "Juno Therapeutics, Inc.",
+    "volatility": 0.03,
+    "price": 427.70
+  },
+  {
+    "id": "CGNT",
+    "name": "Cogentix Medical, Inc.",
+    "volatility": 0.01,
+    "price": 25.07
+  },
+  {
+    "id": "NYLD.A",
+    "name": "NRG Yield, Inc.",
+    "volatility": 0.03,
+    "price": 429.70
+  },
+  {
+    "id": "HCSG",
+    "name": "Healthcare Services Group, Inc.",
+    "volatility": 0.03,
+    "price": 13.36
+  },
+  {
+    "id": "AMWD",
+    "name": "American Woodmark Corporation",
+    "volatility": 0.04,
+    "price": 69.62
+  },
+  {
+    "id": "SPH",
+    "name": "Suburban Propane Partners, L.P.",
+    "volatility": 0.1,
+    "price": 214.98
+  },
+  {
+    "id": "AFSI^E",
+    "name": "AmTrust Financial Services, Inc.",
+    "volatility": 0.08,
+    "price": 95.24
+  },
+  {
+    "id": "BOFIL",
+    "name": "BofI Holding, Inc.",
+    "volatility": 0.1,
+    "price": 194.54
+  },
+  {
+    "id": "AEHR",
+    "name": "Aehr Test Systems",
+    "volatility": 0.1,
+    "price": 391.03
+  },
+  {
+    "id": "CTL",
+    "name": "CenturyLink, Inc.",
+    "volatility": 0.06,
+    "price": 9.86
+  },
+  {
+    "id": "MOV",
+    "name": "Movado Group Inc.",
+    "volatility": 0.05,
+    "price": 379.73
+  },
+  {
+    "id": "SGRP",
+    "name": "SPAR Group, Inc.",
+    "volatility": 0.02,
+    "price": 185.81
+  },
+  {
+    "id": "ZPIN",
+    "name": "Zhaopin Limited",
+    "volatility": 0.04,
+    "price": 18.43
+  },
+  {
+    "id": "POLA",
+    "name": "Polar Power, Inc.",
+    "volatility": 0.07,
+    "price": 441.12
+  },
+  {
+    "id": "CSTR",
+    "name": "CapStar Financial Holdings, Inc.",
+    "volatility": 0.07,
+    "price": 78.06
+  },
+  {
+    "id": "PWOD",
+    "name": "Penns Woods Bancorp, Inc.",
+    "volatility": 0.05,
+    "price": 52.11
+  },
+  {
+    "id": "EXPO",
+    "name": "Exponent, Inc.",
+    "volatility": 0.09,
+    "price": 374.78
+  },
+  {
+    "id": "FSB",
+    "name": "Franklin Financial Network, Inc.",
+    "volatility": 0.04,
+    "price": 209.82
+  },
+  {
+    "id": "CIDM",
+    "name": "Cinedigm Corp",
+    "volatility": 0.04,
+    "price": 375.01
+  },
+  {
+    "id": "ARW",
+    "name": "Arrow Electronics, Inc.",
+    "volatility": 0.05,
+    "price": 320.50
+  },
+  {
+    "id": "NICK",
+    "name": "Nicholas Financial, Inc.",
+    "volatility": 0.02,
+    "price": 132.32
+  },
+  {
+    "id": "LHO^I",
+    "name": "LaSalle Hotel Properties",
+    "volatility": 0.01,
+    "price": 447.56
+  },
+  {
+    "id": "SWN",
+    "name": "Southwestern Energy Company",
+    "volatility": 0.09,
+    "price": 103.19
+  },
+  {
+    "id": "VOC",
+    "name": "VOC Energy Trust",
+    "volatility": 0.06,
+    "price": 390.39
+  },
+  {
+    "id": "ACHC",
+    "name": "Acadia Healthcare Company, Inc.",
+    "volatility": 0.04,
+    "price": 390.00
+  },
+  {
+    "id": "LOAN",
+    "name": "Manhattan Bridge Capital, Inc",
+    "volatility": 0.03,
+    "price": 183.84
+  },
+  {
+    "id": "ARR^B",
+    "name": "ARMOUR Residential REIT, Inc.",
+    "volatility": 0.02,
+    "price": 250.26
+  },
+  {
+    "id": "GLOP",
+    "name": "GasLog Partners LP",
+    "volatility": 0.09,
+    "price": 433.36
+  },
+  {
+    "id": "CLS",
+    "name": "Celestica, Inc.",
+    "volatility": 0.09,
+    "price": 217.89
+  },
+  {
+    "id": "AHPA",
+    "name": "Avista Healthcare Public Acquisition Corp.",
+    "volatility": 0.03,
+    "price": 207.41
+  },
+  {
+    "id": "JOBS",
+    "name": "51job, Inc.",
+    "volatility": 0.05,
+    "price": 85.32
+  },
+  {
+    "id": "DKL",
+    "name": "Delek Logistics Partners, L.P.",
+    "volatility": 0.02,
+    "price": 257.83
+  },
+  {
+    "id": "INTG",
+    "name": "The Intergroup Corporation",
+    "volatility": 0.09,
+    "price": 402.65
+  },
+  {
+    "id": "SCD",
+    "name": "LMP Capital and Income Fund Inc.",
+    "volatility": 0.07,
+    "price": 272.54
+  },
+  {
+    "id": "AJX",
+    "name": "Great Ajax Corp.",
+    "volatility": 0.05,
+    "price": 324.81
+  },
+  {
+    "id": "CRT",
+    "name": "Cross Timbers Royalty Trust",
+    "volatility": 0.03,
+    "price": 176.86
+  },
+  {
+    "id": "NKG",
+    "name": "Nuveen Georgia Quality Municipal Income Fund ",
+    "volatility": 0.01,
+    "price": 264.51
+  },
+  {
+    "id": "VRTX",
+    "name": "Vertex Pharmaceuticals Incorporated",
+    "volatility": 0.01,
+    "price": 404.60
+  },
+  {
+    "id": "MQY",
+    "name": "Blackrock MuniYield Quality Fund, Inc.",
+    "volatility": 0.06,
+    "price": 426.64
+  },
+  {
+    "id": "ROP",
+    "name": "Roper Technologies, Inc.",
+    "volatility": 0.07,
+    "price": 323.55
+  },
+  {
+    "id": "CTXS",
+    "name": "Citrix Systems, Inc.",
+    "volatility": 0.08,
+    "price": 332.00
+  },
+  {
+    "id": "EZT",
+    "name": "Entergy Texas Inc",
+    "volatility": 0.05,
+    "price": 359.59
+  },
+  {
+    "id": "NAT",
+    "name": "Nordic American Tankers Limited",
+    "volatility": 0.03,
+    "price": 192.69
+  },
+  {
+    "id": "CGI",
+    "name": "Celadon Group, Inc.",
+    "volatility": 0.01,
+    "price": 222.43
+  },
+  {
+    "id": "SOJA",
+    "name": "Southern Company (The)",
+    "volatility": 0.03,
+    "price": 113.41
+  },
+  {
+    "id": "GWB",
+    "name": "Great Western Bancorp, Inc.",
+    "volatility": 0.06,
+    "price": 447.88
+  },
+  {
+    "id": "EVGN",
+    "name": "Evogene Ltd.",
+    "volatility": 0.02,
+    "price": 197.36
+  },
+  {
+    "id": "ABX",
+    "name": "Barrick Gold Corporation",
+    "volatility": 0.08,
+    "price": 430.90
+  },
+  {
+    "id": "FWRD",
+    "name": "Forward Air Corporation",
+    "volatility": 0.05,
+    "price": 82.15
+  },
+  {
+    "id": "TEI",
+    "name": "Templeton Emerging Markets Income Fund, Inc.",
+    "volatility": 0.03,
+    "price": 359.82
+  },
+  {
+    "id": "SBBC",
+    "name": "Scorpio Tankers Inc.",
+    "volatility": 0.04,
+    "price": 346.52
+  },
+  { "id": "ABB", "name": "ABB Ltd", "volatility": 0.06, "price": 164.35 },
+  {
+    "id": "PPL",
+    "name": "PPL Corporation",
+    "volatility": 0.03,
+    "price": 375.38
+  },
+  {
+    "id": "HSBC",
+    "name": "HSBC Holdings plc",
+    "volatility": 0.02,
+    "price": 390.96
+  },
+  {
+    "id": "PQ",
+    "name": "Petroquest Energy Inc",
+    "volatility": 0.03,
+    "price": 57.23
+  },
+  {
+    "id": "OFG^A",
+    "name": "OFG Bancorp",
+    "volatility": 0.07,
+    "price": 79.23
+  },
+  {
+    "id": "SYY",
+    "name": "Sysco Corporation",
+    "volatility": 0.06,
+    "price": 86.53
+  },
+  {
+    "id": "EML",
+    "name": "Eastern Company (The)",
+    "volatility": 0.03,
+    "price": 218.60
+  },
+  {
+    "id": "NTGR",
+    "name": "NETGEAR, Inc.",
+    "volatility": 0.03,
+    "price": 148.06
+  },
+  {
+    "id": "KTH",
+    "name": "Lehman ABS Corporation",
+    "volatility": 0.04,
+    "price": 326.39
+  },
+  {
+    "id": "HOLI",
+    "name": "Hollysys Automation Technologies, Ltd.",
+    "volatility": 0.06,
+    "price": 206.36
+  },
+  {
+    "id": "FBC",
+    "name": "Flagstar Bancorp, Inc.",
+    "volatility": 0.04,
+    "price": 125.35
+  },
+  {
+    "id": "HPJ",
+    "name": "Highpower International Inc",
+    "volatility": 0.08,
+    "price": 18.49
+  },
+  {
+    "id": "ORIG",
+    "name": "Ocean Rig UDW Inc.",
+    "volatility": 0.1,
+    "price": 108.31
+  },
+  {
+    "id": "PEP",
+    "name": "Pepsico, Inc.",
+    "volatility": 0.02,
+    "price": 179.39
+  },
+  {
+    "id": "BKFS",
+    "name": "Black Knight Financial Services, Inc.",
+    "volatility": 0.03,
+    "price": 226.31
+  },
+  {
+    "id": "CTS",
+    "name": "CTS Corporation",
+    "volatility": 0.09,
+    "price": 241.36
+  },
+  {
+    "id": "FNTEU",
+    "name": "FinTech Acquisition Corp. II",
+    "volatility": 0.03,
+    "price": 172.85
+  },
+  {
+    "id": "CP",
+    "name": "Canadian Pacific Railway Limited",
+    "volatility": 0.01,
+    "price": 307.58
+  },
+  {
+    "id": "BNTCW",
+    "name": "Benitec Biopharma Limited",
+    "volatility": 0.02,
+    "price": 229.75
+  },
+  {
+    "id": "NAC",
+    "name": "Nuveen California Quality Municipal Income Fund",
+    "volatility": 0.05,
+    "price": 422.33
+  },
+  {
+    "id": "LAUR",
+    "name": "Laureate Education, Inc.",
+    "volatility": 0.03,
+    "price": 362.77
+  },
+  {
+    "id": "KMPR",
+    "name": "Kemper Corporation",
+    "volatility": 0.01,
+    "price": 187.70
+  },
+  {
+    "id": "WNRL",
+    "name": "Western Refining Logistics, LP",
+    "volatility": 0.04,
+    "price": 145.27
+  },
+  {
+    "id": "GWGH",
+    "name": "GWG Holdings, Inc",
+    "volatility": 0.02,
+    "price": 55.51
+  },
+  {
+    "id": "BUI",
+    "name": "BlackRock Utility and Infrastructure Trust",
+    "volatility": 0.07,
+    "price": 91.76
+  },
+  {
+    "id": "EGAN",
+    "name": "eGain Corporation",
+    "volatility": 0.09,
+    "price": 278.50
+  },
+  {
+    "id": "WYIGU",
+    "name": "JM Global Holding Company",
+    "volatility": 0.09,
+    "price": 39.82
+  },
+  {
+    "id": "GIB",
+    "name": "CGI Group, Inc.",
+    "volatility": 0.07,
+    "price": 427.08
+  },
+  {
+    "id": "DOOR",
+    "name": "Masonite International Corporation",
+    "volatility": 0.06,
+    "price": 257.86
+  },
+  {
+    "id": "CAKE",
+    "name": "The Cheesecake Factory Incorporated",
+    "volatility": 0.06,
+    "price": 138.72
+  },
+  {
+    "id": "CNFR",
+    "name": "Conifer Holdings, Inc.",
+    "volatility": 0.06,
+    "price": 3.31
+  },
+  {
+    "id": "HYI",
+    "name": "Western Asset High Yield Defined Opportunity Fund Inc.",
+    "volatility": 0.1,
+    "price": 300.87
+  },
+  {
+    "id": "FCA",
+    "name": "First Trust China AlphaDEX Fund",
+    "volatility": 0.09,
+    "price": 143.17
+  },
+  {
+    "id": "CUBI^D",
+    "name": "Customers Bancorp, Inc",
+    "volatility": 0.08,
+    "price": 129.20
+  },
+  {
+    "id": "NLS",
+    "name": "Nautilus Group, Inc. (The)",
+    "volatility": 0.04,
+    "price": 89.96
+  },
+  {
+    "id": "CYH",
+    "name": "Community Health Systems, Inc.",
+    "volatility": 0.07,
+    "price": 151.75
+  },
+  {
+    "id": "TUTI",
+    "name": "Tuttle Tactical Management Multi-Strategy Income ETF",
+    "volatility": 0.04,
+    "price": 247.95
+  },
+  {
+    "id": "GBAB",
+    "name": "Guggenheim Taxable Municipal Managed Duration Trst",
+    "volatility": 0.08,
+    "price": 151.21
+  },
+  {
+    "id": "DTYS",
+    "name": "iPath US Treasury 10-year Bear ETN",
+    "volatility": 0.02,
+    "price": 265.46
+  },
+  {
+    "id": "AVT",
+    "name": "Avnet, Inc.",
+    "volatility": 0.03,
+    "price": 382.62
+  },
+  {
+    "id": "NYCB^U",
+    "name": "New York Community Bancorp, Inc.",
+    "volatility": 0.07,
+    "price": 264.08
+  },
+  {
+    "id": "AGO^E",
+    "name": "Assured Guaranty Ltd.",
+    "volatility": 0.04,
+    "price": 201.84
+  },
+  {
+    "id": "SC",
+    "name": "Santander Consumer USA Holdings Inc.",
+    "volatility": 0.09,
+    "price": 123.14
+  },
+  {
+    "id": "CNQ",
+    "name": "Canadian Natural Resources Limited",
+    "volatility": 0.03,
+    "price": 148.87
+  },
+  {
+    "id": "ONTXW",
+    "name": "Onconova Therapeutics, Inc.",
+    "volatility": 0.06,
+    "price": 432.69
+  },
+  {
+    "id": "THGA",
+    "name": "The Hanover Insurance Group, Inc.",
+    "volatility": 0.08,
+    "price": 174.40
+  },
+  {
+    "id": "RLGY",
+    "name": "Realogy Holdings Corp.",
+    "volatility": 0.02,
+    "price": 350.93
+  },
+  {
+    "id": "OCIP",
+    "name": "OCI Partners LP",
+    "volatility": 0.08,
+    "price": 10.23
+  },
+  {
+    "id": "SBPH",
+    "name": "Spring Bank Pharmaceuticals, Inc.",
+    "volatility": 0.02,
+    "price": 8.07
+  },
+  {
+    "id": "UBOH",
+    "name": "United Bancshares, Inc.",
+    "volatility": 0.06,
+    "price": 376.22
+  },
+  { "id": "CA", "name": "CA Inc.", "volatility": 0.04, "price": 293.46 },
+  {
+    "id": "PSET",
+    "name": "Principal Price Setters Index ETF",
+    "volatility": 0.02,
+    "price": 38.58
+  },
+  {
+    "id": "BVXV",
+    "name": "BiondVax Pharmaceuticals Ltd.",
+    "volatility": 0.03,
+    "price": 221.03
+  },
+  {
+    "id": "FMY",
+    "name": "First Trust",
+    "volatility": 0.06,
+    "price": 303.34
+  },
+  {
+    "id": "VYMI",
+    "name": "Vanguard International High Dividend Yield ETF",
+    "volatility": 0.1,
+    "price": 337.80
+  },
+  {
+    "id": "LEDS",
+    "name": "SemiLEDS Corporation",
+    "volatility": 0.03,
+    "price": 329.98
+  },
+  {
+    "id": "DNBF",
+    "name": "DNB Financial Corp",
+    "volatility": 0.09,
+    "price": 189.84
+  },
+  {
+    "id": "AMAG",
+    "name": "AMAG Pharmaceuticals, Inc.",
+    "volatility": 0.07,
+    "price": 361.65
+  },
+  {
+    "id": "FFWM",
+    "name": "First Foundation Inc.",
+    "volatility": 0.05,
+    "price": 161.33
+  },
+  {
+    "id": "MTSC",
+    "name": "MTS Systems Corporation",
+    "volatility": 0.06,
+    "price": 131.55
+  },
+  {
+    "id": "MTSI",
+    "name": "MACOM Technology Solutions Holdings, Inc.",
+    "volatility": 0.02,
+    "price": 151.21
+  },
+  {
+    "id": "GNC",
+    "name": "GNC Holdings, Inc.",
+    "volatility": 0.03,
+    "price": 281.84
+  },
+  {
+    "id": "IIF",
+    "name": "Morgan Stanley India Investment Fund, Inc.",
+    "volatility": 0.01,
+    "price": 112.97
+  },
+  {
+    "id": "NNA",
+    "name": "Navios Maritime Acquisition Corporation",
+    "volatility": 0.02,
+    "price": 367.03
+  },
+  {
+    "id": "PRE^H",
+    "name": "PartnerRe Ltd.",
+    "volatility": 0.06,
+    "price": 52.77
+  },
+  {
+    "id": "DYN.WS.A",
+    "name": "Dynegy Inc.",
+    "volatility": 0.03,
+    "price": 96.57
+  },
+  {
+    "id": "KST",
+    "name": "Scudder Strategic Income Trust",
+    "volatility": 0.02,
+    "price": 138.01
+  },
+  {
+    "id": "ASND",
+    "name": "Ascendis Pharma A/S",
+    "volatility": 0.09,
+    "price": 405.23
+  },
+  {
+    "id": "HOLX",
+    "name": "Hologic, Inc.",
+    "volatility": 0.09,
+    "price": 160.58
+  },
+  {
+    "id": "DMLP",
+    "name": "Dorchester Minerals, L.P.",
+    "volatility": 0.09,
+    "price": 292.68
+  },
+  {
+    "id": "WBS",
+    "name": "Webster Financial Corporation",
+    "volatility": 0.05,
+    "price": 167.47
+  },
+  {
+    "id": "VRML",
+    "name": "Vermillion, Inc.",
+    "volatility": 0.07,
+    "price": 114.76
+  },
+  {
+    "id": "MIY",
+    "name": "Blackrock MuniYield Michigan Quality Fund, Inc.",
+    "volatility": 0.08,
+    "price": 438.20
+  },
+  {
+    "id": "ACNB",
+    "name": "ACNB Corporation",
+    "volatility": 0.05,
+    "price": 309.02
+  },
+  {
+    "id": "TPH",
+    "name": "TRI Pointe Group, Inc.",
+    "volatility": 0.07,
+    "price": 213.09
+  },
+  {
+    "id": "AGII",
+    "name": "Argo Group International Holdings, Ltd.",
+    "volatility": 0.05,
+    "price": 45.18
+  },
+  {
+    "id": "MYN",
+    "name": "Blackrock MuniYield New York Quality Fund, Inc.",
+    "volatility": 0.07,
+    "price": 267.18
+  },
+  {
+    "id": "RARX",
+    "name": "Ra Pharmaceuticals, Inc.",
+    "volatility": 0.08,
+    "price": 301.54
+  },
+  {
+    "id": "CVCY",
+    "name": "Central Valley Community Bancorp",
+    "volatility": 0.03,
+    "price": 226.72
+  },
+  {
+    "id": "CWAY",
+    "name": "Coastway Bancorp, Inc.",
+    "volatility": 0.07,
+    "price": 441.98
+  },
+  {
+    "id": "BLMN",
+    "name": "Bloomin' Brands, Inc.",
+    "volatility": 0.1,
+    "price": 139.28
+  },
+  {
+    "id": "AHP^B",
+    "name": "Ashford Hospitality Prime, Inc.",
+    "volatility": 0.07,
+    "price": 30.81
+  },
+  {
+    "id": "ICUI",
+    "name": "ICU Medical, Inc.",
+    "volatility": 0.03,
+    "price": 423.14
+  },
+  {
+    "id": "AIRT",
+    "name": "Air T, Inc.",
+    "volatility": 0.08,
+    "price": 101.94
+  },
+  {
+    "id": "KF",
+    "name": "Korea Fund, Inc. (The)",
+    "volatility": 0.08,
+    "price": 317.72
+  },
+  {
+    "id": "FRC",
+    "name": "FIRST REPUBLIC BANK",
+    "volatility": 0.09,
+    "price": 267.36
+  },
+  {
+    "id": "LPX",
+    "name": "Louisiana-Pacific Corporation",
+    "volatility": 0.01,
+    "price": 72.18
+  },
+  {
+    "id": "PNR",
+    "name": "Pentair plc.",
+    "volatility": 0.03,
+    "price": 54.71
+  },
+  {
+    "id": "NESR",
+    "name": "National Energy Services Reunited Corp.",
+    "volatility": 0.01,
+    "price": 43.70
+  },
+  {
+    "id": "BBY",
+    "name": "Best Buy Co., Inc.",
+    "volatility": 0.08,
+    "price": 166.70
+  }
+]
