@@ -12,6 +12,7 @@ def load_stocks():
     mapped = map(lambda s: {'ticker': s[0], 'price': float(s[1]), 'volatility': float(s[2])}, raw)
     return list(mapped)
 
+# maintain stock updates in memory for demo
 stocks = load_stocks()
 
 # simulate a stock price change: https://stackoverflow.com/a/8597889
