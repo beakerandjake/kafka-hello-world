@@ -53,6 +53,7 @@ services:
     volumes:
       # - postgres_data:/var/lib/postgresql/data
       - ./database/create.sql:/docker-entrypoint-initdb.d/create.sql
+      - ./database/insert.sql:/docker-entrypoint-initdb.d/insert.sql
     networks:
       - postgres_network
     ports:

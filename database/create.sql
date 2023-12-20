@@ -7,6 +7,7 @@ CREATE TABLE price_changes (
 CREATE TABLE stocks (
     id SERIAL PRIMARY KEY,
     ticker TEXT NOT NULL,
+    full_name TEXT NOT NULL, 
     price DECIMAL(12,2) NOT NULL,
     volatility DECIMAL(3, 2)
 );
