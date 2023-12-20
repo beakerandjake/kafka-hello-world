@@ -1,17 +1,15 @@
 import os
 import time
+import signal
+import sys
 from confluent_kafka import Producer
 from stock_price import random_price_change
 
-delay = float(os.environ.get("PRODUCER_SPEED_MS", "1000")) / 1000.0
-
-producer = Producer({"bootstrap.servers": 'kafka:9092'})
-
-# continually stream stock price changes to kafka
-def stream():
+if __name__ == "__main__":
+    signal.signal(signal.SIGTERM, lambda : sys.exit())
+    producer = Producer({"bootstrap.servers": 'kafka:9092'})
+    delay = float(os.environ.get("PRODUCER_SPEED_MS", "1000")) / 1000.0
     while True:
-        update = random_price_change()
-        producer.produce("stock_price_changes", key=update[0], value=str(update))
+        change = random_price_change()
+        producer.produce("stock_price_changes", key=change[0], value=str(change))
         time.sleep(delay)
-
-stream()
