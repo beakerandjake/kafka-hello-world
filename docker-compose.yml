@@ -6,6 +6,9 @@ services:
     environment:
       - PRODUCER_SPEED_MS=1000
       - PRODUCER_TOPIC=stock_price_changes
+      - PGHOST=postgres
+      - PGUSER=postgres
+      - PGPASSWORD=123456
     networks:
       - kafka_network
       - postgres_network

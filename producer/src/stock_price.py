@@ -1,9 +1,18 @@
-import json
 import random
+import psycopg2
 
-# load the stocks
-with open('data.json', 'r') as contents:
-    stocks = json.load(contents, )
+connection = psycopg2.connect('')
+connection.autocommit = True
+cursor = connection.cursor()
+
+# returns an array of stocks.
+def load_stocks():
+    cursor.execute("SELECT ticker, price, volatility FROM stocks")
+    raw = cursor.fetchall()
+    mapped = map(lambda s: {'ticker': s[0], 'price': float(s[1]), 'volatility': float(s[2])}, raw)
+    return list(mapped)
+
+stocks = load_stocks()
 
 # simulate a stock price change: https://stackoverflow.com/a/8597889
 def _get_new_price(stock):
@@ -11,7 +20,7 @@ def _get_new_price(stock):
     if(change_percent > stock['volatility']):
         change_percent -= (2 * stock['volatility'])
     change_amount = stock['price'] * change_percent;
-    return round(stock['price'] + change_amount, 2)
+    return max(0.0, round(stock['price'] + change_amount, 2))
 
 # updates the price of a random stock. 
 def random_price_change():
@@ -19,4 +28,4 @@ def random_price_change():
     new_price = _get_new_price(stock)
     # print('{}: {} -> {}'.format(stock['id'], stock['price'], new_price))
     stock['price'] = new_price
-    return [stock['id'], stock['price']]
+    return [stock['ticker'], stock['price']]
