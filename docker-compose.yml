@@ -4,13 +4,12 @@ services:
     build: producer
     container_name: producer
     environment:
-      - PRODUCER_SPEED_MS=1000
+      - PRODUCER_SPEED_MS=125
       - PRODUCER_TOPIC=stock_price_changes
     networks:
       - kafka_network
     depends_on:
-      kafka:
-        condition: service_healthy
+      - kafka
   consumer:
     build: consumer
     container_name: consumer
@@ -19,10 +18,8 @@ services:
     networks:
       - kafka_network
     depends_on:
-      kafka:
-        condition: service_healthy
-      database:
-        condition: service_started
+      - kafka
+      - database
   kafka:
     image: bitnami/kafka:3.6.1
     container_name: kafka
@@ -39,11 +36,6 @@ services:
       - KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP=CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT
       - KAFKA_CFG_CONTROLLER_QUORUM_VOTERS=0@kafka:9093
       - KAFKA_CFG_CONTROLLER_LISTENER_NAMES=CONTROLLER
-    healthcheck:
-      test: ["CMD", "kafka-topics.sh", "--list", "--bootstrap-server", "localhost:9092"]
-      interval: 1s
-      timeout: 10s
-      retries: 30
   database:
     image: postgres:16.1
     container_name: postgres
