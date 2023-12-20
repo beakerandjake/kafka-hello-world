@@ -21,9 +21,12 @@ if __name__ == "__main__":
         while running:
             message = consumer.poll(timeout=1.0)
             if message is None:
+                print('waiting for message')
                 continue
             if message.error():
                 raise KafkaException(message.error)
-            save_price_event(json.loads(message.value().decode('utf-8')))
+            value = json.loads(message.value().decode('utf-8'))
+            print('consumed message: {}'.format(value))
+            save_price_event(value)
     finally:
         consumer.close()
