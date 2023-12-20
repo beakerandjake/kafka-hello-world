@@ -13,3 +13,8 @@ docker compose up -d
 ```
 docker exec -it kafka  kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic stock_price_changes
 ```
+
+## CLI into Postgres
+```
+docker exec -it postgres psql -U postgres
+```
