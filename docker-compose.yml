@@ -16,8 +16,8 @@ services:
       - kafka_network
     ports:
       - "9092:9092"
-    volumes:
-      - "kafka_data:/bitnami"
+    # volumes:
+    #   - "kafka_data:/bitnami"
     environment:
       - KAFKA_CFG_NODE_ID=0
       - KAFKA_CFG_PROCESS_ROLES=controller,broker
@@ -32,16 +32,16 @@ services:
     environment: 
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 123456
-      POSTGRES_DB: stocks
+      # POSTGRES_DB: stocks
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      # - postgres_data:/var/lib/postgresql/data
       - ./database/create.sql:/docker-entrypoint-initdb.d/create.sql
     ports:
       - "5432:5432"
-volumes:
-  kafka_data:
-    driver: local
-  postgres_data:
+# volumes:
+#   kafka_data:
+#     driver: local
+#   # postgres_data:
 networks:
   kafka_network:
     name: kafka_hello_world_network
