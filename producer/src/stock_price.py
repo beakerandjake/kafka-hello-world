@@ -22,10 +22,8 @@ def _get_new_price(stock):
     change_amount = stock['price'] * change_percent;
     return max(0.0, round(stock['price'] + change_amount, 2))
 
-# updates the price of a random stock. 
-def random_price_change():
-    stock = random.choice(stocks)
-    new_price = _get_new_price(stock)
-    # print('{}: {} -> {}'.format(stock['id'], stock['price'], new_price))
-    stock['price'] = new_price
-    return [stock['ticker'], stock['price']]
+# returns the new prices of the stocks
+def get_price_changes():
+    for i, stock in enumerate(stocks):
+        stocks[i]['price'] = _get_new_price(stock)
+    return list(map(lambda s: [s['ticker'], s['price']], stocks))
