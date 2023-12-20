@@ -8,8 +8,12 @@ services:
       - PRODUCER_TOPIC=stock_price_changes
     networks:
       - kafka_network
+      - postgres_network
     depends_on:
-      - kafka
+      kafka:
+        condition: service_started
+      postgres:
+        condition: service_healthy
   consumer:
     build: consumer
     container_name: consumer
