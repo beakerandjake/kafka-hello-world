@@ -2,7 +2,7 @@ import os
 import signal
 import json
 from confluent_kafka import Consumer, KafkaException
-from save_price_event import save_price_event
+from save_price_change import save_price_change
 
 running = True
 
@@ -27,6 +27,6 @@ if __name__ == "__main__":
                 raise KafkaException(message.error)
             value = json.loads(message.value().decode('utf-8'))
             print('consumed message: {}'.format(value))
-            save_price_event(value)
+            save_price_change(value)
     finally:
         consumer.close()
