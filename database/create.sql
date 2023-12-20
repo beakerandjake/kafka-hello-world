@@ -1,4 +1,5 @@
-CREATE TABLE market_data {
-    ticker TEXT,
-    prince DECIMAL
-}
+CREATE TABLE price_changes (
+    ticker TEXT NOT NULL,
+    price DECIMAL(12,2) NOT NULL,
+    change_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
