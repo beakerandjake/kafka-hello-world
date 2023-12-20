@@ -21,6 +21,4 @@ connection = DbConnection()
 # save the price event to the database
 def save_price_event(event):
     print('saving price change: {}'.format(event))
-    query = "INSERT INTO price_changes (ticker, price) VALUES (%s, %s)"
-    args = tuple(event)
-    connection.query(query, args)
+    connection.query("INSERT INTO price_changes (ticker, price) VALUES (%s, %s)", tuple(event))
