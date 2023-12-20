@@ -13,8 +13,10 @@ def shutdown(signal, frame):
 if __name__ == "__main__":
     signal.signal(signal.SIGTERM, shutdown)
     topic = os.environ['CONSUMER_TOPIC']
+    print("connecting to kafka")
     consumer = Consumer({"bootstrap.servers": 'kafka:9092', "group.id": "stock_prices"})
     consumer.subscribe([topic])
+    print("consuming messages on topic: {}".format(topic))
     try:
         while running:
             message = consumer.poll(timeout=1.0)

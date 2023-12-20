@@ -4,7 +4,7 @@ services:
     build: producer
     container_name: producer
     environment:
-      - PRODUCER_SPEED_MS=125
+      - PRODUCER_SPEED_MS=1000
       - PRODUCER_TOPIC=stock_price_changes
     networks:
       - kafka_network
@@ -15,11 +15,15 @@ services:
     container_name: consumer
     environment:
       - CONSUMER_TOPIC=stock_price_changes
+      - PGHOST=postgres
+      - PGUSER=postgres
+      - PGPASSWORD=123456
     networks:
       - kafka_network
+      - postgres_network
     depends_on:
       - kafka
-      - database
+      - postgres
   kafka:
     image: bitnami/kafka:3.6.1
     container_name: kafka
@@ -36,7 +40,7 @@ services:
       - KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP=CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT
       - KAFKA_CFG_CONTROLLER_QUORUM_VOTERS=0@kafka:9093
       - KAFKA_CFG_CONTROLLER_LISTENER_NAMES=CONTROLLER
-  database:
+  postgres:
     image: postgres:16.1
     container_name: postgres
     restart: always
@@ -47,6 +51,8 @@ services:
     volumes:
       # - postgres_data:/var/lib/postgresql/data
       - ./database/create.sql:/docker-entrypoint-initdb.d/create.sql
+    networks:
+      - postgres_network
     ports:
       - "5432:5432"
 # volumes:
@@ -55,4 +61,4 @@ services:
 #   # postgres_data:
 networks:
   kafka_network:
-    name: kafka_hello_world_network
+  postgres_network:
