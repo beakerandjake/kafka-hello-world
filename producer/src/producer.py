@@ -7,9 +7,10 @@ from stock_price import random_price_change
 
 if __name__ == "__main__":
     signal.signal(signal.SIGTERM, lambda : sys.exit())
-    producer = Producer({"bootstrap.servers": 'kafka:9092'})
     delay = float(os.environ.get("PRODUCER_SPEED_MS", "1000")) / 1000.0
+    topic = os.environ['PRODUCER_TOPIC']
+    producer = Producer({"bootstrap.servers": 'kafka:9092'})
     while True:
         change = random_price_change()
-        producer.produce("stock_price_changes", key=change[0], value=str(change))
+        producer.produce(topic, key=change[0], value=str(change))
         time.sleep(delay)
