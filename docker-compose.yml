@@ -34,24 +34,24 @@ services:
         condition: service_healthy
       postgres:
         condition: service_healthy
-  consumer-aggregate:
-    build: consumer-aggregate
-    container_name: consumer-aggregate
-    environment:
-      - CONSUMER_TOPIC=stock_price_changes
-      - CONSUMER_GROUP_ID=stock_price_aggregate
-      - CONSUMER_WINDOW_TIME_MS=5000
-      - PGHOST=postgres
-      - PGUSER=postgres
-      - PGPASSWORD=123456
-    networks:
-      - kafka_network
-      - postgres_network
-    depends_on:
-      kafka:
-        condition: service_healthy
-      postgres:
-        condition: service_healthy
+  # consumer-aggregate:
+  #   build: consumer-aggregate
+  #   container_name: consumer-aggregate
+  #   environment:
+  #     - CONSUMER_TOPIC=stock_price_changes
+  #     - CONSUMER_GROUP_ID=stock_price_aggregate
+  #     - CONSUMER_WINDOW_TIME_MS=10000
+  #     - PGHOST=postgres
+  #     - PGUSER=postgres
+  #     - PGPASSWORD=123456
+  #   networks:
+  #     - kafka_network
+  #     - postgres_network
+  #   depends_on:
+  #     kafka:
+  #       condition: service_healthy
+  #     postgres:
+  #       condition: service_healthy
   kafka:
     image: bitnami/kafka:3.6.1
     container_name: kafka

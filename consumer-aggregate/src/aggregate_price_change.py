@@ -2,7 +2,7 @@ import os
 from datetime import datetime, timedelta
 from psycopg2 import connect
 
-window_time = os.environ["CONSUMER_WINDOW_TIME_MS"]
+window_time = float(os.environ["CONSUMER_WINDOW_TIME_MS"])
 
 # connection = connect('')
 # connection.autocommit = True
@@ -29,8 +29,6 @@ def aggregate_price_change(event):
         return
 
     delta = datetime.fromisoformat(event["date"]) - history[event["ticker"]]
-    delta_ms = delta.total_seconds() * 1000
-
-    if delta_ms > window_time:
+    if delta.total_seconds() * 1000 > window_time:
         save_aggregate(event)
         history[event["ticker"]] = datetime.fromisoformat(event["date"])
