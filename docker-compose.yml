@@ -22,6 +22,7 @@ services:
     container_name: consumer
     environment:
       - CONSUMER_TOPIC=stock_price_changes
+      - CONSUMER_GROUP_ID=stock_price_realtime
       - PGHOST=postgres
       - PGUSER=postgres
       - PGPASSWORD=123456

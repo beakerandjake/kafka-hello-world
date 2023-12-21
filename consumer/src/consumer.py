@@ -1,35 +1,32 @@
-import os
 import signal
+import os
 import json
+import sys
 from confluent_kafka import Consumer, KafkaException
 from save_price_change import save_price_change
 
-running = True
+# no need to gracefully exit for demo, just quit.
+signal.signal(signal.SIGTERM, lambda a, b: sys.exit())
 
+consumer = Consumer({
+    "bootstrap.servers": 'kafka:9092',
+    "group.id": os.environ['CONSUMER_GROUP_ID']
+})
 
-def shutdown(signal, frame):
-    global running
-    running = False
+consumer.subscribe([os.environ['CONSUMER_TOPIC']])
 
+try:
+    while True:
+        message = consumer.poll(timeout=1.0)
 
-if __name__ == "__main__":
-    signal.signal(signal.SIGTERM, shutdown)
-    topic = os.environ['CONSUMER_TOPIC']
-    print("connecting to kafka")
-    consumer = Consumer(
-        {"bootstrap.servers": 'kafka:9092', "group.id": "stock_prices"})
-    consumer.subscribe([topic])
-    print("consuming messages on topic: {}".format(topic))
-    try:
-        while running:
-            message = consumer.poll(timeout=1.0)
-            if message is None:
-                print('waiting for message')
-                continue
-            if message.error():
-                raise KafkaException(message.error)
-            value = json.loads(message.value().decode('utf-8'))
-            print('consumed message: {}'.format(value))
-            save_price_change(value)
-    finally:
-        consumer.close()
+        if message is None:
+            continue
+        if message.error():
+            print('error consuming message: {}'.format(message.error()))
+            continue
+
+        value = json.loads(message.value().decode('utf-8'))
+        print('consumed message: {}'.format(value))
+        save_price_change(value)
+finally:
+    consumer.close()
