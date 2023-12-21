@@ -1,19 +1,43 @@
+"""
+Aggregates price changes into buckets. 
+Performs simple aggregation in memory to demonstrate consuming a stream of kafka data. 
+"""
 import os
 from datetime import datetime, timedelta
 from psycopg2 import connect
 
 window_time = float(os.environ["CONSUMER_WINDOW_TIME_MS"])
 
-# connection = connect('')
-# connection.autocommit = True
-# cursor = connection.cursor()
+connection = connect("")
+connection.autocommit = True
+cursor = connection.cursor()
 
 history = {}
 
 
-def save_aggregate(event):
+def parse_date(event):
+    """returns the datetime of the event"""
+    return datetime.fromisoformat(event["date"])
+
+
+def save_aggregate(ticker, stream):
     """creates an aggregate row for the stock"""
-    print(f"aggregate update: {event}")
+    print(f"saving aggregate for: {ticker}, num price changes: {len(stream)}")
+    prices = list(map(lambda x: x["price"], stream))
+    query = (
+        "INSERT INTO price_aggregate (ticker, start_date, end_date, open_price, close_price, max_price, min_price)"
+        "VALUES (%s,%s,%s,%s,%s,%s,%s);"
+    )
+    args = [
+        ticker,
+        stream[0]["date"],
+        stream[-1]["date"],
+        stream[0]["price"],
+        stream[-1]["price"],
+        max(prices),
+        min(prices),
+    ]
+    cursor.execute(query, args)
 
 
 def aggregate_price_change(event):
@@ -23,12 +47,12 @@ def aggregate_price_change(event):
         print("could not parse message: {}".format(event))
         return
 
-    if event["ticker"] not in history:
-        print(f"put: {event['ticker']}")
-        history[event["ticker"]] = datetime.fromisoformat(event["date"])
-        return
-
-    delta = datetime.fromisoformat(event["date"]) - history[event["ticker"]]
-    if delta.total_seconds() * 1000 > window_time:
-        save_aggregate(event)
-        history[event["ticker"]] = datetime.fromisoformat(event["date"])
+    if event["ticker"] in history:
+        stream = history[event["ticker"]]
+        stream.append(event)
+        delta = parse_date(event) - parse_date(stream[0])
+        if delta.total_seconds() * 1000 > window_time:
+            save_aggregate(event["ticker"], stream)
+            history[event["ticker"]] = []
+    else:
+        history[event["ticker"]] = [event]
