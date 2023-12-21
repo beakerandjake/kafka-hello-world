@@ -6,8 +6,10 @@ import json
 import confluent_kafka
 import stock_price
 
+
 def shutdown(signal, frame):
     sys.exit()
+
 
 if __name__ == "__main__":
     signal.signal(signal.SIGTERM, shutdown)
@@ -19,5 +21,5 @@ if __name__ == "__main__":
         changes = stock_price.get_price_changes()
         for change in changes:
             print('producing: {} to topic: {}'.format(change, topic))
-            producer.produce(topic, key=change[0], value=json.dumps(change))
+            producer.produce(topic, key=change['ticker'], value=json.dumps(change))
             time.sleep(delay)
