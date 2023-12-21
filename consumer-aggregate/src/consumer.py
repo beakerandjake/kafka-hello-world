@@ -3,7 +3,7 @@ import os
 import json
 import sys
 from confluent_kafka import Consumer
-from save_price_change import save_price_change
+from aggregate_price_change import aggregate_price_change
 
 # no need to gracefully exit for demo, just quit.
 signal.signal(signal.SIGTERM, lambda a, b: sys.exit())
@@ -27,6 +27,6 @@ try:
 
         value = json.loads(message.value().decode('utf-8'))
         print('consumed message: {}'.format(value))
-        save_price_change(value)
+        aggregate_price_change(value)
 finally:
     consumer.close()
