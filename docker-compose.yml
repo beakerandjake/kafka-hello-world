@@ -17,9 +17,9 @@ services:
         condition: service_healthy
       postgres:
         condition: service_healthy
-  consumer:
-    build: consumer
-    container_name: consumer
+  consumer-realtime:
+    build: consumer-realtime
+    container_name: consumer-realtime
     environment:
       - CONSUMER_TOPIC=stock_price_changes
       - CONSUMER_GROUP_ID=stock_price_realtime
