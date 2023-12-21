@@ -1,7 +1,7 @@
 CREATE TABLE price_changes (
     ticker TEXT NOT NULL,
     price DECIMAL(12,2) NOT NULL,
-    change_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    event_date TIMESTAMP NOT NULL
 );
 
 CREATE TABLE stocks (

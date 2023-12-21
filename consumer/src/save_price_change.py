@@ -7,4 +7,4 @@ cursor = connection.cursor()
 # save the price event to the database
 def save_price_change(event):
     print('saving price change: {}'.format(event))
-    cursor.execute("INSERT INTO price_changes (ticker, price) VALUES (%s, %s)", tuple(event))
+    cursor.execute("INSERT INTO price_changes (ticker, price, event_date) VALUES (%s, %s, %s)", tuple(event))

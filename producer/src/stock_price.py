@@ -1,3 +1,4 @@
+import datetime
 import random
 import psycopg2
 
@@ -23,8 +24,15 @@ def _get_new_price(stock):
     change_amount = stock['price'] * change_percent;
     return max(0.0, round(stock['price'] + change_amount, 2))
 
+# return an array representing the price change for the stock
+def map_stock(stock):
+    ticker = stock['ticker']
+    price = stock['price']
+    now = datetime.datetime.now(tz=datetime.timezone.utc).isoformat()
+    return [ticker, price, now]
+
 # returns the new prices of the stocks
 def get_price_changes():
     for i, stock in enumerate(stocks):
         stocks[i]['price'] = _get_new_price(stock)
-    return list(map(lambda s: [s['ticker'], s['price']], stocks))
+    return list(map(map_stock, stocks))
