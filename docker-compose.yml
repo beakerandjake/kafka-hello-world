@@ -52,9 +52,9 @@ services:
       - KAFKA_CFG_CONTROLLER_LISTENER_NAMES=CONTROLLER
     healthcheck:
       test: ["CMD", "kafka-topics.sh", "--list", "--bootstrap-server", "localhost:9092"]
-      interval: 1s
-      timeout: 2s
-      retries: 20
+      interval: 5s
+      timeout: 10s
+      retries: 5
   postgres:
     image: postgres:16.1
     container_name: postgres
@@ -73,9 +73,9 @@ services:
       - "5432:5432"
     healthcheck:
       test: ["CMD", "pg_isready", "-U", "postgres"]
-      interval: 1s
-      timeout: 2s
-      retries: 20
+      interval: 5s
+      timeout: 10s
+      retries: 5
 # volumes:
 #   kafka_data:
 #     driver: local
