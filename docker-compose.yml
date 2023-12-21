@@ -40,6 +40,7 @@ services:
     environment:
       - CONSUMER_TOPIC=stock_price_changes
       - CONSUMER_GROUP_ID=stock_price_aggregate
+      - CONSUMER_WINDOW_TIME_MS=5000
       - PGHOST=postgres
       - PGUSER=postgres
       - PGPASSWORD=123456

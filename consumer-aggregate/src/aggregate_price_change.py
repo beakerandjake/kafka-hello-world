@@ -1,11 +1,19 @@
-from datetime import datetime
+import os
+from datetime import datetime, timedelta
 from psycopg2 import connect
+
+window_time = os.environ["CONSUMER_WINDOW_TIME_MS"]
 
 # connection = connect('')
 # connection.autocommit = True
 # cursor = connection.cursor()
 
 history = {}
+
+
+def save_aggregate(event):
+    """creates an aggregate row for the stock"""
+    print(f"aggregate update: {event}")
 
 
 def aggregate_price_change(event):
@@ -16,10 +24,13 @@ def aggregate_price_change(event):
         return
 
     if event["ticker"] not in history:
-        print("put: {}".format(event["ticker"]))
+        print(f"put: {event['ticker']}")
         history[event["ticker"]] = datetime.fromisoformat(event["date"])
         return
-    
-    delta = datetime.fromisoformat(event["date"]) - history[event["ticker"]]
-    print("tick: {}, delta: {}".format(event["ticker"], delta))
 
+    delta = datetime.fromisoformat(event["date"]) - history[event["ticker"]]
+    delta_ms = delta.total_seconds() * 1000
+
+    if delta_ms > window_time:
+        save_aggregate(event)
+        history[event["ticker"]] = datetime.fromisoformat(event["date"])
