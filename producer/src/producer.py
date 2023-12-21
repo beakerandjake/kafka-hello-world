@@ -1,3 +1,6 @@
+"""
+Kafka producer which sends stock price change events
+"""
 import os
 import time
 import signal
@@ -14,12 +17,12 @@ def shutdown(signal, frame):
 if __name__ == "__main__":
     signal.signal(signal.SIGTERM, shutdown)
     delay = float(os.environ.get("PRODUCER_SPEED_MS", "1000")) / 1000.0
-    topic = os.environ['PRODUCER_TOPIC']
+    topic = os.environ["PRODUCER_TOPIC"]
     print("connecting to kafka")
-    producer = confluent_kafka.Producer({"bootstrap.servers": 'kafka:9092'})
+    producer = confluent_kafka.Producer({"bootstrap.servers": "kafka:9092"})
     while True:
         changes = stock_price.get_price_changes()
         for change in changes:
-            print('producing: {} to topic: {}'.format(change, topic))
-            producer.produce(topic, key=change['ticker'], value=json.dumps(change))
+            print("producing: {} to topic: {}".format(change, topic))
+            producer.produce(topic, key=change["ticker"], value=json.dumps(change))
             time.sleep(delay)

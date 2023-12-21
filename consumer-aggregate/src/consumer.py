@@ -1,3 +1,6 @@
+"""
+Kafka consumer which listens to stock price changes and aggregates the price changes
+"""
 import signal
 import os
 import json
