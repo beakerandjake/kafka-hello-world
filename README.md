@@ -21,5 +21,5 @@ docker exec -it postgres psql -U postgres
 
 ## execute dotnet command 
 ```
-docker run --rm -it -v ${pwd}:/app/ -w /app mcr.microsoft.com/dotnet/sdk:8.0 dotnet COMMAND
+docker run --rm -it -v ${pwd}:/app/ -w /app mcr.microsoft.com/dotnet/sdk:8.0 dotnet 
 ```

@@ -14,3 +14,22 @@ services:
       # don't mount so local folder isn't polluted 
       - /app/obj/
       - /app/bin/
+    networks:
+      - postgres_network
+  postgres:
+    image: postgres:16.1
+    container_name: postgres
+    restart: always
+    environment: 
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456
+      # POSTGRES_DB: stocks
+    volumes:
+      - ../database/create.sql:/docker-entrypoint-initdb.d/create.sql
+      - ../database/insert.sql:/docker-entrypoint-initdb.d/insert.sql
+    networks:
+      - postgres_network
+    ports:
+      - "5432:5432"
+networks:
+  postgres_network:
