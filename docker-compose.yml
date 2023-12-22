@@ -52,6 +52,11 @@ services:
         condition: service_healthy
       postgres:
         condition: service_healthy
+  api:
+    build: api
+    container_name: api
+    ports:
+      - "8080:8080"
   kafka:
     image: bitnami/kafka:3.6.1
     container_name: kafka
@@ -101,3 +106,4 @@ services:
 networks:
   kafka_network:
   postgres_network:
+  api_network:
