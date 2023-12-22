@@ -5,9 +5,7 @@ using Microsoft.EntityFrameworkCore;
 public class StockDb : DbContext
 {
     public DbSet<Stock> Stocks { get; set; }
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-     => optionsBuilder.UseNpgsql(@"Host=postgres;Username=postgres;Password=123456;");
+    public StockDb(DbContextOptions<StockDb> options) : base(options) { }
 }
 
 [Table("stocks")]
