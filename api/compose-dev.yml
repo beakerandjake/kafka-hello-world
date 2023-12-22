@@ -5,7 +5,12 @@ services:
       context: .
       dockerfile: Dockerfile.dev
     container_name: api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
     ports:
       - "8080:8080"
     volumes:
       - ./:/app
+      # don't mount so local folder isn't polluted 
+      - /app/obj/
+      - /app/bin/
