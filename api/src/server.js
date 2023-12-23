@@ -1,8 +1,10 @@
+import { fileURLToPath } from "node:url";
+import { dirname, join } from "node:path";
 import Fastify from "fastify";
-import websocketPlugin from "@fastify/websocket";
 import postgresPlugin from "@fastify/postgres";
+import autoload from "@fastify/autoload";
+import ssePlugin from "fastify-sse-v2";
 import traps from "@dnlup/fastify-traps";
-import routes from "./routes.js";
 
 const fastify = Fastify({
   logger: {
@@ -23,8 +25,12 @@ fastify.register(postgresPlugin, {
   user: process.env.API_PG_USER,
   password: process.env.API_PG_PASSWORD,
 });
-fastify.register(websocketPlugin);
-fastify.register(routes);
+fastify.register(ssePlugin);
+
+// register all routes of the api.
+fastify.register(autoload, {
+  dir: join(dirname(fileURLToPath(import.meta.url)), "routes"),
+});
 
 try {
   await fastify.listen({
