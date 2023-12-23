@@ -1,6 +1,8 @@
 const routes = async (fastify) => {
-  fastify.get("/stocks", async (request, response) => {
-    const { rows } = await fastify.pg.query("SELECT COUNT(*) FROM stocks");
+  fastify.get("/stocks", async () => {
+    const { rows } = await fastify.pg.query(
+      "SELECT id, ticker, full_name FROM stocks"
+    );
     return rows;
   });
 };
