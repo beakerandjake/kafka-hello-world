@@ -11,6 +11,12 @@
   "author": "",
   "license": "GPL-3.0",
   "dependencies": {
-    "fastify": "^4.25.1"
+    "@dnlup/fastify-traps": "^3.0.1",
+    "@fastify/postgres": "^5.2.2",
+    "fastify": "^4.25.1",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "pino-pretty": "^10.3.0"
   }
 }
