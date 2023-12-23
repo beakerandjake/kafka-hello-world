@@ -25,21 +25,20 @@ const routes = async (fastify) => {
 
   // pushing price updates to the client via sse.
   fastify.get("/stocks/:ticker/realtime", opts, async (request, reply) => {
-    // can't subscribe to stock which doesn't exist.
     const { ticker } = request.params;
     if (!(await tickerExists(ticker))) {
       return reply.code(404).type("text/html").send("Could not find ticker");
     }
 
+    // emit sse if this price change corresponds to our ticket.
     const handler = (message) => {
-      fastify.log.info(`got message: ${JSON.stringify(message)}`);
-      reply.sse({ data: message });
+      if (message.ticker.toLowerCase() === ticker.toLowerCase()) {
+        reply.sse({ data: JSON.stringify(message) });
+      }
     };
 
-    // listen and broadcast price events while connection is open.
+    // subscribe to price change events while the connection is open.
     fastify.priceChangeEmitter.on("price_change", handler);
-
-    // stop listening to price change events when connection is closed.
     request.socket.on("close", () => {
       fastify.priceChangeEmitter.off("price_change", handler);
     });

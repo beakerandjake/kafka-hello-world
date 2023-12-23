@@ -20,7 +20,9 @@ const fastify = Fastify({
   },
 });
 
-fastify.register(traps, { timeout: 1000 });
+// TODO why server shutdown take long
+
+fastify.register(traps, { timeout: 5000 });
 fastify.register(postgresPlugin, {
   host: process.env.API_PG_HOST,
   port: process.env.API_PG_PORT,
