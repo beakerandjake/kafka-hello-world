@@ -5,6 +5,14 @@ const routes = async (fastify) => {
     );
     return rows;
   });
+
+  fastify.get("/stocks/realtime", { websocket: true }, (connection, req) => {
+    connection.socket.on("message", (message) => {
+      connection.socket.send("hi from server");
+    });
+  });
 };
+
+// look into mqemitter
 
 export default routes;
