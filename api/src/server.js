@@ -6,6 +6,8 @@ import autoload from "@fastify/autoload";
 import ssePlugin from "fastify-sse-v2";
 import traps from "@dnlup/fastify-traps";
 
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
 const fastify = Fastify({
   logger: {
     transport: {
@@ -27,10 +29,9 @@ fastify.register(postgresPlugin, {
 });
 fastify.register(ssePlugin);
 
-// register all routes of the api.
-fastify.register(autoload, {
-  dir: join(dirname(fileURLToPath(import.meta.url)), "routes"),
-});
+// register all custom plugins.
+fastify.register(autoload, { dir: join(__dirname, "plugins") });
+fastify.register(autoload, { dir: join(__dirname, "routes") });
 
 try {
   await fastify.listen({
