@@ -29,7 +29,18 @@ const routes = async (fastify) => {
     if (!(await tickerExists(ticker))) {
       return reply.code(404).type("text/html").send("Could not find ticker");
     }
-    return `OKAY:${request.params.ticker}`;
+    const { default: test } = await import("../plugins/kafkaConsumer.js");
+    
+    test.on("price_change", (message) => {
+      reply.sse({ data: message });
+    });
+
+    request.socket.on("close", () => {
+      fastify.log.info("closed connection!");
+    });
+
+    // return reply to keep connection open.
+    return reply;
   });
 };
 
