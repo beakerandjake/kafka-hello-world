@@ -23,10 +23,10 @@ const plugin = async (fastify, options) => {
     },
   });
 
-  fastify.addHook("onClose", (done) => {
+  fastify.addHook("onClose", async () => {
     fastify.log.info("cleaning up price change emitter");
     emitter.removeAllListeners();
-    done();
+    await consumer.disconnect();
   });
 
   fastify.decorate("priceChangeEmitter", emitter);
