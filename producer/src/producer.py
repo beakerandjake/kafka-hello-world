@@ -25,4 +25,5 @@ if __name__ == "__main__":
         for change in changes:
             print("producing: {} to topic: {}".format(change, topic))
             producer.produce(topic, key=change["ticker"], value=json.dumps(change))
-        time.sleep(delay)
+            # TODO random delay
+            time.sleep(delay)
