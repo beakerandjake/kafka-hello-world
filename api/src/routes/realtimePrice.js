@@ -32,9 +32,7 @@ const routes = async (fastify) => {
 
     // emit sse if this price change corresponds to our ticket.
     const handler = (message) => {
-      if (message.ticker.toLowerCase() === ticker.toLowerCase()) {
         reply.sse({ data: JSON.stringify(message) });
-      }
     };
 
     // subscribe to price change events while the connection is open.
