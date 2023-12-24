@@ -16,6 +16,7 @@ const plugin = async (fastify, { broker, topic }) => {
     retry: { retries: 10 },
   });
   await consumer.connect();
+  // consumes even if no listeners, could sub/unsub based on listener count instead.
   await consumer.subscribe({ topic });
 
   // emit each message received from kafka
