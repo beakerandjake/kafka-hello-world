@@ -60,6 +60,8 @@ services:
       - API_PG_PORT=5432
       - API_PG_USER=postgres
       - API_PG_PASSWORD=123456
+      - API_KAFKA_BROKER=kafka:9092
+      - API_KAFKA_TOPIC=stock_price_changes
       - API_PORT=3000
     ports:
       - "3000:3000"
@@ -88,7 +90,8 @@ services:
       - KAFKA_CFG_CONTROLLER_QUORUM_VOTERS=0@kafka:9093
       - KAFKA_CFG_CONTROLLER_LISTENER_NAMES=CONTROLLER
     healthcheck:
-      test: ["CMD", "kafka-topics.sh", "--list", "--bootstrap-server", "localhost:9092"]
+      # ensure topic is created before marked as ready
+      test: "kafka-topics.sh --create --topic stock_price_changes --bootstrap-server localhost:9092"
       interval: 5s
       timeout: 10s
       retries: 5
@@ -96,7 +99,7 @@ services:
     image: postgres:16.1
     container_name: postgres
     restart: always
-    environment: 
+    environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 123456
       # POSTGRES_DB: stocks
