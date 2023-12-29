@@ -307,6 +307,7 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+dist-ssr/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -470,3 +471,12 @@ pyrightconfig.json
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/python,dotnetcore,aspnetcore,visualstudiocode
+
+# vite
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+logs
