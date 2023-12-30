@@ -5,24 +5,28 @@ const stocks = [
   {
     id: 1,
     ticker: "FUN",
+    name: "Fun Time Cool Company",
     price: 666.69,
     changePercent: -1.32,
   },
   {
     id: 2,
     ticker: "YUM",
+    name: "Yummy Good Food LLC",
     price: 212.48,
     changePercent: 6.69,
   },
   {
     id: 3,
     ticker: "CAT",
+    name: "Cat Corp",
     price: 420.69,
     changePercent: 4.38,
   },
   {
     id: 4,
     ticker: "DOG",
+    name: "Doggy Brands",
     price: 13.98,
     changePercent: -2.39,
   },
