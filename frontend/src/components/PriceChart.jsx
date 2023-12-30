@@ -1,10 +1,11 @@
 import { useState } from "react";
 // import Chart from "react-apexcharts";
 
-import { green, red } from "tailwindcss/colors";
+import { green, red, white, gray } from "tailwindcss/colors";
 import "chart.js/auto";
 import { Chart } from "react-chartjs-2";
 import "chartjs-adapter-date-fns";
+import { format } from "date-fns";
 
 const startDate = new Date(2022, 4, 1, 9, 30);
 const endDate = new Date(2022, 4, 1, 16);
@@ -85,6 +86,19 @@ export const PriceChart = () => {
         intersect: false,
         axis: "x",
         position: "nearest",
+        backgroundColor: white,
+        borderColor: gray[300],
+        titleColor: gray[900],
+        bodyColor: gray[500],
+        borderWidth: 1,
+        displayColors: false,
+        callbacks: {
+          title: ([{ raw }]) => `$${raw.y.toFixed(2)}`,
+          label: ({ raw }) => {
+            console.log("context", format(new Date(raw.x), 'MMM'));
+            return format(new Date(raw.x), 'MMM d, h:mm b')
+          },
+        },
       },
       crosshair: {
         zoom: {
