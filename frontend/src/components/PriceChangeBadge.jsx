@@ -10,7 +10,7 @@ export const PriceChangeBadge = ({ percent }) => {
   return (
     <div
       className={clsx(
-        "flex items-center justify-center gap-1 rounded-lg pl-1 pr-1 text-base/7 font-medium",
+        "inline-flex items-center justify-center gap-1 rounded-lg pl-1 pr-1 text-base/7 font-medium",
         isPositive ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700",
       )}
     >
