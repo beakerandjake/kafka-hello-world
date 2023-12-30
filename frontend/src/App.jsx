@@ -1,6 +1,7 @@
 import { NoStockSelected } from "./components/NoStockSelected";
 import { PageHeading } from "./components/PageHeading";
 import { StockCard } from "./components/StockCard";
+import { StockDetail } from "./components/StockDetail";
 
 const stocks = [
   {
@@ -49,7 +50,8 @@ function App() {
             ))}
           </div>
           <div className="mt-5">
-            <NoStockSelected />
+            {/* <NoStockSelected /> */}
+            <StockDetail {...stocks[0]} />
           </div>
         </div>
       </main>
