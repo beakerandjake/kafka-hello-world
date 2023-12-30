@@ -1,6 +1,6 @@
+import { NoStockSelected } from "./components/NoStockSelected";
 import { PageHeading } from "./components/PageHeading";
 import { StockCard } from "./components/StockCard";
-import { StockSearch } from "./components/StockSearch";
 
 const stocks = [
   {
@@ -48,7 +48,9 @@ function App() {
               />
             ))}
           </div>
-          <StockSearch stocks={stocks} />
+          <div className="mt-5">
+            <NoStockSelected />
+          </div>
         </div>
       </main>
     </div>
