@@ -4,7 +4,7 @@ import Chart from "react-apexcharts";
 const generateData = () => {
   const data = [];
   let price = 43.29;
-  const startDate = new Date(2022, 4, 1);
+  const startDate = new Date(2022, 4, 1, 9, 30);
   for (let i = 0; i < 390; i++) {
     const positive = Math.random() > 0.5;
     const amount = Math.random() * 10 * (positive ? 1 : -1);
@@ -22,7 +22,7 @@ export const PriceChart = () => {
   const [options, setOptions] = useState({
     chart: {
       animations: {
-        enabled: false
+        enabled: false,
       },
       zoom: {
         enabled: false,
@@ -31,26 +31,25 @@ export const PriceChart = () => {
         show: false,
       },
     },
-    stroke:{
-      width: 1.5
+    stroke: {
+      width: 1.5,
     },
     xaxis: {
       type: "datetime",
       labels: {
-        // formatter: (value, timestamp) => {
-        //   return "cool guy!";
-        // },
-        dateTimeFormatter: {
-          year: "yyyy",
-          month: "MMM 'yy",
-          day: "dd MMM",
-          hour: "HH:mm",
+        formatter: (value, timestamp) => {
+          return new Date(timestamp).toLocaleString("en-us", {
+            hour: "numeric",
+            hour12: true,
+          });
         },
       },
     },
     yaxis: {
       labels: {
-        formatter: (value) => value,
+        formatter: (value) => {
+          return value;
+        },
       },
     },
     stoke: {
