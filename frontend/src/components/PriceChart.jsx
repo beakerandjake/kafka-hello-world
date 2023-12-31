@@ -5,11 +5,8 @@ import { green, slate, red, white, gray } from "tailwindcss/colors";
 import "chart.js/auto";
 import { Chart } from "react-chartjs-2";
 import "chartjs-adapter-date-fns";
-import { format, addMinutes } from "date-fns";
+import { format, addMinutes, set } from "date-fns";
 import { useDarkMode } from "../hooks/useDarkMode";
-
-const startDate = new Date(2022, 4, 1, 9, 30);
-const endDate = new Date(2022, 4, 1, 16);
 
 const priceChange = (timestamp, price) => {
   const nextDate = addMinutes(new Date(timestamp), 2);
@@ -25,7 +22,7 @@ const priceChange = (timestamp, price) => {
 const generateData = () => {
   const data = [];
   let price = 43.29;
-  let timestamp = startDate.getTime();
+  let timestamp = set(new Date(), { hours: 9, minutes: 30 }).getTime();
   let amount = 145; // 390
   for (let i = 0; i < amount; i++) {
     const change = priceChange(timestamp, price);
@@ -64,7 +61,7 @@ const getChartConfig = (isDarkMode, changePercent) => ({
       displayColors: false,
       callbacks: {
         title: ([{ raw }]) => `$${raw.y.toFixed(2)}`,
-        label: ({ raw }) => format(new Date(raw.x), "MMM d, h:mm b"),
+        label: ({ raw }) => format(new Date(raw.x), "MMM d, h:mm a"),
       },
     },
     crosshair: {
@@ -81,8 +78,8 @@ const getChartConfig = (isDarkMode, changePercent) => ({
       time: {
         unit: "hour",
       },
-      min: startDate.getTime(),
-      max: endDate.getTime(),
+      min: set(new Date(), { hours: 9, minutes: 30 }).getTime(),
+      max: set(new Date(), { hours: 16 }).getTime(),
       grid: {
         color: isDarkMode ? slate[700] : gray[300],
       },
