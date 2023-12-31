@@ -1,9 +1,20 @@
-import "chart.js/auto";
 import "chartjs-adapter-date-fns";
 import { format, set } from "date-fns";
-import { Chart } from "react-chartjs-2";
+import { Line } from "react-chartjs-2";
 import { gray, green, red, slate, white } from "tailwindcss/colors";
 import { useDarkMode } from "../hooks/useDarkMode";
+
+// import exactly what is needed from chart.js to reduce bundle size.
+import {
+  Chart as ChartJS,
+  Tooltip,
+  LinearScale,
+  TimeScale,
+  PointElement,
+  LineElement,
+  Filler,
+} from "chart.js";
+ChartJS.register(LinearScale, TimeScale, PointElement, LineElement, Tooltip, Filler);
 
 /**
  * Returns a config object for the chart.js line chart which renders the stock price.
@@ -37,11 +48,6 @@ const getChartConfig = (isDarkMode, changePercent) => ({
       callbacks: {
         title: ([{ raw }]) => `$${raw.y.toFixed(2)}`,
         label: ({ raw }) => format(new Date(raw.x), "MMM d, h:mm a"),
-      },
-    },
-    crosshair: {
-      zoom: {
-        enabled: false,
       },
     },
   },
@@ -95,8 +101,7 @@ export const PriceChart = ({ priceData, changePercent }) => {
   return (
     <div className="flex flex-col gap-2 px-2">
       <div className="md:min-h-52">
-        <Chart
-          type="line"
+        <Line
           options={getChartConfig(isDarkMode, changePercent)}
           data={data}
           updateMode="none"
