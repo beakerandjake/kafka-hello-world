@@ -83,6 +83,20 @@ const getChartConfig = (isDarkMode, changePercent) => ({
       },
       min: startDate.getTime(),
       max: endDate.getTime(),
+      grid: {
+        color: isDarkMode ? slate[700] : gray[300],
+      },
+      ticks: {
+        color: isDarkMode ? slate[400] : gray[500],
+      },
+    },
+    y: {
+      grid: {
+        color: isDarkMode ? slate[700] : gray[300],
+      },
+      ticks: {
+        color: isDarkMode ? slate[400] : gray[500],
+      },
     },
   },
 });
