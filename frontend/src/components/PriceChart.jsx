@@ -5,66 +5,35 @@ import { green, red, white, gray } from "tailwindcss/colors";
 import "chart.js/auto";
 import { Chart } from "react-chartjs-2";
 import "chartjs-adapter-date-fns";
-import { format } from "date-fns";
+import { format, addMinutes } from "date-fns";
 
 const startDate = new Date(2022, 4, 1, 9, 30);
 const endDate = new Date(2022, 4, 1, 16);
 
+const priceChange = (timestamp, price) => {
+  const nextDate = addMinutes(new Date(timestamp), 1);
+  const positive = Math.random() > 0.5;
+  const amount = Math.random() * 10 * (positive ? 1 : -1);
+  const newPrice = Math.max(0, price + amount);
+  return {
+    x: nextDate.getTime(),
+    y: newPrice,
+  };
+};
+
 const generateData = () => {
   const data = [];
   let price = 43.29;
-  // for (let i = 0; i < 390; i++) {
-  for (let i = 0; i < 145; i++) {
-    const positive = Math.random() > 0.5;
-    const amount = Math.random() * 10 * (positive ? 1 : -1);
-    price = Math.max(0, price + amount);
-    data.push({
-      x: new Date(startDate.getTime() + (i + 1) * 60000).getTime(),
-      y: price,
-    });
+  let timestamp = startDate.getTime();
+  let amount = 145; // 390
+  for (let i = 0; i < amount; i++) {
+    const change = priceChange(timestamp, price);
+    timestamp = change.x;
+    price = change.y;
+    data.push(change);
   }
-  console.log(data);
   return data;
 };
-
-// const [options, setOptions] = useState({
-//   chart: {
-//     animations: {
-//       enabled: false,
-//     },
-//     zoom: {
-//       enabled: false,
-//     },
-//     toolbar: {
-//       show: false,
-//     },
-//   },
-//   stroke: {
-//     width: 1.5,
-//   },
-//   xaxis: {
-//     type: "datetime",
-//     labels: {
-//       formatter: (value, timestamp) => {
-//         return new Date(timestamp).toLocaleString("en-us", {
-//           hour: "numeric",
-//           hour12: true,
-//         });
-//       },
-//     },
-//   },
-//   yaxis: {
-//     labels: {
-//       formatter: (value) => {
-//         return value;
-//       },
-//     },
-//   },
-//   stoke: {
-//     width: 1,
-//   },
-// });
-// const [series, setSeries] = useState([{ name: "test", data: generateData() }]);
 
 export const PriceChart = () => {
   const [options] = useState({
@@ -94,10 +63,7 @@ export const PriceChart = () => {
         displayColors: false,
         callbacks: {
           title: ([{ raw }]) => `$${raw.y.toFixed(2)}`,
-          label: ({ raw }) => {
-            console.log("context", format(new Date(raw.x), 'MMM'));
-            return format(new Date(raw.x), 'MMM d, h:mm b')
-          },
+          label: ({ raw }) => format(new Date(raw.x), "MMM d, h:mm b"),
         },
       },
       crosshair: {
@@ -118,8 +84,9 @@ export const PriceChart = () => {
         max: endDate.getTime(),
       },
     },
+    animation: false,
   });
-  const [data] = useState({
+  const [data, setData] = useState({
     datasets: [
       {
         data: generateData(),
@@ -128,9 +95,22 @@ export const PriceChart = () => {
     labels: ["January", "February", "March", "April"],
   });
 
+  const addNewTime = () => {
+    const { x: timestamp, y: price } = data.datasets[0].data.at(-1);
+    const next = priceChange(timestamp, price);
+    const newData = { data: [...data.datasets[0].data, next] };
+    setData({ ...data, datasets: [newData] });
+  };
+
   return (
-    <div className="h-full w-full px-2 md:min-h-52">
-      <Chart type="line" options={options} data={data} />
+    <div className="flex flex-col gap-2 px-2">
+      <div className="md:min-h-52">
+        <Chart type="line" options={options} data={data} />
+      </div>
+      <span className="text-xs font-light text-gray-500 dark:text-slate-400 text-right">
+        Chart is updated every minute
+      </span>
+      {/* <button onClick={() => addNewTime()}>CLICK</button> */}
     </div>
   );
 };

@@ -9,7 +9,7 @@ export const StockDetail = ({ ticker, name, price, changePercent }) => {
         <h1 className="text-xl font-medium leading-6 text-gray-900">{name}</h1>
       </div>
       {/* Body */}
-      <div className="px-4 py-5 sm:p-6">
+      <div className="flex flex-col gap-2 px-4 py-5 sm:p-6">
         <div className="flex gap-3">
           <h3 className="text-2xl font-semibold">${price}</h3>
           <PriceChangeBadge percent={changePercent} />
