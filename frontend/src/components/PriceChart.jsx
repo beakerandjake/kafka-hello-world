@@ -12,7 +12,7 @@ const startDate = new Date(2022, 4, 1, 9, 30);
 const endDate = new Date(2022, 4, 1, 16);
 
 const priceChange = (timestamp, price) => {
-  const nextDate = addMinutes(new Date(timestamp), 1);
+  const nextDate = addMinutes(new Date(timestamp), 2);
   const positive = Math.random() > 0.5;
   const amount = Math.random() * 10 * (positive ? 1 : -1);
   const newPrice = Math.max(0, price + amount);
@@ -43,8 +43,8 @@ const getChartConfig = (isDarkMode, changePercent) => ({
       radius: 0,
     },
     line: {
-      borderWidth: 1,
-      borderColor: changePercent >= 0 ? green[400] : red[400],
+      borderWidth: 2,
+      borderColor: changePercent >= 0 ? green[500] : red[500],
     },
   },
   plugins: {
@@ -91,7 +91,13 @@ export const PriceChart = ({ changePercent }) => {
   const [data, setData] = useState({
     datasets: [
       {
+        label: "price",
         data: generateData(),
+        fill: {
+          target: "origin",
+          above:
+            changePercent >= 0 ? "rgba(21, 128, 61, 0.2)" : "rgba(185, 28, 28, 0.2)", // Area will be red above the origin
+        },
       },
     ],
   });
@@ -115,7 +121,7 @@ export const PriceChart = ({ changePercent }) => {
         />
       </div>
       <span className="text-right text-xs font-light text-gray-500 dark:text-slate-400">
-        Chart is updated every minute
+        Chart is updated every two minutes
       </span>
       <button onClick={() => addNewTime()}>CLICK</button>
     </div>
