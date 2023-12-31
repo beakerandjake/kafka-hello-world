@@ -1,38 +1,13 @@
-import { useState } from "react";
-// import Chart from "react-apexcharts";
-
-import { green, slate, red, white, gray } from "tailwindcss/colors";
 import "chart.js/auto";
-import { Chart } from "react-chartjs-2";
 import "chartjs-adapter-date-fns";
-import { format, addMinutes, set } from "date-fns";
+import { format, set } from "date-fns";
+import { Chart } from "react-chartjs-2";
+import { gray, green, red, slate, white } from "tailwindcss/colors";
 import { useDarkMode } from "../hooks/useDarkMode";
 
-const priceChange = (timestamp, price) => {
-  const nextDate = addMinutes(new Date(timestamp), 2);
-  const positive = Math.random() > 0.5;
-  const amount = Math.random() * 10 * (positive ? 1 : -1);
-  const newPrice = Math.max(0, price + amount);
-  return {
-    x: nextDate.getTime(),
-    y: newPrice,
-  };
-};
-
-const generateData = () => {
-  const data = [];
-  let price = 43.29;
-  let timestamp = set(new Date(), { hours: 9, minutes: 30 }).getTime();
-  let amount = 145; // 390
-  for (let i = 0; i < amount; i++) {
-    const change = priceChange(timestamp, price);
-    timestamp = change.x;
-    price = change.y;
-    data.push(change);
-  }
-  return data;
-};
-
+/**
+ * Returns a config object for the chart.js line chart which renders the stock price.
+ */
 const getChartConfig = (isDarkMode, changePercent) => ({
   elements: {
     point: {
@@ -98,27 +73,23 @@ const getChartConfig = (isDarkMode, changePercent) => ({
   },
 });
 
-export const PriceChart = ({ changePercent }) => {
-  const [data, setData] = useState({
+/**
+ * Renders the price data for a single day of trading in a line chart.
+ */
+export const PriceChart = ({ priceData, changePercent }) => {
+  const isDarkMode = useDarkMode();
+  const data = {
     datasets: [
       {
         label: "price",
-        data: generateData(),
+        data: priceData,
         fill: {
           target: "origin",
           above:
-            changePercent >= 0 ? "rgba(21, 128, 61, 0.2)" : "rgba(185, 28, 28, 0.2)", // Area will be red above the origin
+            changePercent >= 0 ? "rgba(21, 128, 61, 0.2)" : "rgba(185, 28, 28, 0.2)",
         },
       },
     ],
-  });
-  const isDarkMode = useDarkMode();
-
-  const addNewTime = () => {
-    const { x: timestamp, y: price } = data.datasets[0].data.at(-1);
-    const next = priceChange(timestamp, price);
-    const newData = { data: [...data.datasets[0].data, next] };
-    setData({ ...data, datasets: [newData] });
   };
 
   return (
@@ -134,7 +105,6 @@ export const PriceChart = ({ changePercent }) => {
       <span className="text-right text-xs font-light text-gray-500 dark:text-slate-400">
         Chart is updated every two minutes
       </span>
-      <button onClick={() => addNewTime()}>CLICK</button>
     </div>
   );
 };
