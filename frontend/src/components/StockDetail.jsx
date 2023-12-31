@@ -16,7 +16,7 @@ export const StockDetail = ({ ticker, name, price, changePercent }) => {
           <h3 className="text-2xl font-semibold  dark:text-white">${price}</h3>
           <PriceChangeBadge percent={changePercent} />
         </div>
-        <PriceChart />
+        <PriceChart changePercent={changePercent} />
       </div>
     </div>
   );
