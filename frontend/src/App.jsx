@@ -29,50 +29,24 @@ const generateData = () => {
   return data;
 };
 
-const stocks = [
-  {
-    id: 1,
-    ticker: "FUN",
-    name: "Fun Time Cool Company",
-    price: 666.69,
-    changePercent: -1.32,
-  },
-  {
-    id: 2,
-    ticker: "YUM",
-    name: "Yummy Good Food LLC",
-    price: 212.48,
-    changePercent: 6.69,
-  },
-  {
-    id: 3,
-    ticker: "CAT",
-    name: "Cat Corp",
-    price: 420.69,
-    changePercent: 4.38,
-  },
-  {
-    id: 4,
-    ticker: "DOG",
-    name: "Doggy Brands",
-    price: 13.98,
-    changePercent: -2.39,
-  },
-];
-
 function App() {
+  const [stocks, setStocks] = useState([]);
   const [selectedStockIndex, setSelectedStockIndex] = useState(0);
   const [priceData, setPriceData] = useState(generateData());
 
+  // load stocks
   useEffect(() => {
-    fetch("http://localhost:3000/stocks", { method: "get" })
-      .then((response) => {
-        console.log(response.json());
-      })
-      .catch((error) => {
-        console.error("failed to fetch stocks", error);
-      });
+    const fetchStocks = async () => {
+      const response = await fetch("http://localhost:3000/stocks");
+      const parsed = await response.json();
+      setStocks(parsed);
+    };
+    fetchStocks();
   }, []);
+
+  if (!stocks.length) {
+    return <p>Loading...</p>;
+  }
 
   const onStockSelected = (index) => {
     setPriceData(generateData());
