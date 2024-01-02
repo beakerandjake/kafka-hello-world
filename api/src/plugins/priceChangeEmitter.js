@@ -10,22 +10,15 @@ import Emittery from "emittery";
  */
 const plugin = async (fastify, { broker, topic }) => {
   const emitter = new Emittery();
-  fastify.decorate("priceChangeEmitter", emitter);
 
   const kafka = new Kafka({ clientId: "api", brokers: [broker] });
   const consumer = kafka.consumer({
     groupId: crypto.randomBytes(20).toString("hex"),
-    retry: { retries: 10, restartOnFailure: Promise.resolve(true) },
+    retry: { retries: 10 },
   });
-
-  try {
-    // consumes even if no listeners, could sub/unsub based on listener count instead.
-    await consumer.connect();
-    await consumer.subscribe({ topic });
-  } catch (error) {
-    fastify.log.error("failed to subscribe to kafka", error);
-    return;
-  }
+  await consumer.connect();
+  // consumes even if no listeners, could sub/unsub based on listener count instead.
+  await consumer.subscribe({ topic });
 
   // emit each message received from kafka
   consumer.run({
@@ -41,6 +34,8 @@ const plugin = async (fastify, { broker, topic }) => {
     emitter.clearListeners();
     await consumer.disconnect();
   });
+
+  fastify.decorate("priceChangeEmitter", emitter);
 };
 
 export default fp(plugin, { fastify: "4.x" });
