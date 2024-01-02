@@ -9,7 +9,17 @@ export const stocksReducer = (stocks, action) => {
         ...x,
         percentChange: percentChange(x.openPrice, x.latestPrice),
       }));
+    case "price_change":
+      return stocks.map((x) =>
+        x.ticker.toLowerCase() === action.ticker.toLowerCase()
+          ? {
+              ...x,
+              latestPrice: action.price,
+              percentChange: percentChange(x.openPrice, action.price),
+            }
+          : x,
+      );
     default:
-      throw Error(`Unknown action: ${action}`);
+      throw Error(`Unknown action type: ${action?.type}`);
   }
 };
