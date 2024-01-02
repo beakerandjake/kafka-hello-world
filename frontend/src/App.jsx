@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { PageHeading } from "./components/PageHeading";
 import { StockCard } from "./components/StockCard";
 import { StockDetail } from "./components/StockDetail";
@@ -63,6 +63,16 @@ const stocks = [
 function App() {
   const [selectedStockIndex, setSelectedStockIndex] = useState(0);
   const [priceData, setPriceData] = useState(generateData());
+
+  useEffect(() => {
+    fetch("http://localhost:3000/stocks", { method: "get" })
+      .then((response) => {
+        console.log(response.json());
+      })
+      .catch((error) => {
+        console.error("failed to fetch stocks", error);
+      });
+  }, []);
 
   const onStockSelected = (index) => {
     setPriceData(generateData());
