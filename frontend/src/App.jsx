@@ -1,4 +1,4 @@
-import { NoStockSelected } from "./components/NoStockSelected";
+import { useState } from "react";
 import { PageHeading } from "./components/PageHeading";
 import { StockCard } from "./components/StockCard";
 import { StockDetail } from "./components/StockDetail";
@@ -35,23 +35,24 @@ const stocks = [
 ];
 
 function App() {
+  const [selectedStockIndex, setSelectedStockIndex] = useState(0);
+
   return (
     <div className="min-h-full">
       <PageHeading />
       <main>
         <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
           <div className="flex w-full items-center gap-3  overflow-hidden overflow-x-auto pb-6">
-            {stocks.map((stock) => (
+            {stocks.map((stock, index) => (
               <StockCard
                 key={stock.ticker}
                 {...stock}
-                onClick={() => console.log("clicked on a stock", stock.ticker)}
+                onClick={() => setSelectedStockIndex(index)}
               />
             ))}
           </div>
           <div className="mt-5">
-            {/* <NoStockSelected /> */}
-            <StockDetail {...stocks[0]} />
+            <StockDetail {...stocks[selectedStockIndex]} />
           </div>
         </div>
       </main>
