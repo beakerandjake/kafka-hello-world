@@ -1,5 +1,5 @@
 const percentChange = (openPrice, latestPrice) => {
-  return openPrice / latestPrice;
+  return ((latestPrice - openPrice) / openPrice) * 100;
 };
 
 export const stocksReducer = (stocks, action) => {
