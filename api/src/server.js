@@ -1,6 +1,7 @@
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import Fastify from "fastify";
+import cors from "@fastify/cors";
 import postgresPlugin from "@fastify/postgres";
 import autoload from "@fastify/autoload";
 import ssePlugin from "fastify-sse-v2";
@@ -20,9 +21,8 @@ const fastify = Fastify({
   },
 });
 
-// TODO why server shutdown take long
-
 fastify.register(traps, { timeout: 5000 });
+fastify.register(cors);
 fastify.register(postgresPlugin, {
   host: process.env.API_PG_HOST,
   port: process.env.API_PG_PORT,
