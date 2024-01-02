@@ -2,7 +2,6 @@ import { PriceChangeBadge } from "./PriceChangeBadge";
 import { PriceChart } from "./PriceChart";
 
 export const StockDetail = ({ name, latestPrice, priceData, percentChange }) => {
-  console.log("name", name);
   return (
     <div className="fade-in w-full rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800">
       {/* Header */}
