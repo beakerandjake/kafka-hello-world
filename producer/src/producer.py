@@ -6,6 +6,7 @@ import time
 import signal
 import sys
 import json
+import random
 import confluent_kafka
 import stock_price
 
@@ -22,8 +23,9 @@ if __name__ == "__main__":
     producer = confluent_kafka.Producer({"bootstrap.servers": "kafka:9092"})
     while True:
         changes = stock_price.get_price_changes()
+        random.shuffle(changes)
         for change in changes:
             print("producing: {} to topic: {}".format(change, topic))
             producer.produce(topic, key=change["ticker"], value=json.dumps(change))
             # TODO random delay
-            time.sleep(delay)
+            time.sleep(random.uniform(delay - (delay / 2), delay + (delay / 2)))
