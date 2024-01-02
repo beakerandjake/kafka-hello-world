@@ -7,7 +7,7 @@ const routes = async (fastify) => {
       SELECT 
         id,
         ticker, 
-        full_name as name,
+        full_name,
         price as open_price, 
         (
           SELECT pc.price
@@ -18,7 +18,14 @@ const routes = async (fastify) => {
         ) as latest_price
       FROM stocks as s
     `);
-    return rows;
+
+    return rows.map((x) => ({
+      id: x.id,
+      ticker: x.ticker,
+      name: x.full_name,
+      openPrice: x.latest_price != null ? Number(x.open_price) : null,
+      latestPrice: x.latest_price != null ? Number(x.latest_price) : null,
+    }));
   });
 };
 
