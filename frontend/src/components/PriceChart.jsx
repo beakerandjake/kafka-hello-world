@@ -19,7 +19,7 @@ ChartJS.register(LinearScale, TimeScale, PointElement, LineElement, Tooltip, Fil
 /**
  * Returns a config object for the chart.js line chart which renders the stock price.
  */
-const getChartConfig = (isDarkMode, changePercent) => ({
+const getChartConfig = (isDarkMode, percentChange) => ({
   elements: {
     point: {
       pointStyle: false,
@@ -27,7 +27,7 @@ const getChartConfig = (isDarkMode, changePercent) => ({
     },
     line: {
       borderWidth: 2,
-      borderColor: changePercent >= 0 ? green[500] : red[500],
+      borderColor: percentChange >= 0 ? green[500] : red[500],
     },
   },
   plugins: {
@@ -82,7 +82,7 @@ const getChartConfig = (isDarkMode, changePercent) => ({
 /**
  * Renders the price data for a single day of trading in a line chart.
  */
-export const PriceChart = ({ priceData, changePercent }) => {
+export const PriceChart = ({ priceData, percentChange }) => {
   const isDarkMode = useDarkMode();
   const data = {
     datasets: [
@@ -92,7 +92,7 @@ export const PriceChart = ({ priceData, changePercent }) => {
         fill: {
           target: "origin",
           above:
-            changePercent >= 0 ? "rgba(21, 128, 61, 0.2)" : "rgba(185, 28, 28, 0.2)",
+            percentChange >= 0 ? "rgba(21, 128, 61, 0.2)" : "rgba(185, 28, 28, 0.2)",
         },
       },
     ],
@@ -102,7 +102,7 @@ export const PriceChart = ({ priceData, changePercent }) => {
     <div className="flex flex-col gap-2 px-2">
       <div className="md:min-h-52">
         <Line
-          options={getChartConfig(isDarkMode, changePercent)}
+          options={getChartConfig(isDarkMode, percentChange)}
           data={data}
           updateMode="none"
         />

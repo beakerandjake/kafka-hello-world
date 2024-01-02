@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { PriceChangeBadge } from "./PriceChangeBadge";
 
-export const StockCard = ({ ticker, price, changePercent, isSelected, onClick }) => {
+export const StockCard = ({ ticker, price, percentChange, isSelected, onClick }) => {
   return (
     <div
       className={clsx(
@@ -16,7 +16,7 @@ export const StockCard = ({ ticker, price, changePercent, isSelected, onClick })
         <h5 className="text-sm font-bold dark:text-white">{ticker}</h5>
         <div className="text-sm text-gray-500 dark:text-slate-400">{price}</div>
       </div>
-      <PriceChangeBadge percent={changePercent} />
+      <PriceChangeBadge percentChange={percentChange} />
     </div>
   );
 };

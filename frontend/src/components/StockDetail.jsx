@@ -1,7 +1,8 @@
 import { PriceChangeBadge } from "./PriceChangeBadge";
 import { PriceChart } from "./PriceChart";
 
-export const StockDetail = ({ name, price, priceData, changePercent }) => {
+export const StockDetail = ({ name, latestPrice, priceData, percentChange }) => {
+  console.log("name", name);
   return (
     <div className="fade-in w-full rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800">
       {/* Header */}
@@ -14,14 +15,14 @@ export const StockDetail = ({ name, price, priceData, changePercent }) => {
       <div className="flex flex-col gap-2 px-4 py-5 sm:p-6">
         <div className="flex gap-3">
           <h3
-            key={price}
+            key={latestPrice}
             className="fade-in text-2xl font-semibold  duration-300 dark:text-white"
           >
-            ${price}
+            ${latestPrice}
           </h3>
-          <PriceChangeBadge percent={changePercent} />
+          <PriceChangeBadge percentChange={percentChange} />
         </div>
-        <PriceChart priceData={priceData} changePercent={changePercent} />
+        <PriceChart priceData={priceData} percentChange={percentChange} />
       </div>
     </div>
   );

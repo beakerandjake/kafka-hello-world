@@ -4,9 +4,9 @@ import { clsx } from "clsx";
 /**
  * A badge which displays the current price change percentage.
  */
-export const PriceChangeBadge = ({ percent }) => {
-  const isPositive = percent >= 0;
-  const formatted = Math.abs(percent || 0).toFixed(2);
+export const PriceChangeBadge = ({ percentChange }) => {
+  const isPositive = percentChange >= 0;
+  const formatted = Math.abs(percentChange || 0).toFixed(2);
   return (
     <div
       className={clsx(
@@ -15,7 +15,7 @@ export const PriceChangeBadge = ({ percent }) => {
       )}
     >
       <span className="text-sm">{isPositive ? <FaArrowUp /> : <FaArrowDown />}</span>
-      <span key={percent} className="fade-in">
+      <span key={percentChange} className="fade-in">
         {formatted}%
       </span>
     </div>

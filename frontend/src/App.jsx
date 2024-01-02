@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useReducer } from "react";
 import { PageHeading } from "./components/PageHeading";
 import { StockCard } from "./components/StockCard";
 import { StockDetail } from "./components/StockDetail";
 import { addMinutes, set } from "date-fns";
+import { stocksReducer } from "./reducers/stocksReducer";
 
 const priceChange = (timestamp, price) => {
   const nextDate = addMinutes(new Date(timestamp), 2);
@@ -30,7 +31,7 @@ const generateData = () => {
 };
 
 function App() {
-  const [stocks, setStocks] = useState([]);
+  const [stocks, dispatch] = useReducer(stocksReducer, []);
   const [selectedStockIndex, setSelectedStockIndex] = useState(0);
   const [priceData, setPriceData] = useState(generateData());
 
@@ -38,8 +39,10 @@ function App() {
   useEffect(() => {
     const fetchStocks = async () => {
       const response = await fetch("http://localhost:3000/stocks");
-      const parsed = await response.json();
-      setStocks(parsed);
+      dispatch({
+        type: "loaded",
+        stocks: await response.json(),
+      });
     };
     fetchStocks();
   }, []);
