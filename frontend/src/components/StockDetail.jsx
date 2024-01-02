@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { PriceChangeBadge } from "./PriceChangeBadge";
 import { PriceChart } from "./PriceChart";
 
@@ -14,7 +13,10 @@ export const StockDetail = ({ name, price, priceData, changePercent }) => {
       {/* Body */}
       <div className="flex flex-col gap-2 px-4 py-5 sm:p-6">
         <div className="flex gap-3">
-          <h3 className="text-2xl font-semibold  duration-300 dark:text-white">
+          <h3
+            key={price}
+            className="fade-in text-2xl font-semibold  duration-300 dark:text-white"
+          >
             ${price}
           </h3>
           <PriceChangeBadge percent={changePercent} />
