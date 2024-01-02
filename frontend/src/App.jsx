@@ -2,6 +2,32 @@ import { useState } from "react";
 import { PageHeading } from "./components/PageHeading";
 import { StockCard } from "./components/StockCard";
 import { StockDetail } from "./components/StockDetail";
+import { addMinutes, set } from "date-fns";
+
+const priceChange = (timestamp, price) => {
+  const nextDate = addMinutes(new Date(timestamp), 2);
+  const positive = Math.random() > 0.5;
+  const amount = Math.random() * 10 * (positive ? 1 : -1);
+  const newPrice = Math.max(0, price + amount);
+  return {
+    x: nextDate.getTime(),
+    y: newPrice,
+  };
+};
+
+const generateData = () => {
+  const data = [];
+  let price = 43.29;
+  let timestamp = set(new Date(), { hours: 9, minutes: 30 }).getTime();
+  let amount = 145; // 390
+  for (let i = 0; i < amount; i++) {
+    const change = priceChange(timestamp, price);
+    timestamp = change.x;
+    price = change.y;
+    data.push(change);
+  }
+  return data;
+};
 
 const stocks = [
   {
@@ -36,6 +62,12 @@ const stocks = [
 
 function App() {
   const [selectedStockIndex, setSelectedStockIndex] = useState(0);
+  const [priceData, setPriceData] = useState(generateData());
+
+  const onStockSelected = (index) => {
+    setPriceData(generateData());
+    setSelectedStockIndex(index);
+  };
 
   return (
     <div className="min-h-full">
@@ -47,12 +79,17 @@ function App() {
               <StockCard
                 key={stock.ticker}
                 {...stock}
-                onClick={() => setSelectedStockIndex(index)}
+                isSelected={index === selectedStockIndex}
+                onClick={() => onStockSelected(index)}
               />
             ))}
           </div>
           <div className="mt-5">
-            <StockDetail {...stocks[selectedStockIndex]} />
+            <StockDetail
+              key={selectedStockIndex}
+              {...stocks[selectedStockIndex]}
+              priceData={priceData}
+            />
           </div>
         </div>
       </main>
