@@ -2,7 +2,7 @@
  * Provides real time price updates for the stock.
  */
 const routes = async (fastify) => {
-  fastify.get("/stocks/realtime", opts, async (request, reply) => {
+  fastify.get("/stocks/realtime", async (request, reply) => {
     // emit sse on price change.
     const handler = (message) => {
       reply.sse({ data: JSON.stringify(message) });
