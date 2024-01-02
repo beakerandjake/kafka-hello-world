@@ -7,7 +7,7 @@ const routes = async (fastify) => {
       SELECT 
         id,
         ticker, 
-        full_name,
+        full_name as name,
         price as open_price, 
         (
           SELECT pc.price
