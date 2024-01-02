@@ -30,11 +30,18 @@ const generateData = () => {
 
 export const StockDetail = ({ ticker, name, price, changePercent }) => {
   const [data, setData] = useState(generateData());
+  const [percent, setPercent] = useState(changePercent);
 
   const addNewData = () => {
     const { x: timestamp, y: price } = data.at(-1);
     const next = priceChange(timestamp, price);
     setData([...data, next]);
+  };
+
+  const updatePercent = () => {
+    const newPercent = Math.random() * 5;
+    const direction = Math.random() > 0.5 ? 1 : -1;
+    setPercent(newPercent * direction);
   };
 
   return (
@@ -48,12 +55,12 @@ export const StockDetail = ({ ticker, name, price, changePercent }) => {
       {/* Body */}
       <div className="flex flex-col gap-2 px-4 py-5 sm:p-6">
         <div className="flex gap-3">
-          <h3 className="text-2xl font-semibold  dark:text-white">${price}</h3>
-          <PriceChangeBadge percent={changePercent} />
+          <h3 className="text-2xl font-semibold  dark:text-white duration-300">${price}</h3>
+          <PriceChangeBadge percent={percent} />
         </div>
-        <PriceChart priceData={data} changePercent={changePercent} />
+        <PriceChart priceData={data} changePercent={percent} />
       </div>
-      <button onClick={addNewData}>Click</button>
+      <button onClick={updatePercent}>Click {percent} </button>
     </div>
   );
 };
