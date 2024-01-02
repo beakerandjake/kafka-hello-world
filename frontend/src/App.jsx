@@ -47,7 +47,25 @@ function App() {
     fetchStocks();
   }, []);
 
-  if (!stocks.length) {
+  // sse price change events
+  useEffect(() => {
+    const sse = new EventSource("http://localhost:3000/stocks/realtime");
+
+    sse.onmessage = (event) => {
+      const parsed = JSON.parse(event.data);
+      dispatch({ type: "price_change", ...parsed });
+    };
+
+    sse.onerror = (error) => {
+      console.error("SSE Event Source failed:", error);
+    };
+
+    return () => {
+      sse.close();
+    };
+  }, []);
+
+  if (!stocks?.length) {
     return <p>Loading...</p>;
   }
 
