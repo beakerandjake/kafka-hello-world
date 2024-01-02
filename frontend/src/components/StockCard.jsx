@@ -10,13 +10,7 @@ export const StockCard = ({ ticker, price, changePercent, isSelected, onClick })
           ? "outline outline-2 outline-blue-500 dark:outline-slate-400"
           : "hover:bg-slate-100 dark:hover:bg-slate-700",
       )}
-      onClick={(e) => {
-        if (isSelected) {
-          e.stopPropagation();
-          return;
-        }
-        onClick();
-      }}
+      onClick={() => !isSelected && onClick()}
     >
       <div className="mr-2 flex flex-col">
         <h5 className="text-sm font-bold dark:text-white">{ticker}</h5>
