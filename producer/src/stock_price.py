@@ -30,7 +30,7 @@ def _get_new_price(stock):
     if change_percent > stock["volatility"]:
         change_percent -= 2 * stock["volatility"]
     change_amount = stock["price"] * change_percent
-    return max(0.0, round(stock["price"] + change_amount, 2))
+    return max(1, round(stock["price"] + change_amount, 2))
 
 
 def map_stock(stock):
