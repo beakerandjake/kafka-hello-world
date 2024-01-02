@@ -4,7 +4,7 @@ services:
     build: producer
     container_name: producer
     environment:
-      - PRODUCER_SPEED_MS=1000
+      - PRODUCER_SPEED_MS=10000
       - PRODUCER_TOPIC=stock_price_changes
       - PGHOST=postgres
       - PGUSER=postgres
