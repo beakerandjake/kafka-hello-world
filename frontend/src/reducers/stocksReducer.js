@@ -5,11 +5,13 @@ const percentChange = (openPrice, latestPrice) => {
 export const stocksReducer = (stocks, action) => {
   switch (action.type) {
     case "loaded":
+      console.log("stock loaded", action.stocks);
       return action.stocks.map((x) => ({
         ...x,
-        percentChange: percentChange(x.openPrice, x.latestPrice),
+        percentChange: percentChange(x.openPrice, x.latestPrice || 0),
       }));
     case "price_change":
+      console.log("price change", action);
       return stocks.map((x) =>
         x.ticker.toLowerCase() === action.ticker.toLowerCase()
           ? {
