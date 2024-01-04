@@ -24,7 +24,10 @@ const routes = async (fastify) => {
     `;
     const params = [request.params.ticker];
     const { rows } = await fastify.pg.query(query, params);
-    return rows;
+    return rows.map((x) => ({
+      ...x,
+      price: Number(x.price),
+    }));
   });
 };
 
