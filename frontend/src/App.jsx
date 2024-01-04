@@ -1,12 +1,13 @@
-import { useEffect, useState, useReducer } from "react";
+import { useEffect, useState } from "react";
 import { PageHeading } from "./components/PageHeading";
 import { StockCard } from "./components/StockCard";
 import { StockDetail } from "./components/StockDetail";
 import { addMinutes, set } from "date-fns";
-import { stocksReducer } from "./reducers/stocksReducer";
+import { getStocks, getPriceData } from "./services/stockApi";
 
-// hit localhost when developing locally
-const API_ENDPOINT = import.meta.env.PROD ? "/api" : "http://localhost:3000";
+const calculatePercentChange = (openPrice, latestPrice) => {
+  return ((latestPrice - openPrice) / openPrice) * 100;
+};
 
 const priceChange = (timestamp, price) => {
   const nextDate = addMinutes(new Date(timestamp), 2);
@@ -34,39 +35,44 @@ const generateData = () => {
 };
 
 function App() {
-  const [stocks, dispatch] = useReducer(stocksReducer, []);
+  const [stocks, setStocks] = useState([]);
+  const [prices, setPrices] = useState([]);
   const [selectedStockIndex, setSelectedStockIndex] = useState(0);
   const [priceData, setPriceData] = useState(generateData());
 
-  // load stocks
+  // get basic stock data on init.
   useEffect(() => {
-    const fetchStocks = async () => {
-      const response = await fetch(`${API_ENDPOINT}/stocks`);
-      dispatch({
-        type: "loaded",
-        stocks: await response.json(),
-      });
+    const loadInitialData = async () => {
+      const stocks = await getStocks();
+      const prices = await Promise.all(
+        stocks.map(({ ticker }) => getPriceData(ticker)),
+      );
+      return { stocks, prices };
     };
-    fetchStocks();
+
+    loadInitialData().then(({ stocks, prices }) => {
+      setStocks(stocks);
+      setPrices(prices);
+    });
   }, []);
 
   // sse price change events
-  useEffect(() => {
-    const sse = new EventSource(`${API_ENDPOINT}/stocks/realtime`);
+  // useEffect(() => {
+  //   const sse = new EventSource(`${API_ENDPOINT}/stocks/realtime`);
 
-    sse.onmessage = (event) => {
-      const parsed = JSON.parse(event.data);
-      dispatch({ type: "price_change", ...parsed });
-    };
+  //   sse.onmessage = (event) => {
+  //     const parsed = JSON.parse(event.data);
+  //     dispatch({ type: "price_change", ...parsed });
+  //   };
 
-    sse.onerror = (error) => {
-      console.error("SSE Event Source failed:", error);
-    };
+  //   sse.onerror = (error) => {
+  //     console.error("SSE Event Source failed:", error);
+  //   };
 
-    return () => {
-      sse.close();
-    };
-  }, []);
+  //   return () => {
+  //     sse.close();
+  //   };
+  // }, []);
 
   if (!stocks?.length) {
     return <p>Loading...</p>;
