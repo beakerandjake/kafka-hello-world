@@ -5,6 +5,7 @@ import { StockDetail } from "./components/StockDetail";
 import { addMinutes, set } from "date-fns";
 import { stocksReducer } from "./reducers/stocksReducer";
 
+// hit localhost when developing locally
 const API_ENDPOINT = import.meta.env.PROD ? "/api" : "http://localhost:3000";
 
 const priceChange = (timestamp, price) => {
