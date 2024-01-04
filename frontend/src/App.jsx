@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { PageHeading } from "./components/PageHeading";
-import { StockCard } from "./components/StockCard";
+import { TickerCard } from "./components/TickerCard";
 import { StockDetail } from "./components/StockDetail";
 import { addMinutes, set } from "date-fns";
-import { getStocks, getPriceData } from "./services/stockApi";
+import { getStocks, getPrices } from "./services/stockApi";
+import { TickerBar } from "./components/TickerBar";
 
 const calculatePercentChange = (openPrice, latestPrice) => {
   return ((latestPrice - openPrice) / openPrice) * 100;
@@ -37,6 +38,8 @@ const generateData = () => {
 function App() {
   const [stocks, setStocks] = useState([]);
   const [prices, setPrices] = useState([]);
+  const [selected, setSelected] = useState(null);
+
   const [selectedStockIndex, setSelectedStockIndex] = useState(0);
   const [priceData, setPriceData] = useState(generateData());
 
@@ -44,13 +47,13 @@ function App() {
   useEffect(() => {
     const loadInitialData = async () => {
       const stocks = await getStocks();
-      const prices = await Promise.all(
-        stocks.map(({ ticker }) => getPriceData(ticker)),
-      );
+      const prices = await getPrices(stocks.map(({ ticker }) => ticker));
       return { stocks, prices };
     };
 
     loadInitialData().then(({ stocks, prices }) => {
+      console.log("stocks", stocks);
+      console.log("prices", prices);
       setStocks(stocks);
       setPrices(prices);
     });
@@ -88,16 +91,12 @@ function App() {
       <PageHeading />
       <main>
         <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-          <div className="flex w-full items-center gap-3  overflow-hidden overflow-x-auto pb-6">
-            {stocks.map((stock, index) => (
-              <StockCard
-                key={stock.ticker}
-                {...stock}
-                isSelected={index === selectedStockIndex}
-                onClick={() => onStockSelected(index)}
-              />
-            ))}
-          </div>
+          <TickerBar
+            stocks={stocks}
+            prices={prices}
+            selected={selected}
+            onSelect={setSelected}
+          />
           <div className="mt-5">
             <StockDetail
               key={selectedStockIndex}

@@ -1,12 +1,14 @@
 import { FaArrowUp, FaArrowDown } from "react-icons/fa";
 import { clsx } from "clsx";
+import { calculatePercentChange } from "../util/calculatePercentChange";
 
 /**
- * A badge which displays the current price change percentage.
+ * A badge which displays the change percentage between the open and latest price.
  */
-export const PriceChangeBadge = ({ percentChange }) => {
-  const isPositive = percentChange >= 0;
-  const formatted = Math.abs(percentChange || 0).toFixed(2);
+export const PriceChangeBadge = ({ openPrice, latestPrice }) => {
+  const change = calculatePercentChange(openPrice, latestPrice);
+  const isPositive = change >= 0;
+  const formatted = Math.abs(change).toFixed(2);
   return (
     <div
       className={clsx(
@@ -15,7 +17,7 @@ export const PriceChangeBadge = ({ percentChange }) => {
       )}
     >
       <span className="text-sm">{isPositive ? <FaArrowUp /> : <FaArrowDown />}</span>
-      <span key={percentChange} className="fade-in">
+      <span key={change} className="fade-in">
         {formatted}%
       </span>
     </div>

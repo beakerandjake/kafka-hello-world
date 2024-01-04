@@ -1,7 +1,16 @@
 import clsx from "clsx";
 import { PriceChangeBadge } from "./PriceChangeBadge";
 
-export const StockCard = ({ ticker, price, percentChange, isSelected, onClick }) => {
+/**
+ * Clickable card which shows stock details at a glance.
+ */
+export const TickerCard = ({
+  ticker,
+  openPrice,
+  latestPrice,
+  isSelected,
+  onClick,
+}) => {
   return (
     <div
       className={clsx(
@@ -14,9 +23,11 @@ export const StockCard = ({ ticker, price, percentChange, isSelected, onClick })
     >
       <div className="mr-2 flex flex-col">
         <h5 className="text-sm font-bold dark:text-white">{ticker}</h5>
-        <div className="text-sm text-gray-500 dark:text-slate-400">{price}</div>
+        <div className="text-sm text-gray-500 dark:text-slate-400">
+          {latestPrice}
+        </div>
       </div>
-      <PriceChangeBadge percentChange={percentChange} />
+      <PriceChangeBadge openPrice={openPrice} latestPrice={latestPrice} />
     </div>
   );
 };
