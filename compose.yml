@@ -63,11 +63,10 @@ services:
       - API_KAFKA_BROKER=kafka:9092
       - API_KAFKA_TOPIC=stock_price_changes
       - API_PORT=3000
-    ports:
-      - "3000:3000"
     networks:
       - postgres_network
       - kafka_network
+      - reverse_proxy
     depends_on:
       kafka:
         condition: service_healthy
@@ -81,15 +80,23 @@ services:
   frontend:
     build: frontend
     container_name: frontend
-    ports:
-      - "8080:80"
-    environment:
-      - NGINX_PORT=80
     networks:
-      - api_network
+      - reverse_proxy
     depends_on:
       api:
         condition: service_healthy
+  reverse-proxy:
+    build: reverse-proxy
+    container_name: reverse-proxy
+    ports:
+      - "8080:80"
+    restart: always
+    tty: true
+    networks:
+      - reverse_proxy
+    depends_on:
+      - frontend
+      - api
   kafka:
     image: bitnami/kafka:3.6.1
     container_name: kafka
@@ -134,10 +141,11 @@ services:
       timeout: 10s
       retries: 5
 # volumes:
+#   frontend_build:
 #   kafka_data:
 #     driver: local
 #   # postgres_data:
 networks:
   kafka_network:
   postgres_network:
-  api_network:
+  reverse_proxy:
