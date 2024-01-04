@@ -5,6 +5,8 @@ import { StockDetail } from "./components/StockDetail";
 import { addMinutes, set } from "date-fns";
 import { stocksReducer } from "./reducers/stocksReducer";
 
+const API_ENDPOINT = import.meta.env.PROD ? "/api" : "http://localhost:3000";
+
 const priceChange = (timestamp, price) => {
   const nextDate = addMinutes(new Date(timestamp), 2);
   const positive = Math.random() > 0.5;
@@ -38,7 +40,7 @@ function App() {
   // load stocks
   useEffect(() => {
     const fetchStocks = async () => {
-      const response = await fetch(`/api/stocks`);
+      const response = await fetch(`${API_ENDPOINT}/stocks`);
       dispatch({
         type: "loaded",
         stocks: await response.json(),
@@ -49,7 +51,7 @@ function App() {
 
   // sse price change events
   useEffect(() => {
-    const sse = new EventSource(`/api/stocks/realtime`);
+    const sse = new EventSource(`${API_ENDPOINT}/stocks/realtime`);
 
     sse.onmessage = (event) => {
       const parsed = JSON.parse(event.data);
