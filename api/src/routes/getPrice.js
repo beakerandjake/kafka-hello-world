@@ -16,6 +16,7 @@ const routes = async (fastify) => {
   fastify.get("/stocks/:ticker/price", opts, async (request, reply) => {
     const query = `
       SELECT
+        ticker,
         price as open,
         (
           SELECT pc.price
@@ -35,9 +36,11 @@ const routes = async (fastify) => {
       return reply.code(404).type("text/html").send("ticker not found");
     }
 
+    const [result] = rows;
     return {
-      open: Number(rows[0].open),
-      latest: Number(rows[0].latest),
+      ...result,
+      open: Number(result.open),
+      latest: Number(result.latest),
     };
   });
 };
