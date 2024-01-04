@@ -1,5 +1,5 @@
 // hit localhost when developing locally
-const API_ENDPOINT = import.meta.env.PROD ? "/api" : "http://localhost:3000";
+export const API_ENDPOINT = import.meta.env.PROD ? "/api" : "http://localhost:3000";
 
 /**
  * Returns the latest price data for the stock.
