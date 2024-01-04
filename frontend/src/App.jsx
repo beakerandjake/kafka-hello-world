@@ -1,14 +1,10 @@
 import { useEffect, useState } from "react";
 import { PageHeading } from "./components/PageHeading";
-import { TickerCard } from "./components/TickerCard";
-import { StockDetail } from "./components/StockDetail";
 import { addMinutes, set } from "date-fns";
 import { getStocks, getPrices } from "./services/stockApi";
 import { TickerBar } from "./components/TickerBar";
-
-const calculatePercentChange = (openPrice, latestPrice) => {
-  return ((latestPrice - openPrice) / openPrice) * 100;
-};
+import { StockDetailCard } from "./components/StockDetailCard";
+import { PriceDetail } from "./components/PriceDetail";
 
 const priceChange = (timestamp, price) => {
   const nextDate = addMinutes(new Date(timestamp), 2);
@@ -56,6 +52,7 @@ function App() {
       console.log("prices", prices);
       setStocks(stocks);
       setPrices(prices);
+      setSelected(stocks[0].ticker);
     });
   }, []);
 
@@ -78,32 +75,26 @@ function App() {
   // }, []);
 
   if (!stocks?.length) {
-    return <p>Loading...</p>;
+    return;
   }
 
-  const onStockSelected = (index) => {
-    setPriceData(generateData());
-    setSelectedStockIndex(index);
-  };
+  const stock = stocks.find(({ ticker }) => ticker === selected);
+  const price = prices[stock.ticker];
 
   return (
     <div className="min-h-full">
       <PageHeading />
       <main>
-        <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col gap-5 px-4 py-6 sm:px-6 lg:px-8">
           <TickerBar
             stocks={stocks}
             prices={prices}
             selected={selected}
             onSelect={setSelected}
           />
-          <div className="mt-5">
-            <StockDetail
-              key={selectedStockIndex}
-              {...stocks[selectedStockIndex]}
-              priceData={priceData}
-            />
-          </div>
+          <StockDetailCard name={stock.name}>
+            <PriceDetail openPrice={price.open} latestPrice={price.latest} />
+          </StockDetailCard>
         </div>
       </main>
     </div>
