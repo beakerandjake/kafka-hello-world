@@ -38,7 +38,7 @@ function App() {
   // load stocks
   useEffect(() => {
     const fetchStocks = async () => {
-      const response = await fetch("http://localhost:3000/stocks");
+      const response = await fetch(`/api/stocks`);
       dispatch({
         type: "loaded",
         stocks: await response.json(),
@@ -49,7 +49,7 @@ function App() {
 
   // sse price change events
   useEffect(() => {
-    const sse = new EventSource("http://localhost:3000/stocks/realtime");
+    const sse = new EventSource(`/api/stocks/realtime`);
 
     sse.onmessage = (event) => {
       const parsed = JSON.parse(event.data);
