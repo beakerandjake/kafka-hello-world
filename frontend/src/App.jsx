@@ -5,6 +5,7 @@ import { getStocks, getPrices } from "./services/stockApi";
 import { TickerBar } from "./components/TickerBar";
 import { StockDetailCard } from "./components/StockDetailCard";
 import { PriceDetail } from "./components/PriceDetail";
+import { useRealtimePrices } from "./hooks/useRealtimePrices";
 
 const priceChange = (timestamp, price) => {
   const nextDate = addMinutes(new Date(timestamp), 2);
@@ -33,11 +34,9 @@ const generateData = () => {
 
 function App() {
   const [stocks, setStocks] = useState([]);
-  const [prices, setPrices] = useState([]);
+  const [prices, setPrices] = useState({});
   const [selected, setSelected] = useState(null);
-
-  const [selectedStockIndex, setSelectedStockIndex] = useState(0);
-  const [priceData, setPriceData] = useState(generateData());
+  const priceUpdate = useRealtimePrices();
 
   // get basic stock data on init.
   useEffect(() => {
@@ -56,23 +55,17 @@ function App() {
     });
   }, []);
 
-  // sse price change events
-  // useEffect(() => {
-  //   const sse = new EventSource(`${API_ENDPOINT}/stocks/realtime`);
-
-  //   sse.onmessage = (event) => {
-  //     const parsed = JSON.parse(event.data);
-  //     dispatch({ type: "price_change", ...parsed });
-  //   };
-
-  //   sse.onerror = (error) => {
-  //     console.error("SSE Event Source failed:", error);
-  //   };
-
-  //   return () => {
-  //     sse.close();
-  //   };
-  // }, []);
+  // update prices whenever a realtime change is pushed to us
+  useEffect(() => {
+    if (!priceUpdate) {
+      return;
+    }
+    const { ticker, price } = priceUpdate;
+    setPrices((prev) => ({
+      ...prev,
+      [ticker]: { ...prev[ticker], latest: price },
+    }));
+  }, [priceUpdate]);
 
   if (!stocks?.length) {
     return;
@@ -92,6 +85,7 @@ function App() {
             selected={selected}
             onSelect={setSelected}
           />
+          {JSON.stringify(priceUpdate)}
           <StockDetailCard name={stock.name}>
             <PriceDetail openPrice={price.open} latestPrice={price.latest} />
           </StockDetailCard>
