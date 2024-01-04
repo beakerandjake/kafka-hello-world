@@ -63,6 +63,8 @@ services:
       - API_KAFKA_BROKER=kafka:9092
       - API_KAFKA_TOPIC=stock_price_changes
       - API_PORT=3000
+    ports:
+      - "3000:3000"
     networks:
       - postgres_network
       - kafka_network
@@ -104,8 +106,6 @@ services:
       - kafka_network
     ports:
       - "9092:9092"
-    # volumes:
-    #   - "kafka_data:/bitnami"
     environment:
       - KAFKA_CFG_NODE_ID=0
       - KAFKA_CFG_PROCESS_ROLES=controller,broker
@@ -126,9 +126,7 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 123456
-      # POSTGRES_DB: stocks
     volumes:
-      # - postgres_data:/var/lib/postgresql/data
       - ./database/create.sql:/docker-entrypoint-initdb.d/create.sql
       - ./database/insert.sql:/docker-entrypoint-initdb.d/insert.sql
     networks:
@@ -140,11 +138,6 @@ services:
       interval: 5s
       timeout: 10s
       retries: 5
-# volumes:
-#   frontend_build:
-#   kafka_data:
-#     driver: local
-#   # postgres_data:
 networks:
   kafka_network:
   postgres_network:
