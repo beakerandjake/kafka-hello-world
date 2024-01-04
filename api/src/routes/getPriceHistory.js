@@ -10,7 +10,7 @@ const opts = {
 };
 
 /**
- * Returns the aggregate price data for a stock.
+ * Returns the historical price data for a stock.
  */
 const routes = async (fastify) => {
   fastify.get("/stocks/:ticker/history", opts, async (request) => {
