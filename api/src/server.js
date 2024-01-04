@@ -1,10 +1,11 @@
-import { fileURLToPath } from "node:url";
-import { dirname, join } from "node:path";
 import Fastify from "fastify";
-import postgresPlugin from "@fastify/postgres";
-import autoload from "@fastify/autoload";
-import ssePlugin from "fastify-sse-v2";
 import traps from "@dnlup/fastify-traps";
+import autoload from "@fastify/autoload";
+import cors from "@fastify/cors";
+import postgresPlugin from "@fastify/postgres";
+import ssePlugin from "fastify-sse-v2";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -21,6 +22,7 @@ const fastify = Fastify({
 });
 
 fastify.register(traps, { timeout: 5000 });
+fastify.register(cors);
 fastify.register(postgresPlugin, {
   host: process.env.API_PG_HOST,
   port: process.env.API_PG_PORT,
