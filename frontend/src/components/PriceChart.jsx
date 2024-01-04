@@ -60,7 +60,7 @@ const getChartConfig = (isDarkMode, percentChange) => ({
         unit: "hour",
       },
       min: set(new Date(), { hours: 9, minutes: 30 }).getTime(),
-      max: set(new Date(), { hours: 16 }).getTime(),
+      suggestedMax: set(new Date(), { hours: 16 }).getTime(),
       grid: {
         color: isDarkMode ? slate[700] : gray[300],
       },
