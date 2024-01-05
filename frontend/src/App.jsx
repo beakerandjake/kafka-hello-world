@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { PageHeading } from "./components/PageHeading";
 import { addMinutes, set } from "date-fns";
-import { getStocks, getPrices } from "./services/stockApi";
+import { getStocks, getPrices, getPriceHistory } from "./services/stockApi";
 import { TickerBar } from "./components/TickerBar";
 import { StockDetailCard } from "./components/StockDetailCard";
+import { PriceChart } from "./components/PriceChart";
 import { PriceDetail } from "./components/PriceDetail";
 import { useRealtimePrices } from "./hooks/useRealtimePrices";
 
@@ -35,6 +36,7 @@ const generateData = () => {
 function App() {
   const [stocks, setStocks] = useState([]);
   const [prices, setPrices] = useState({});
+  const [history, setHistory] = useState([]);
   const [selected, setSelected] = useState(null);
   const priceUpdate = useRealtimePrices();
 
@@ -67,6 +69,19 @@ function App() {
     }));
   }, [priceUpdate]);
 
+  // load chart data when stock is selected
+  useEffect(() => {
+    let ignore = false;
+    getPriceHistory(selected).then((result) => {
+      if (!ignore) {
+        setHistory(result);
+      }
+    });
+    return () => {
+      ignore = true;
+    };
+  }, [selected]);
+
   if (!stocks?.length) {
     return;
   }
@@ -85,9 +100,13 @@ function App() {
             selected={selected}
             onSelect={setSelected}
           />
-          {JSON.stringify(priceUpdate)}
           <StockDetailCard name={stock.name}>
             <PriceDetail openPrice={price.open} latestPrice={price.latest} />
+            <PriceChart
+              priceData={history}
+              openPrice={price.open}
+              latestPrice={price.latest}
+            />
           </StockDetailCard>
         </div>
       </main>

@@ -19,7 +19,7 @@ ChartJS.register(LinearScale, TimeScale, PointElement, LineElement, Tooltip, Fil
 /**
  * Returns a config object for the chart.js line chart which renders the stock price.
  */
-const getChartConfig = (isDarkMode, percentChange) => ({
+const getChartConfig = (isDarkMode, positive) => ({
   elements: {
     point: {
       pointStyle: false,
@@ -27,7 +27,7 @@ const getChartConfig = (isDarkMode, percentChange) => ({
     },
     line: {
       borderWidth: 2,
-      borderColor: percentChange >= 0 ? green[500] : red[500],
+      borderColor: positive ? green[500] : red[500],
     },
   },
   plugins: {
@@ -59,8 +59,8 @@ const getChartConfig = (isDarkMode, percentChange) => ({
       time: {
         unit: "hour",
       },
-      min: set(new Date(), { hours: 9, minutes: 30 }).getTime(),
-      suggestedMax: set(new Date(), { hours: 16 }).getTime(),
+      // suggestedMin: set(new Date(), { hours: 9, minutes: 30 }).getTime(),
+      // suggestedMax: set(new Date(), { hours: 16 }).getTime(),
       grid: {
         color: isDarkMode ? slate[700] : gray[300],
       },
@@ -82,7 +82,8 @@ const getChartConfig = (isDarkMode, percentChange) => ({
 /**
  * Renders the price data for a single day of trading in a line chart.
  */
-export const PriceChart = ({ priceData, percentChange }) => {
+export const PriceChart = ({ priceData, openPrice, latestPrice }) => {
+  const positive = openPrice <= latestPrice;
   const isDarkMode = useDarkMode();
   const data = {
     datasets: [
@@ -91,25 +92,15 @@ export const PriceChart = ({ priceData, percentChange }) => {
         data: priceData,
         fill: {
           target: "origin",
-          above:
-            percentChange >= 0 ? "rgba(21, 128, 61, 0.2)" : "rgba(185, 28, 28, 0.2)",
+          above: positive ? "rgba(21, 128, 61, 0.2)" : "rgba(185, 28, 28, 0.2)",
         },
       },
     ],
   };
 
   return (
-    <div className="flex flex-col gap-2 px-2">
-      <div className="md:min-h-52">
-        <Line
-          options={getChartConfig(isDarkMode, percentChange)}
-          data={data}
-          updateMode="none"
-        />
-      </div>
-      <span className="text-right text-xs font-light text-gray-500 dark:text-slate-400">
-        Chart is updated every two minutes
-      </span>
+    <div className="md:min-h-52">
+      <Line options={getChartConfig(isDarkMode, positive)} data={data} />
     </div>
   );
 };
