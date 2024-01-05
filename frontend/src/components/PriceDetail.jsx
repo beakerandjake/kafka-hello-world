@@ -20,7 +20,7 @@ export const PriceDetail = ({ openPrice, latestPrice }) => {
         <h2
           className={clsx(
             "text-lg font-medium transition-colors",
-            positive ? "text-green-700" : "text-red-700",
+            positive ? "text-green-700" : "text-red-700 dark:text-red-500",
           )}
         >
           {positive && "+"}
