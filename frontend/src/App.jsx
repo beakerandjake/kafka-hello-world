@@ -69,6 +69,17 @@ function App() {
     }));
   }, [priceUpdate]);
 
+  useEffect(() => {
+    if (!priceUpdate) {
+      return;
+    }
+
+    if (priceUpdate.ticker === selected) {
+      const data = { x: priceUpdate.date.getTime(), y: priceUpdate.price };
+      setHistory((prev) => [...prev, data]);
+    }
+  }, [priceUpdate, selected]);
+
   // load chart data when stock is selected
   useEffect(() => {
     let ignore = false;

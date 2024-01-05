@@ -79,6 +79,9 @@ const getChartConfig = (isDarkMode, positive) => ({
   },
   animation: {
     colors: { duration: 0 },
+    y: {
+      duration: 100,
+    },
   },
 });
 
