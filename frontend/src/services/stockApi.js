@@ -21,6 +21,15 @@ export const getPrices = async (tickers) => {
 };
 
 /**
+ * Returns historical price data.
+ */
+export const getPriceHistory = async (ticker) => {
+  const response = await fetch(`${API_ENDPOINT}/stocks/${ticker}/history`);
+  const raw = await response.json();
+  return raw.map(({ date, price }) => ({ x: date, y: price }));
+};
+
+/**
  * Returns the available stocks.
  */
 export const getStocks = async () => {

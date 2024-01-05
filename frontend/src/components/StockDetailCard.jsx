@@ -11,7 +11,7 @@ export const StockDetailCard = ({ name, children }) => {
         </h1>
       </div>
       {/* Body */}
-      <div className="flex flex-col gap-2 px-4 py-5 sm:p-6">{children}</div>
+      <div className="flex flex-col gap-4 px-4 py-5 sm:p-6">{children}</div>
     </div>
   );
 };
