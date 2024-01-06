@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { PageHeading } from "./components/PageHeading";
 import { addMinutes, set } from "date-fns";
-import { getStocks, getPrices, getPriceHistory } from "./services/stockApi";
+import { getStocks, getPrices } from "./services/stockApi";
 import { TickerBar } from "./components/TickerBar";
 import { StockDetailCard } from "./components/StockDetailCard";
-import { PriceChart } from "./components/PriceChart";
 import { PriceDetail } from "./components/PriceDetail";
 import { useRealtimePrices } from "./hooks/useRealtimePrices";
+import { PriceChartRaw } from "./components/PriceChartRaw";
 
 const priceChange = (timestamp, price) => {
   const nextDate = addMinutes(new Date(timestamp), 2);
@@ -36,7 +36,6 @@ const generateData = () => {
 function App() {
   const [stocks, setStocks] = useState([]);
   const [prices, setPrices] = useState({});
-  const [history, setHistory] = useState([]);
   const [selected, setSelected] = useState(null);
   const priceUpdate = useRealtimePrices();
 
@@ -57,7 +56,7 @@ function App() {
     });
   }, []);
 
-  // update prices whenever a realtime change is pushed to us
+  // update latest prices whenever a realtime change is pushed to us
   useEffect(() => {
     if (!priceUpdate) {
       return;
@@ -68,30 +67,6 @@ function App() {
       [ticker]: { ...prev[ticker], latest: price },
     }));
   }, [priceUpdate]);
-
-  useEffect(() => {
-    if (!priceUpdate) {
-      return;
-    }
-
-    if (priceUpdate.ticker === selected) {
-      const data = { x: priceUpdate.date.getTime(), y: priceUpdate.price };
-      setHistory((prev) => [...prev, data]);
-    }
-  }, [priceUpdate, selected]);
-
-  // load chart data when stock is selected
-  useEffect(() => {
-    let ignore = false;
-    getPriceHistory(selected).then((result) => {
-      if (!ignore) {
-        setHistory(result);
-      }
-    });
-    return () => {
-      ignore = true;
-    };
-  }, [selected]);
 
   if (!stocks?.length) {
     return;
@@ -113,10 +88,9 @@ function App() {
           />
           <StockDetailCard name={stock.name}>
             <PriceDetail openPrice={price.open} latestPrice={price.latest} />
-            <PriceChart
-              priceData={history}
-              openPrice={price.open}
-              latestPrice={price.latest}
+            <PriceChartRaw
+              ticker={stock.ticker}
+              priceDirection={Math.sign(price.latest - price.open)}
             />
           </StockDetailCard>
         </div>
