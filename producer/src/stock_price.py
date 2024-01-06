@@ -48,16 +48,11 @@ def get_new_price(ticker):
     return new_price
 
 
-# def map_stock(stock):
-#     """return an array representing the price change for the stock"""
-#     ticker = stock["ticker"]
-#     price = stock["price"]
-#     now = datetime.now(tz=timezone.utc).isoformat()
-#     return {"ticker": ticker, "price": price, "date": now}
-
-
-# def get_price_changes():
-#     """returns the new prices of the stocks"""
-#     for i, stock in enumerate(stocks):
-#         stocks[i]["price"] = _simulate_price_change(stock)
-#     return list(map(map_stock, stocks))
+def get_new_prices():
+    """updates the price of all stocks and returns the new prices"""
+    return list(
+        map(
+            lambda ticker: {"ticker": ticker, "price": get_new_price(ticker)},
+            stocks.keys(),
+        )
+    )
