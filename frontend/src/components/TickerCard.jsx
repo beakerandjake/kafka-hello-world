@@ -14,7 +14,7 @@ export const TickerCard = ({
   return (
     <div
       className={clsx(
-        "m-1 w-40 flex cursor-pointer items-center rounded-lg border border-slate-300 bg-white p-2 shadow dark:border-gray-700 dark:bg-gray-800 ",
+        "m-1 flex cursor-pointer items-center rounded-lg border border-slate-300 bg-white p-2 shadow dark:border-gray-700 dark:bg-gray-800 ",
         isSelected
           ? "outline outline-2 outline-blue-500 dark:outline-slate-400"
           : "hover:bg-slate-100 dark:hover:bg-slate-700",
@@ -25,9 +25,9 @@ export const TickerCard = ({
         <h5 className="text-sm font-bold dark:text-white">{ticker}</h5>
         <div
           key={latestPrice}
-          className="fade-in text-sm text-gray-500 dark:text-slate-400"
+          className="fade-in min-w-12 text-sm text-gray-500 dark:text-slate-400"
         >
-          {latestPrice}
+          {latestPrice.toFixed(2)}
         </div>
       </div>
       <PriceChangeBadge openPrice={openPrice} latestPrice={latestPrice} />
