@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { PageHeading } from "./components/PageHeading";
-import { PriceChartRaw } from "./components/PriceChartRaw";
+import { PriceChart } from "./components/PriceChart";
 import { PriceDetail } from "./components/PriceDetail";
 import { StockDetailCard } from "./components/StockDetailCard";
 import { TickerBar } from "./components/TickerBar";
@@ -58,10 +58,9 @@ function App() {
             selected={selected}
             onSelect={setSelected}
           />
-          <div className="text-white">{JSON.stringify(prices)}</div>
           <StockDetailCard name={stock.name}>
             <PriceDetail openPrice={price.open} latestPrice={price.latest} />
-            <PriceChartRaw
+            <PriceChart
               ticker={stock.ticker}
               priceData={price}
               priceDirection={Math.sign(price.latest - price.open)}
