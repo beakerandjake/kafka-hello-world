@@ -73,7 +73,7 @@ def aggregate_price_changes(ticker, price_changes):
                 time_range[0].isoformat(),
                 time_range[1].isoformat(),
                 changes[0]["price"],
-                changes[1]["price"],
+                changes[-1]["price"],
                 max(prices),
                 min(prices),
             )
