@@ -16,22 +16,22 @@ const routes = async (fastify) => {
   fastify.get("/stocks/:ticker/price", opts, async (request, reply) => {
     const query = `
       SELECT
-        ticker,
-        price as open,
-        (
-          SELECT pc.price
+          s.ticker,
+          s.price as open,
+          p.price as latest,
+          p.event_date as timestamp
+      FROM stocks s
+      INNER JOIN (
+          SELECT pc.ticker, pc.price, pc.event_date
           FROM price_changes as pc
-          WHERE pc.ticker = s.ticker
+          WHERE LOWER(pc.ticker) = LOWER($1)
           ORDER BY pc.event_date DESC
           LIMIT 1
-        ) as latest
-      FROM stocks as s 
-      WHERE LOWER(ticker) = LOWER($1)
-      LIMIT 1
+      ) p on (p.ticker = s.ticker)
+      WHERE LOWER(s.ticker) = LOWER($1);
     `;
     const params = [request.params.ticker];
     const { rows } = await fastify.pg.query(query, params);
-
     if (!rows.length) {
       return reply.code(404).type("text/html").send("ticker not found");
     }
