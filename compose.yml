@@ -6,6 +6,7 @@ services:
     environment:
       - PRODUCER_SPEED_MS=1000
       - PRODUCER_TOPIC=stock_price_changes
+      - PRODUCER_SEED_MINUTES=120
       - PGHOST=postgres
       - PGUSER=postgres
       - PGPASSWORD=123456
