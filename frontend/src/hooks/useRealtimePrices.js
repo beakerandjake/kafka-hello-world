@@ -11,9 +11,8 @@ export const useRealtimePrices = () => {
     const sse = new EventSource(`${API_ENDPOINT}/stocks/realtime`);
     // update latest prices whenever server pushes new data.
     sse.onmessage = (event) => {
-      const parsed = JSON.parse(event.data);
-      parsed.date = parseISO(parsed.date);
-      setLatest(parsed);
+      const { date, ...rest } = JSON.parse(event.data);
+      setLatest({ ...rest, date: parseISO(date) });
     };
     return () => {
       sse.close();

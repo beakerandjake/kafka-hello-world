@@ -61,10 +61,10 @@ function App() {
     if (!priceUpdate) {
       return;
     }
-    const { ticker, price } = priceUpdate;
+    const { ticker, date, price } = priceUpdate;
     setPrices((prev) => ({
       ...prev,
-      [ticker]: { ...prev[ticker], latest: price },
+      [ticker]: { ...prev[ticker], latest: price, timestamp: date },
     }));
   }, [priceUpdate]);
 
@@ -86,6 +86,7 @@ function App() {
             selected={selected}
             onSelect={setSelected}
           />
+          <div className="text-white">{JSON.stringify(prices)}</div>
           <StockDetailCard name={stock.name}>
             <PriceDetail openPrice={price.open} latestPrice={price.latest} />
             <PriceChartRaw
