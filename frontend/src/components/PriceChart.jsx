@@ -1,5 +1,5 @@
 import "chartjs-adapter-date-fns";
-import { format, isAfter, isBefore, isSameMinute } from "date-fns";
+import { format, isBefore, isSameMinute } from "date-fns";
 import { useEffect, useRef } from "react";
 import { gray, green, red, slate, white } from "tailwindcss/colors";
 import { useDarkMode } from "../hooks/useDarkMode";
@@ -133,15 +133,15 @@ const updateWithLatestPrice = (
   latestPrice,
   latestTimestamp,
 ) => {
-  const date = new Date(lastDataPoint.x);
+  const lastTimestamp = new Date(lastDataPoint.x);
 
-  if (isBefore(latestTimestamp, date)) {
+  if (isBefore(latestTimestamp, lastTimestamp)) {
     return;
   }
-
-  if (isSameMinute(date, latestTimestamp)) {
+  
+  if (isSameMinute(lastTimestamp, latestTimestamp)) {
     lastDataPoint.y = latestPrice;
-  } else if (isAfter(latestTimestamp, date)) {
+  } else {
     chart.data.datasets[0].data.push({
       x: latestTimestamp.getTime(),
       y: latestPrice,

@@ -5,7 +5,8 @@ const routes = async (fastify) => {
   fastify.get("/stocks/realtime", {}, async (request, reply) => {
     // emit sse on price change.
     const handler = (message) => {
-      reply.sse({ data: JSON.stringify(message) });
+      const { date, ...rest } = message;
+      reply.sse({ data: JSON.stringify({ ...rest, timestamp: date }) });
     };
 
     // subscribe to price change events while the connection is open.

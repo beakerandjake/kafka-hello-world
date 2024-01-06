@@ -33,10 +33,10 @@ function App() {
     if (!priceUpdate) {
       return;
     }
-    const { ticker, date, price } = priceUpdate;
+    const { ticker, timestamp, price } = priceUpdate;
     setPrices((prev) => ({
       ...prev,
-      [ticker]: { ...prev[ticker], latest: price, timestamp: date },
+      [ticker]: { ...prev[ticker], latest: price, timestamp },
     }));
   }, [priceUpdate]);
 

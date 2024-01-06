@@ -16,7 +16,7 @@ const routes = async (fastify) => {
   fastify.get("/stocks/:ticker/history", opts, async (request) => {
     const query = `
       SELECT 
-        end_date as date, 
+        end_date as timestamp, 
         close_price as price
       FROM price_aggregate 
       WHERE LOWER(ticker) = LOWER($1)
