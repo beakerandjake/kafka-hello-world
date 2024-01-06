@@ -98,7 +98,7 @@ def seed():
     end_time = datetime.now(tz=timezone.utc)
     start_time = end_time - timedelta(minutes=minutes_to_seed)
     for ticker in stock_price.get_tickers():
-        print("seeding stock:", ticker)
+        print("seeding stock:", ticker, "from:", start_time, "to:", end_time)
         price_changes = get_price_changes(ticker, start_time, end_time)
         save_price_changes(ticker, price_changes)
         save_price_aggregates(ticker, price_changes)
