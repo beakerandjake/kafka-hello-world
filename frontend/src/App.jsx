@@ -1,37 +1,11 @@
 import { useEffect, useState } from "react";
 import { PageHeading } from "./components/PageHeading";
-import { addMinutes, set } from "date-fns";
-import { getStocks, getPrices } from "./services/stockApi";
-import { TickerBar } from "./components/TickerBar";
-import { StockDetailCard } from "./components/StockDetailCard";
-import { PriceDetail } from "./components/PriceDetail";
-import { useRealtimePrices } from "./hooks/useRealtimePrices";
 import { PriceChartRaw } from "./components/PriceChartRaw";
-
-const priceChange = (timestamp, price) => {
-  const nextDate = addMinutes(new Date(timestamp), 2);
-  const positive = Math.random() > 0.5;
-  const amount = Math.random() * 10 * (positive ? 1 : -1);
-  const newPrice = Math.max(0, price + amount);
-  return {
-    x: nextDate.getTime(),
-    y: newPrice,
-  };
-};
-
-const generateData = () => {
-  const data = [];
-  let price = 43.29;
-  let timestamp = set(new Date(), { hours: 9, minutes: 30 }).getTime();
-  let amount = 145; // 390
-  for (let i = 0; i < amount; i++) {
-    const change = priceChange(timestamp, price);
-    timestamp = change.x;
-    price = change.y;
-    data.push(change);
-  }
-  return data;
-};
+import { PriceDetail } from "./components/PriceDetail";
+import { StockDetailCard } from "./components/StockDetailCard";
+import { TickerBar } from "./components/TickerBar";
+import { useRealtimePrices } from "./hooks/useRealtimePrices";
+import { getPrices, getStocks } from "./services/stockApi";
 
 function App() {
   const [stocks, setStocks] = useState([]);
@@ -48,8 +22,6 @@ function App() {
     };
 
     loadInitialData().then(({ stocks, prices }) => {
-      console.log("stocks", stocks);
-      console.log("prices", prices);
       setStocks(stocks);
       setPrices(prices);
       setSelected(stocks[0].ticker);
@@ -91,6 +63,7 @@ function App() {
             <PriceDetail openPrice={price.open} latestPrice={price.latest} />
             <PriceChartRaw
               ticker={stock.ticker}
+              priceData={price}
               priceDirection={Math.sign(price.latest - price.open)}
             />
           </StockDetailCard>

@@ -1,5 +1,5 @@
 import "chartjs-adapter-date-fns";
-import { format } from "date-fns";
+import { format, isAfter, isBefore, isSameMinute } from "date-fns";
 import { useEffect, useRef } from "react";
 import { gray, green, red, slate, white } from "tailwindcss/colors";
 import { useDarkMode } from "../hooks/useDarkMode";
@@ -35,9 +35,9 @@ const defaultConfig = {
     maintainAspectRatio: false,
     animation: {
       colors: { duration: 100 },
-      // y: {
-      //   duration: 100,
-      // },
+      y: {
+        duration: 350,
+      },
     },
     elements: {
       point: {
@@ -123,9 +123,38 @@ const setChartColor = (chart, isDarkMode) => {
 };
 
 /**
+ * Mutates the chart date with the latest price data.
+ * Updates the last data point if the latest price falls in the same minute.
+ * Adds a new data point if the latest price falls after the last data point.
+ */
+const updateWithLatestPrice = (
+  chart,
+  lastDataPoint,
+  latestPrice,
+  latestTimestamp,
+) => {
+  const date = new Date(lastDataPoint.x);
+
+  if (isBefore(latestTimestamp, date)) {
+    return;
+  }
+
+  if (isSameMinute(date, latestPrice.timestamp)) {
+    lastDataPoint.y = latestPrice.latest;
+  } else if (isAfter(latestPrice.timestamp, date)) {
+    chart.data.datasets[0].data.push({
+      x: latestTimestamp.getTime(),
+      y: latestPrice,
+    });
+  }
+
+  chart.update();
+};
+
+/**
  * Renders the price data of the stock in a line chart.
  */
-export const PriceChartRaw = ({ ticker, priceDirection }) => {
+export const PriceChartRaw = ({ ticker, priceData, priceDirection }) => {
   const canvasRef = useRef();
   const chartRef = useRef();
   const isDarkMode = useDarkMode();
@@ -160,6 +189,22 @@ export const PriceChartRaw = ({ ticker, priceDirection }) => {
   useEffect(() => {
     setChartColor(chartRef.current, isDarkMode);
   }, [isDarkMode]);
+
+  // update the chart data with the latest price changes.
+  useEffect(() => {
+    if (!chartRef.current) {
+      return;
+    }
+    const last = chartRef.current.data.datasets[0].data?.at(-1);
+    if (last) {
+      updateWithLatestPrice(
+        chartRef.current,
+        last,
+        priceData.latest,
+        priceData.timestamp,
+      );
+    }
+  }, [priceData.timestamp, priceData.latest]);
 
   return (
     <div className="md:min-h-52">
