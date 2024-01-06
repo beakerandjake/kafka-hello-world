@@ -9,7 +9,7 @@ from psycopg2.extras import execute_batch
 import stock_price
 from util import randomize_delay
 
-minutes_to_seed = float(os.getenv("PRODUCER_SEED_MINUTES", 5))
+minutes_to_seed = float(os.getenv("PRODUCER_SEED_MINUTES", 0))
 delay_ms = float(os.environ.get("PRODUCER_SPEED_MS", 1000))
 
 print("minutes_to_seed", minutes_to_seed)
@@ -95,6 +95,10 @@ def save_price_aggregates(ticker, price_changes):
 
 def seed():
     """seeds the price_changes and price_aggregate table with "historic" data"""
+    if minutes_to_seed <= 0:
+        print("skipping seed because PRODUCER_SEED_MINUTES <= 0")
+        return
+
     end_time = datetime.now(tz=timezone.utc)
     start_time = end_time - timedelta(minutes=minutes_to_seed)
     for ticker in stock_price.get_tickers():
