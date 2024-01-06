@@ -14,8 +14,8 @@ export const getPrice = async (ticker) => {
  */
 export const getPrices = async (tickers) => {
   const prices = await Promise.all(tickers.map((ticker) => getPrice(ticker)));
-  return prices.reduce((acc, { ticker, open, latest }) => {
-    acc[ticker] = { open, latest };
+  return prices.reduce((acc, { ticker, ...rest }) => {
+    acc[ticker] = rest;
     return acc;
   }, {});
 };
