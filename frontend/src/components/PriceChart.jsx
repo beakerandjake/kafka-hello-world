@@ -139,9 +139,9 @@ const updateWithLatestPrice = (
     return;
   }
 
-  if (isSameMinute(date, latestPrice.timestamp)) {
-    lastDataPoint.y = latestPrice.latest;
-  } else if (isAfter(latestPrice.timestamp, date)) {
+  if (isSameMinute(date, latestTimestamp)) {
+    lastDataPoint.y = latestPrice;
+  } else if (isAfter(latestTimestamp, date)) {
     chart.data.datasets[0].data.push({
       x: latestTimestamp.getTime(),
       y: latestPrice,
