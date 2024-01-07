@@ -19,10 +19,12 @@ connection = psycopg2.connect("")
 connection.autocommit = True
 cursor = connection.cursor()
 
+
 def truncate():
     """truncates the price_changes and price_aggregate tables"""
-    cursor.execute('truncate price_changes')
-    cursor.execute('truncate price_aggregate')
+    cursor.execute("truncate price_changes")
+    cursor.execute("truncate price_aggregate")
+
 
 def get_price_changes(ticker, start_time, end_time):
     """returns a list of price changes from start time to end time"""
@@ -104,7 +106,7 @@ def seed():
     if minutes_to_seed <= 0:
         print("skipping seed because PRODUCER_SEED_MINUTES <= 0")
         return
-    
+
     # reset db on start to ease local development
     truncate()
 

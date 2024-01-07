@@ -20,13 +20,11 @@ consumer.subscribe([os.environ["CONSUMER_TOPIC"]])
 try:
     while True:
         message = consumer.poll(timeout=1.0)
-
         if message is None:
             continue
         if message.error():
             print("error consuming message: {}".format(message.error()))
             continue
-
         value = json.loads(message.value().decode("utf-8"))
         print("consumed message: {}".format(value))
         save_price_change(value)
