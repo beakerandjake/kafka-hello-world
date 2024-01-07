@@ -17,7 +17,7 @@ const routes = async (fastify) => {
     const query = `
       SELECT
           s.ticker,
-          s.price as open,
+          s.open_price as open,
           p.price as latest,
           p.event_date as timestamp
       FROM stocks s

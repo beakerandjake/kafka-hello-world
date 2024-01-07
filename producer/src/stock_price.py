@@ -12,7 +12,7 @@ cursor = connection.cursor()
 
 def load_stocks():
     """returns an dict of stocks, mapping ticker to current price"""
-    cursor.execute("SELECT ticker, price, volatility FROM stocks")
+    cursor.execute("SELECT ticker, open_price, volatility FROM stocks")
     return dict(
         map(
             lambda x: [x[0], {"price": float(x[1]), "volatility": float(x[2])}],

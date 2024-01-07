@@ -1,4 +1,4 @@
-INSERT INTO stocks (ticker, full_name, price, volatility) 
+INSERT INTO stocks (ticker, full_name, open_price, volatility) 
 VALUES 
     ('CATS', 'Sleepy Cat, Inc.', 486.01, 0.04),
     ('DOG', 'Good Dog Corporation', 144.66, 0.05),
