@@ -20,7 +20,7 @@ def shutdown(signal, frame):
 
 def map_message(price_change):
     "maps a price change event to a message which will be published to kafka"
-    return price_change | {"date": datetime.now(tz=timezone.utc).isoformat()}
+    return price_change | {"timestamp": datetime.now(tz=timezone.utc).isoformat()}
 
 
 def produce():

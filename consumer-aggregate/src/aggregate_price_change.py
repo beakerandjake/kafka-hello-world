@@ -15,9 +15,9 @@ cursor = connection.cursor()
 history = {}
 
 
-def parse_date(event):
+def parse_timestamp(event):
     """returns the datetime of the event"""
-    return datetime.fromisoformat(event["date"])
+    return datetime.fromisoformat(event["timestamp"])
 
 
 def save_aggregate(ticker, stream):
@@ -30,8 +30,8 @@ def save_aggregate(ticker, stream):
     )
     args = [
         ticker,
-        stream[0]["date"],
-        stream[-1]["date"],
+        stream[0]["timestamp"],
+        stream[-1]["timestamp"],
         stream[0]["price"],
         stream[-1]["price"],
         max(prices),
@@ -43,14 +43,14 @@ def save_aggregate(ticker, stream):
 def aggregate_price_change(event):
     """aggregates and stores the price change event"""
 
-    if "ticker" not in event or "price" not in event or "date" not in event:
+    if "ticker" not in event or "price" not in event or "timestamp" not in event:
         print("could not parse message: {}".format(event))
         return
 
     if event["ticker"] in history:
         stream = history[event["ticker"]]
         stream.append(event)
-        delta = parse_date(event) - parse_date(stream[0])
+        delta = parse_timestamp(event) - parse_timestamp(stream[0])
         if delta.total_seconds() * 1000 > window_time:
             save_aggregate(event["ticker"], stream)
             history[event["ticker"]] = []
