@@ -39,6 +39,11 @@ def _simulate_price_change(price, volatility):
     return max(1, round(price + change_amount, 2))
 
 
+def get_current_price(ticker):
+    """returns the current price of the stock"""
+    return stocks[ticker]["price"]
+
+
 def get_new_price(ticker):
     """updates the price of the stock and returns the new price"""
     new_price = _simulate_price_change(

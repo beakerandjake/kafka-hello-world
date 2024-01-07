@@ -23,7 +23,9 @@ cursor = connection.cursor()
 def get_price_changes(ticker, start_time, end_time):
     """Returns a list of price changes from start time to end time"""
     current_time = start_time
-    price_changes = []
+    price_changes = [
+        {"price": stock_price.get_current_price(ticker), "timestamp": current_time}
+    ]
     while current_time < end_time:
         current_time = current_time + timedelta(milliseconds=randomize_delay(delay_ms))
         price_changes.append(
