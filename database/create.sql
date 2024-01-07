@@ -19,5 +19,5 @@ CREATE TABLE stocks (
     ticker TEXT NOT NULL,
     full_name TEXT NOT NULL, 
     open_price DECIMAL(12,2) NOT NULL,
-    volatility DECIMAL(3, 2)
+    volatility DECIMAL(5, 4) NOT NULL
 );

@@ -36,7 +36,10 @@ def _simulate_price_change(price, volatility):
     if change_percent > volatility:
         change_percent -= 2 * volatility
     change_amount = price * change_percent
-    return max(1, round(price + change_amount, 2))
+    new_price = price + change_amount
+    if new_price < 5:
+        new_price = price + abs(change_amount)
+    return round(new_price, 2)
 
 
 def get_current_price(ticker):
