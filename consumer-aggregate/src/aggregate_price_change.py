@@ -63,7 +63,7 @@ def save_aggregate(ticker, timestamp):
             MAX(price) OVER () as max_price,
             MIN(price) OVER () as min_price
         FROM price_changes
-        WHERE ticker = 'CATS'
+        WHERE ticker = '%(ticker)s'
             AND event_date >= timestamp %(start)s
             AND event_date < timestamp %(end)s
         WINDOW
