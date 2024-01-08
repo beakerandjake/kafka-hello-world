@@ -8,22 +8,13 @@ from psycopg2 import connect
 
 window_time_seconds = float(os.environ["CONSUMER_WINDOW_TIME_MS"]) / 1000.0
 
+print(f"aggregating every: {window_time_seconds} seconds")
+
 connection = connect("")
 connection.autocommit = True
 cursor = connection.cursor()
 
-
-def initialize():
-    """loads the last price change times for each stock"""
-    cursor.execute("SELECT ticker, MAX(event_date) FROM price_changes GROUP BY ticker")
-    return dict(
-        map(lambda x: (x[0], x[1].replace(tzinfo=timezone.utc)), cursor.fetchall())
-    )
-
-
-cache = initialize()
-
-print("initialized cache", cache)
+cache = {}
 
 
 def parse_timestamp(event):
@@ -39,9 +30,7 @@ def entered_new_window(ticker, timestamp):
 
 def window_start(timestamp):
     """returns the a new datetime representing the inclusive start time of the window"""
-    return datetime.combine(timestamp, time.min).replace(
-        hour=timestamp.hour, minute=timestamp.minute
-    )
+    return timestamp.replace(second=0, microsecond=0)
 
 
 def window_end(start):
@@ -49,9 +38,9 @@ def window_end(start):
     return start + timedelta(seconds=window_time_seconds)
 
 
-def save_aggregate(ticker, timestamp):
+def save_aggregate(ticker):
     """creates an aggregate row for the stock"""
-    start = window_start(timestamp)
+    start = window_start(cache[ticker])
     end = window_end(start)
     print(f"aggregating: {ticker} from: {start} to {end}")
     query = """
@@ -80,11 +69,14 @@ def aggregate_price_change(event):
     if "ticker" not in event or "price" not in event or "timestamp" not in event:
         print("could not parse message: {}".format(event))
         return
-    if event["ticker"] not in cache:
-        print("unknown ticker: {}".format(event["ticker"]))
-        return
     timestamp = parse_timestamp(event)
+    if event["ticker"] not in cache:
+        cache[event["ticker"]] = window_start(timestamp)
+        print(f"cache ticker: {event['ticker']}, {cache[event['ticker']]}")
+        return
     if entered_new_window(event["ticker"], timestamp) is True:
-        save_aggregate(event["ticker"], timestamp)
-        cache[event["ticker"]] = timestamp
-        print("{}: new window end: {}".format(event["ticker"], cache[event["ticker"]]))
+        save_aggregate(event["ticker"])
+        cache[event["ticker"]] = window_start(timestamp)
+        print(
+            "{}: new window start: {}".format(event["ticker"], cache[event["ticker"]])
+        )
