@@ -63,12 +63,12 @@ def save_aggregate(ticker, timestamp):
             MAX(price) OVER () as max_price,
             MIN(price) OVER () as min_price
         FROM price_changes
-        WHERE ticker = '%(ticker)s'
+        WHERE ticker = %(ticker)s
             AND event_date >= timestamp %(start)s
             AND event_date < timestamp %(end)s
         WINDOW
             date_asc AS (ORDER BY event_date ASC),
-            date_desc AS (ORDER BY event_date DESC);
+            date_desc AS (ORDER BY event_date DESC)
     """
     cursor.execute(query, {"ticker": ticker, "start": start, "end": end})
 
