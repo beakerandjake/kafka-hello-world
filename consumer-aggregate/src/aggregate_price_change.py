@@ -23,6 +23,8 @@ def initialize():
 
 cache = initialize()
 
+print("initialized cache", cache)
+
 
 def parse_timestamp(event):
     """returns the datetime of the event"""
@@ -85,3 +87,4 @@ def aggregate_price_change(event):
     if entered_new_window(event["ticker"], timestamp) is True:
         save_aggregate(event["ticker"], timestamp)
         cache[event["ticker"]] = timestamp
+        print("{}: new window end: {}".format(event["ticker"], cache[event["ticker"]]))
