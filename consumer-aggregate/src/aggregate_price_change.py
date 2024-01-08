@@ -77,6 +77,4 @@ def aggregate_price_change(event):
     if entered_new_window(event["ticker"], timestamp) is True:
         save_aggregate(event["ticker"])
         cache[event["ticker"]] = window_start(timestamp)
-        print(
-            "{}: new window start: {}".format(event["ticker"], cache[event["ticker"]])
-        )
+        print(f"{event['ticker']}: new start time: {cache[event['ticker']]}")
