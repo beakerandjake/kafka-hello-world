@@ -12,9 +12,9 @@ VALUES
 DO $$
 DECLARE price_start_time TIMESTAMP;
 BEGIN
-    -- start the price_aggregate rows from 180 minutes in the past. 
+    -- start the price_aggregate rows in the past. 
     price_start_time = date_trunc('second', NOW() - INTERVAL '180 minute');
-
+    RAISE NOTICE 'price start time: %', price_start_time;
     -- contains aggregate rows for each ticker for each minute between now and (now - 180) 
     WITH aggregates (row_num, ticker, open_price, close_price, max_price, min_price) AS (
         VALUES
