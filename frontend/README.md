@@ -1,8 +1,15 @@
-# React + Vite
+# frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Allows you to view historical price data of the stocks as well as realtime price information. 
 
-Currently, two official plugins are available:
+## Usage
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This application depends on the api container, and is intended to be ran through docker compose.
+
+At the root of the repo run:
+
+```
+docker compose up
+```
+
+After all containers have started, navigate to `http://localhost:8080` in your browser.
