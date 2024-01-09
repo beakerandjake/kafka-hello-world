@@ -30,7 +30,7 @@ docker exec -it kafka kafka-console-consumer.sh --bootstrap-server localhost:909
 
 The producer can be configured via environment variables set in the `compose.yml` file.
 
-- `PRODUCER_SPEED_MS` - General amount of time to wait between publishing events (actual time is randomized from this value).
+- `PRODUCER_SPEED_MS` - General amount of time (in milliseconds) to wait between publishing events (actual time is randomized).
 - `PRODUCER_TOPIC` - The kafka topic to publish messages to.
 - `PGHOST` - The name of the postgres host to connect to.
 - `PGUSER` - The username to connect to postgres as.
