@@ -97,8 +97,10 @@ services:
     networks:
       - reverse_proxy
     depends_on:
-      - frontend
-      - api
+      frontend:
+        condition: service_started
+      api:
+        condition: service_healthy
   kafka:
     image: bitnami/kafka:3.6.1
     container_name: kafka
