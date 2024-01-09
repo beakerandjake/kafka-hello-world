@@ -2,6 +2,11 @@
 
 A kafka producer which continually publishes stock price changes to the **stock_price_changes** topic.
 
+## Built With
+
+* `confluent_kafka` is used to produce messages to kafka.
+* `psycopg2` is used to query postgres.
+
 ## Usage
 
 This application depends on the kafka and postgres containers existing, and is intended to be ran through docker compose.
