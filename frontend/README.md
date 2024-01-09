@@ -11,7 +11,7 @@ This application depends on the api container, and is intended to be ran through
 At the root of the repo run:
 
 ```
-docker compose up
+docker compose up -d
 ```
 
 After all containers have started, navigate to `http://localhost:8080` in your browser.

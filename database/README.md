@@ -23,6 +23,14 @@ Stores aggregated data from the `price_changes` table. The consumer-aggregate ap
 
 ## Usage
 
+This application is intended to be ran through docker compose.
+
+At the root of the repo run:
+
+```
+docker compose up -d
+```
+
 The `compose.yml` file copies the `create.sql` and the `insert.sql` files into the postgres containers `/docker-entrypoint-initdb.d/` directory. The postgres container runs these scrips on startup.
 
 ### Execute Commands Interactively

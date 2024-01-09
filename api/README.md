@@ -29,7 +29,7 @@ This application depends on the kafka and postgres containers existing, and is i
 At the root of the repo run:
 
 ```
-docker compose up
+docker compose up -d
 ```
 
 After all the containers have started up you can verify the api is serving data by running: 
