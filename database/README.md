@@ -1,6 +1,6 @@
 # database
 
-This directory contains sql files which initialize the postgres database.
+This directory contains sql files which initialize a postgres database.
 
 `create.sql` creates the tables required by the application.
 
@@ -24,3 +24,24 @@ Stores aggregated data from the `price_changes` table. The consumer-aggregate ap
 ## Usage
 
 The `compose.yml` file copies the `create.sql` and the `insert.sql` files into the postgres containers `/docker-entrypoint-initdb.d/` directory. The postgres container runs these scrips on startup.
+
+### Execute Commands Interactively
+To connect to the postgres container and execute commands interactively: 
+
+```
+docker exec -it postgres psql -U postgres
+```
+
+### Execute Single Command
+
+To connect to the postgres container and execute a single command: 
+
+```
+docker exec -it postgres psql -U postgres -c <COMMAND TEXT HERE>
+```
+
+Example: 
+
+```
+docker exec -it postgres psql -U postgres -c 'select * from stocks;'
+```
