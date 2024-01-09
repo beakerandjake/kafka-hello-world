@@ -13,7 +13,7 @@ function App() {
   const [selected, setSelected] = useState(null);
   const priceUpdate = useRealtimePrices();
 
-  // get basic stock data on init.
+  // load data on init.
   useEffect(() => {
     const loadInitialData = async () => {
       const stocks = await getStocks();
@@ -28,7 +28,7 @@ function App() {
     });
   }, []);
 
-  // update latest prices whenever a realtime change is pushed to us
+  // update prices whenever an update is pushed to us
   useEffect(() => {
     if (!priceUpdate) {
       return;

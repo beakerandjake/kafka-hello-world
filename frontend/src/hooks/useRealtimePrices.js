@@ -3,7 +3,7 @@ import { API_ENDPOINT } from "../services/stockApi";
 import { parseISO } from "date-fns";
 
 /**
- * Hook which return a continual stream of latest price changes as they happen.
+ * Hook which provides the latest price change of the stocks.
  */
 export const useRealtimePrices = () => {
   const [latest, setLatest] = useState(null);

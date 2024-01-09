@@ -138,7 +138,7 @@ const updateWithLatestPrice = (
   if (isBefore(latestTimestamp, lastTimestamp)) {
     return;
   }
-  
+
   if (isSameMinute(lastTimestamp, latestTimestamp)) {
     lastDataPoint.y = latestPrice;
   } else {
@@ -159,7 +159,7 @@ export const PriceChart = ({ ticker, priceData, priceDirection }) => {
   const chartRef = useRef();
   const isDarkMode = useDarkMode();
 
-  // create a chart on the canvas on load.
+  // create the chart.js chart on the canvas ref on initialize.
   useEffect(() => {
     chartRef.current = new ChartJS(canvasRef.current, defaultConfig);
     return () => {
@@ -167,7 +167,7 @@ export const PriceChart = ({ ticker, priceData, priceDirection }) => {
     };
   }, []);
 
-  // load new chart data when a new ticker is selected
+  // load chart data when a new ticker is selected
   useEffect(() => {
     let ignore = false;
     getPriceHistory(ticker).then((result) => {
