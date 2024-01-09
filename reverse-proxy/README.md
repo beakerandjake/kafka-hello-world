@@ -6,6 +6,8 @@ Forwards requests containing: **/api** to the api container at http://api:3000/ 
 
 ## Usage
 
+This application depends on the api and frontend containers existing, and is intended to be ran through docker compose.
+
 At the root of the repo run:
 
 ```
