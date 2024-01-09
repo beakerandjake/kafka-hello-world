@@ -4,7 +4,7 @@ A kafka consumer which listens to stock price change events and aggregates those
 
 By default it aggregates data in one minute windows and inserts the aggregated data  into the `price_aggregate` table.
 
-Built with confluent_kafka and psycopg2.
+Built with `confluent_kafka` and `psycopg2`.
 
 ## Usage
 

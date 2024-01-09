@@ -2,7 +2,7 @@
 
 A kafka producer which continually publishes stock price change events to a kafka topic.
 
-Built with confluent_kafka and psycopg2.
+Built with `confluent_kafka` and `psycopg2`.
 
 ## Usage
 

@@ -2,7 +2,7 @@
 
 A kafka consumer which listens to stock price change events and saves the events to a database.
 
-Built with confluent_kafka and psycopg2.
+Built with `confluent_kafka` and `psycopg2`.
 
 ## Usage
 
