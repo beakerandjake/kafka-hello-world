@@ -45,13 +45,13 @@
 <!-- about -->
 ## About
 
-** TODO Screenshot / GIF ** 
+![project-screenshot]
 
-This project was created while I was learning Kafka. I needed a stream of realtime data to work with and stock prices came to mind. 
+Created while I was learning Kafka, I needed a stream of realtime data to work with and stock prices came to mind. 
 
 The project is composed of different applications which are orchestrated by docker compose. 
 
-A single Producer continually publishes price change events to a topic which get consumed by multiple Consumers. 
+A single Producer continually publishes price change messages to a topic which get consumed by multiple Consumers. 
 
 - One Consumer saves each price event to a database, another Consumer aggregates these rows into time buckets.
 - A final Consumer pushes these events to the frontend via SSE. 
@@ -70,3 +70,4 @@ docker compose up -d
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
+[project-screenshot]: https://github.com/beakerandjake/kafka-hello-world/assets/1727349/d9f7bf11-d548-43e1-817c-0055e18a562e
