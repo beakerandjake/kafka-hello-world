@@ -2,6 +2,8 @@
 
 Allows you to view historical price data of the stocks as well as realtime price information. 
 
+Built with react, vite, chart.js, and tailwindcss. 
+
 ## Usage
 
 This application depends on the api container, and is intended to be ran through docker compose.

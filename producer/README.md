@@ -1,11 +1,8 @@
 # producer
 
-A kafka producer which continually publishes stock price changes to the **stock_price_changes** topic.
+A kafka producer which continually publishes stock price change events to a kafka topic.
 
-## Built With
-
-* `confluent_kafka` is used to produce messages to kafka.
-* `psycopg2` is used to query postgres.
+Built with confluent_kafka and psycopg2.
 
 ## Usage
 
