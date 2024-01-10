@@ -1,6 +1,15 @@
 import { FaArrowUp, FaArrowDown } from "react-icons/fa";
 import { clsx } from "clsx";
-import { calculatePercentChange } from "../util/calculatePercentChange";
+
+/**
+ * Returns the percent that the stock has changed from its open price
+ */
+const calculatePercentChange = (openPrice, latestPrice) => {
+  if (Number.isNaN(openPrice) || Number.isNaN(latestPrice)) {
+    return 0;
+  }
+  return ((latestPrice - openPrice) / openPrice) * 100;
+};
 
 /**
  * A badge which displays the change percentage between the open and latest price.
