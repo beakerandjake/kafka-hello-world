@@ -40,12 +40,12 @@
   </ol>
 </details>
 
-🚧 README under construction 🚧
-
 <!-- about -->
 ## About
 
 ![project-screenshot]
+
+🚧 README under construction 🚧
 
 Created while I was learning Kafka, I needed a stream of realtime data to work with and stock prices came to mind. 
 
@@ -73,11 +73,55 @@ A single Producer continually publishes price change messages to a topic which g
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Run
+<!-- getting started -->
+## Getting Started
 
+Installation is easy thanks to docker compose, you just need to clone this repository then run the `up` command.
+
+### Prerequisites
+
+[docker compose](https://docs.docker.com/engine/install/) must be installed on your machine. It can be installed through docker desktop or docker engine.
+
+### Installation
+
+1. Clone this repo
+   ```sh
+   git clone https://github.com/beakerandjake/kafka-hello-world
+   ```
+2. Start the application
+   ```sh
+   docker compose up -d
+   ```
+
+To stop the application
+   ```sh
+   docker compose down
+   ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+Once the containers are all started navigate to `http://localhost:8080` in your browser. You should see prices continually update, if you leave it running you can see the price chart change over time.
+
+To view the price events you can create a console consumer:
+
+```sh
+docker exec -it kafka kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic stock_price_changes
 ```
-docker compose up -d
+
+You can also follow the consumer logs:
+```sh
+docker logs consumer-realtime --follow
 ```
+```sh
+docker logs consumer-aggregate --follow
+```
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
