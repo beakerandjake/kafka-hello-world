@@ -75,7 +75,7 @@ Installation is easy thanks to docker compose, you just need to clone this repos
 
 ### Prerequisites
 
-[docker compose][install-docker-url] must be installed on your machine. It can be installed through docker desktop or docker engine.
+Docker Compose must be installed on your machine. It can be installed through docker desktop or [docker engine][install-docker-url].
 
 ### Installation
 
@@ -123,7 +123,7 @@ docker logs consumer-aggregate --follow
 
 ![project-architecture]
 
-See a specific components README file for more information.
+See a specific component's README file for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
