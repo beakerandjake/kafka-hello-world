@@ -8,7 +8,7 @@ export const PageHeading = () => (
         Kafka Hello World <span className="pl-1">📈</span>
       </h1>
       <h2 className="text-sm mt-2 hidden text-gray-500 md:block dark:text-slate-400">
-        Real time (fake) stock prices with Kafka
+        Realtime (fake) stock prices with Kafka
       </h2>
     </div>
   </header>
