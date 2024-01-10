@@ -9,7 +9,7 @@
   </a>
   <h2 align="center">kafka-hello-world</h2>
   <p align="center">
-    Real time (fake) stock prices with Kafka.
+    Realtime (fake) stock prices with Kafka.
   </p>
 </div>
 
