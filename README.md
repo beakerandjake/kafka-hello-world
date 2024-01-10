@@ -49,7 +49,7 @@ A single Producer continually publishes price change messages to a topic with mu
 
 - One Consumer saves each price event to a database.
 - Another Consumer aggregates these rows into time buckets.
-- A final Consumer pushes these events to the frontend via SSE. 
+- A final Consumer pushes price events to the frontend via SSE. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
