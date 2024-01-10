@@ -47,7 +47,8 @@ The project is composed of different applications which are orchestrated by dock
 
 A single Producer continually publishes price change messages to a topic with multiple Consumers. 
 
-- One Consumer saves each price event to a database, another Consumer aggregates these rows into time buckets.
+- One Consumer saves each price event to a database.
+- Another Consumer aggregates these rows into time buckets.
 - A final Consumer pushes these events to the frontend via SSE. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
