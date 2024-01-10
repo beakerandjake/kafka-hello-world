@@ -10,7 +10,7 @@ This application depends on the api container, and is intended to be ran through
 
 At the root of the repo run:
 
-```
+```sh
 docker compose up -d
 ```
 

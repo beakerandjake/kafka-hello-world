@@ -10,7 +10,7 @@ This application depends on the api and frontend containers existing, and is int
 
 At the root of the repo run:
 
-```
+```sh
 docker compose up -d
 ```
 

@@ -27,7 +27,7 @@ This application is intended to be ran through docker compose.
 
 At the root of the repo run:
 
-```
+```sh
 docker compose up -d
 ```
 

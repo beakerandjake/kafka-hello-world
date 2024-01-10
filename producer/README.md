@@ -10,19 +10,19 @@ This application depends on the kafka and postgres containers existing, and is i
 
 At the root of the repo run:
 
-```
+```sh
 docker compose up -d
 ```
 
 After all the containers have started up you can verify it is producing by viewing the logs:
 
-```
+```sh
 docker logs producer --follow
 ```
 
 Or you can subscribe to the topic in the command line:
 
-```
+```sh
 docker exec -it kafka kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic stock_price_changes
 ```
 

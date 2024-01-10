@@ -10,19 +10,19 @@ This application depends on the kafka and postgres containers existing, and is i
 
 At the root of the repo run:
 
-```
+```sh
 docker compose up -d
 ```
 
 After all the containers have started up you can verify it is consuming by viewing the logs:
 
-```
+```sh
 docker logs consumer-realtime --follow
 ```
 
 Alternatively you can query the postgres container for a row count
 
-```
+```sh
 docker exec -it postgres psql -U postgres -c 'select count(*) from price_changes;'
 ```
 
