@@ -32,11 +32,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#architecture-diagram">Architecture Diagram</a></li>
   </ol>
 </details>
 
@@ -44,8 +40,6 @@
 ## About
 
 ![project-screenshot]
-
-🚧 README under construction 🚧
 
 Created while I was learning Kafka, I needed a stream of realtime data to work with and stock prices came to mind. 
 
@@ -80,7 +74,7 @@ Installation is easy thanks to docker compose, you just need to clone this repos
 
 ### Prerequisites
 
-[docker compose](https://docs.docker.com/engine/install/) must be installed on your machine. It can be installed through docker desktop or docker engine.
+[docker compose][install-docker-url] must be installed on your machine. It can be installed through docker desktop or docker engine.
 
 ### Installation
 
@@ -123,12 +117,20 @@ docker logs consumer-aggregate --follow
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- Architecture Diagram -->
+## Architecture Diagram
+
+![project-architecture]
+
+See a specific components README file for more information.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
 [project-screenshot]: https://github.com/beakerandjake/kafka-hello-world/assets/1727349/d9f7bf11-d548-43e1-817c-0055e18a562e
+[project-architecture]: https://github.com/beakerandjake/kafka-hello-world/assets/1727349/fa3b1072-904c-4b7a-b4b8-6e6995e53df3
 
 [Kafka]: https://img.shields.io/badge/Apache%20Kafka-000?style=for-the-badge&logo=apachekafka
 [Kafka-url]: https://kafka.apache.org/
@@ -148,3 +150,4 @@ docker logs consumer-aggregate --follow
 [TailwindCSS-url]: https://tailwindcss.com/
 [Chart.js]: https://img.shields.io/badge/chart.js-F5788D.svg?style=for-the-badge&logo=chart.js&logoColor=white
 [Chart.js-url]: https://www.chartjs.org/
+[install-docker-url]: https://docs.docker.com/engine/install/
