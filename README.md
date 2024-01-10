@@ -45,7 +45,7 @@ Created while I was learning Kafka, I needed a stream of realtime data to work w
 
 The project is composed of different applications which are orchestrated by docker compose. 
 
-A single Producer continually publishes price change messages to a topic which get consumed by multiple Consumers. 
+A single Producer continually publishes price change messages to a topic with multiple Consumers. 
 
 - One Consumer saves each price event to a database, another Consumer aggregates these rows into time buckets.
 - A final Consumer pushes these events to the frontend via SSE. 
