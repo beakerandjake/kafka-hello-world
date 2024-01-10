@@ -60,15 +60,15 @@ A single Producer continually publishes price change messages to a topic which g
 
 ### Built With
 
-![Kafka]
-![Postgres]
-![Nginx]
-![Docker]
-![Fastify]
-![Vite]
-![React]
-![Chart.js]
-![TailwindCSS]
+[![Kafka][Kafka]][Kafka-url]
+[![Postgres][Postgres]][Postgres-url]
+[![Nginx][Nginx]][Nginx-url]
+[![Docker][Docker]][Docker-url]
+[![Fastify][Fastify]][Fastify-url]
+[![Vite][Vite]][Vite-url]
+[![React][React]][React-url]
+[![Chart.js][Chart.js]][Chart.js-url]
+[![TailwindCSS][TailwindCSS]][TailwindCSS-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -87,11 +87,20 @@ docker compose up -d
 [project-screenshot]: https://github.com/beakerandjake/kafka-hello-world/assets/1727349/d9f7bf11-d548-43e1-817c-0055e18a562e
 
 [Kafka]: https://img.shields.io/badge/Apache%20Kafka-000?style=for-the-badge&logo=apachekafka
+[Kafka-url]: https://kafka.apache.org/
 [Postgres]: https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white
+[Postgres-url]: https://www.postgresql.org/
 [Nginx]: https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white
+[Nginx-url]: https://nginx.org
 [Docker]: https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white
+[Docker-url]: https://www.docker.com/
 [Fastify]: https://img.shields.io/badge/fastify-%23000000.svg?style=for-the-badge&logo=fastify&logoColor=white
+[Fastify-url]: https://fastify.dev/
 [Vite]: https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white
+[Vite-url]: https://vitejs.dev/
 [React]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://react.dev/
 [TailwindCSS]: https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
+[TailwindCSS-url]: https://tailwindcss.com/
 [Chart.js]: https://img.shields.io/badge/chart.js-F5788D.svg?style=for-the-badge&logo=chart.js&logoColor=white
+[Chart.js-url]: https://www.chartjs.org/
