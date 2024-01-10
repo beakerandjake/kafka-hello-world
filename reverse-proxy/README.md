@@ -1,6 +1,6 @@
 # reverse-proxy
 
-A simple nginx reverse proxy container which serves the frontent and api. Allows the frontend and api to communicate without having to use CORS. Leverages the networking created by docker compose.
+A simple nginx reverse proxy container which serves the frontend and api. Allows the frontend and api to communicate without having to use CORS. Leverages the networking created by docker compose.
 
 Forwards requests containing: **/api** to the api container at http://api:3000/ and all other requests to the frontend container at http://frontend:80
 
